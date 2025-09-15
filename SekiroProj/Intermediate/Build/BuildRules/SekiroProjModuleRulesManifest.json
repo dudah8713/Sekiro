@@ -1,0 +1,8 @@
+{
+	"SourceFiles": [
+		"W:\\Sekiro\\SekiroProj\\Source\\SekiroProj\\SekiroProj.Build.cs",
+		"W:\\Sekiro\\SekiroProj\\Source\\SekiroProj.Target.cs",
+		"W:\\Sekiro\\SekiroProj\\Source\\SekiroProjEditor.Target.cs"
+	],
+	"EngineVersion": "5.5.4"
+}

@@ -1,0 +1,14 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "w:\\sekiro\\sekiroproj\\source\\sekiroproj\\sekiroproj.cpp",
+        "ProvidedModule": "",
+        "PCH": "w:\\sekiro\\sekiroproj\\intermediate\\build\\win64\\x64\\sekiroprojeditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.cpp20.h.pch",
+        "Includes": [
+            "w:\\sekiro\\sekiroproj\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\sekiroproj\\definitions.sekiroproj.h",
+            "w:\\sekiro\\sekiroproj\\source\\sekiroproj\\sekiroproj.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

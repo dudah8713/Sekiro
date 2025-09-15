@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "SekiroProj",
+			"Path": "..\\Source\\SekiroProj.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "SekiroProjEditor",
+			"Path": "..\\Source\\SekiroProjEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}

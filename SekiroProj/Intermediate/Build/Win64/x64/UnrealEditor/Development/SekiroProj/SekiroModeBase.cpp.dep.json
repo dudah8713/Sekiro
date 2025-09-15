@@ -1,0 +1,19 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "w:\\sekiro\\sekiroproj\\source\\sekiroproj\\sekiromodebase.cpp",
+        "ProvidedModule": "",
+        "PCH": "w:\\sekiro\\sekiroproj\\intermediate\\build\\win64\\x64\\sekiroprojeditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.cpp20.h.pch",
+        "Includes": [
+            "w:\\sekiro\\sekiroproj\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\sekiroproj\\definitions.sekiroproj.h",
+            "w:\\sekiro\\sekiroproj\\source\\sekiroproj\\sekiromodebase.h",
+            "w:\\epicgames\\epic games\\ue_5.5\\engine\\source\\runtime\\engine\\classes\\gameframework\\gamemodebase.h",
+            "w:\\epicgames\\epic games\\ue_5.5\\engine\\source\\runtime\\engine\\classes\\engine\\serverstatreplicator.h",
+            "w:\\epicgames\\epic games\\ue_5.5\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\serverstatreplicator.generated.h",
+            "w:\\epicgames\\epic games\\ue_5.5\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\gamemodebase.generated.h",
+            "w:\\sekiro\\sekiroproj\\intermediate\\build\\win64\\unrealeditor\\inc\\sekiroproj\\uht\\sekiromodebase.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}
