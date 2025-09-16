@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SekiroProjModuleRules")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Development")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+483e432dad358c865ab7cbd304c8d2fa00d88b5e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7b7a152e0dd9477fee26fdf9f0c5c5745cfeab73")]
 [assembly: System.Reflection.AssemblyProductAttribute("SekiroProjModuleRules")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SekiroProjModuleRules")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
