@@ -11,6 +11,7 @@
     <None Include="..\..\Source\SekiroProjEditor.Target.cs">
       <Filter>Source</Filter>
     </None>
+    <None Include="..\..\SekiroProj.sln.DotSettings.user" />
     <Filter Include="Config">
       <UniqueIdentifier>{FA535FFB-25E1-3D20-B416-52F9BE21E06E}</UniqueIdentifier>
     </Filter>
@@ -29,6 +30,12 @@
     <Filter Include="Source\SekiroProj">
       <UniqueIdentifier>{AB612EE7-DA89-3235-9843-5F5E15A721A1}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\SekiroProj\SekiroModeBase.cpp">
+      <Filter>Source\SekiroProj</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\SekiroProj\SekiroModeBase.h">
+      <Filter>Source\SekiroProj</Filter>
+    </ClCompile>
     <None Include="..\..\Source\SekiroProj\SekiroProj.Build.cs">
       <Filter>Source\SekiroProj</Filter>
     </None>
