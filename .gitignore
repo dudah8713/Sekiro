@@ -81,3 +81,4 @@ DerivedDataCache/*
 *.log
 SekiroProj/Saved/Logs/SekiroProj.log
 SekiroProj/Saved/Logs/SekiroProj.log
+*.log
