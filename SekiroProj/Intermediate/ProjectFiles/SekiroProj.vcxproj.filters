@@ -11,6 +11,7 @@
     <None Include="..\..\Source\SekiroProjEditor.Target.cs">
       <Filter>Source</Filter>
     </None>
+    <None Include="..\..\.vsconfig" />
     <None Include="..\..\SekiroProj.sln.DotSettings.user" />
     <Filter Include="Config">
       <UniqueIdentifier>{FA535FFB-25E1-3D20-B416-52F9BE21E06E}</UniqueIdentifier>
@@ -44,6 +45,18 @@
     </ClCompile>
     <ClCompile Include="..\..\Source\SekiroProj\SekiroProj.h">
       <Filter>Source\SekiroProj</Filter>
+    </ClCompile>
+    <Filter Include="Source\SekiroProj\SekiroGame">
+      <UniqueIdentifier>{824EEF80-6EF6-3A83-8085-7BE4C39917B1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\SekiroProj\SekiroGame\Character">
+      <UniqueIdentifier>{9A5A6A4F-6F44-34ED-AE6B-CA0958964B69}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\SekiroProj\SekiroGame\Character\SekiroCharacterBase.cpp">
+      <Filter>Source\SekiroProj\SekiroGame\Character</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\SekiroProj\SekiroGame\Character\SekiroCharacterBase.h">
+      <Filter>Source\SekiroProj\SekiroGame\Character</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
