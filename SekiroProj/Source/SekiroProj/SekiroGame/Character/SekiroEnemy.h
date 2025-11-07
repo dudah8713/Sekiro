@@ -16,4 +16,7 @@ class SEKIROPROJ_API ASekiroEnemy : public ASekiroCharacterBase
 
 public:
 	ASekiroEnemy();
+
+protected:
+	virtual void BeginPlay() override;
 };

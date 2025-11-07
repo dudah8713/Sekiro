@@ -12,6 +12,11 @@ ASekiroCharacterBase::ASekiroCharacterBase()
 	Weapon->SetCollisionEnabled(ECollisionEnabled::NoCollision);
 }
 
+UAbilitySystemComponent* ASekiroCharacterBase::GetAbilitySystemComponent() const
+{
+	return AbilitySystemComponent;
+}
+
 void ASekiroCharacterBase::BeginPlay()
 {
 	Super::BeginPlay();

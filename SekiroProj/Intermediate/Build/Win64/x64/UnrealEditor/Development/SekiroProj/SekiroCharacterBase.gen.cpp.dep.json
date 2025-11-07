@@ -7,6 +7,8 @@
         "Includes": [
             "c:\\work\\sekiro\\sekiroproj\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\sekiroproj\\definitions.sekiroproj.h",
             "c:\\work\\sekiro\\sekiroproj\\source\\sekiroproj\\sekirogame\\character\\sekirocharacterbase.h",
+            "c:\\program files\\epic games\\ue_5.5\\engine\\plugins\\runtime\\gameplayabilities\\source\\gameplayabilities\\public\\abilitysysteminterface.h",
+            "c:\\program files\\epic games\\ue_5.5\\engine\\plugins\\runtime\\gameplayabilities\\intermediate\\build\\win64\\unrealeditor\\inc\\gameplayabilities\\uht\\abilitysysteminterface.generated.h",
             "c:\\program files\\epic games\\ue_5.5\\engine\\source\\runtime\\engine\\classes\\gameframework\\character.h",
             "c:\\program files\\epic games\\ue_5.5\\engine\\source\\runtime\\engine\\classes\\gameframework\\charactermovementreplication.h",
             "c:\\program files\\epic games\\ue_5.5\\engine\\source\\runtime\\net\\core\\public\\net\\core\\nettoken\\nettokenexportcontext.h",

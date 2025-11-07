@@ -3,13 +3,22 @@
 
 #include "SekiroGame/Character/SekiroEnemy.h"
 
-#include "SekiroGame/AbilitySystem/SekiroAbilitySystem.h"
+#include "SekiroGame/AbilitySystem/SekiroAbilitySystemComponent.h"
 #include "SekiroGame/AbilitySystem/SekiroAttributeSet.h"
 
 ASekiroEnemy::ASekiroEnemy()
 {
-	AbilitySystemComponent = CreateDefaultSubobject<USekiroAbilitySystem>("AbilitySystemComponent");
+	AbilitySystemComponent = CreateDefaultSubobject<USekiroAbilitySystemComponent>("AbilitySystemComponent");
 	AbilitySystemComponent->SetIsReplicated(true);
-
+	//GameplayEffect를 클라이언트에게 어떻게 Replicate 할 것인가?
+	AbilitySystemComponent->SetReplicationMode(EGameplayEffectReplicationMode::Minimal);
+	
 	AttributeSet = CreateDefaultSubobject<USekiroAttributeSet>("AttributeSet");
+}
+
+void ASekiroEnemy::BeginPlay()
+{
+	Super::BeginPlay();
+
+	AbilitySystemComponent->InitAbilityActorInfo(this, this);
 }

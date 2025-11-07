@@ -14,16 +14,17 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define SEKIROPROJ_SekiroPlayerState_generated_h
 
-#define FID_Work_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_Player_SekiroPlayerState_h_15_INCLASS_NO_PURE_DECLS \
+#define FID_Work_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_Player_SekiroPlayerState_h_18_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesASekiroPlayerState(); \
 	friend struct Z_Construct_UClass_ASekiroPlayerState_Statics; \
 public: \
 	DECLARE_CLASS(ASekiroPlayerState, APlayerState, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/SekiroProj"), NO_API) \
-	DECLARE_SERIALIZER(ASekiroPlayerState)
+	DECLARE_SERIALIZER(ASekiroPlayerState) \
+	virtual UObject* _getUObject() const override { return const_cast<ASekiroPlayerState*>(this); }
 
 
-#define FID_Work_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_Player_SekiroPlayerState_h_15_ENHANCED_CONSTRUCTORS \
+#define FID_Work_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_Player_SekiroPlayerState_h_18_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	ASekiroPlayerState(ASekiroPlayerState&&); \
@@ -35,12 +36,12 @@ public: \
 	NO_API virtual ~ASekiroPlayerState();
 
 
-#define FID_Work_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_Player_SekiroPlayerState_h_12_PROLOG
-#define FID_Work_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_Player_SekiroPlayerState_h_15_GENERATED_BODY \
+#define FID_Work_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_Player_SekiroPlayerState_h_15_PROLOG
+#define FID_Work_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_Player_SekiroPlayerState_h_18_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Work_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_Player_SekiroPlayerState_h_15_INCLASS_NO_PURE_DECLS \
-	FID_Work_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_Player_SekiroPlayerState_h_15_ENHANCED_CONSTRUCTORS \
+	FID_Work_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_Player_SekiroPlayerState_h_18_INCLASS_NO_PURE_DECLS \
+	FID_Work_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_Player_SekiroPlayerState_h_18_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

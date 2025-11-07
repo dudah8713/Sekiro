@@ -13,5 +13,11 @@ UCLASS()
 class SEKIROPROJ_API ASekiroSamurai : public ASekiroCharacterBase
 {
 	GENERATED_BODY()
-	
+
+public:
+	virtual void PossessedBy(AController* NewController) override;
+	virtual void OnRep_PlayerState() override;
+
+private:
+	void InitAbilityActorInfo();
 };

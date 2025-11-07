@@ -3,6 +3,7 @@
 #pragma once
 
 #include "CoreMinimal.h"
+#include "AbilitySystemInterface.h"
 #include "GameFramework/Character.h"
 #include "SekiroCharacterBase.generated.h"
 
@@ -10,13 +11,16 @@ class UAbilitySystemComponent;
 class UAttributeSet;
 
 UCLASS(Abstract) //직접적인 월드 배치를 방지함
-class SEKIROPROJ_API ASekiroCharacterBase : public ACharacter
+class SEKIROPROJ_API ASekiroCharacterBase : public ACharacter, public IAbilitySystemInterface
 {
 	GENERATED_BODY()
 
 public:
 	ASekiroCharacterBase();
-
+	
+	virtual UAbilitySystemComponent* GetAbilitySystemComponent() const override;
+	UAttributeSet* GetAttributeSet() { return AttributeSet; }
+	
 protected:
 	virtual void BeginPlay() override;
 
