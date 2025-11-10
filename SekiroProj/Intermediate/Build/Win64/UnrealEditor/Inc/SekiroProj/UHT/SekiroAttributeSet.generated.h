@@ -19,6 +19,8 @@ struct FGameplayAttributeData;
 #define FID_Work_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_AbilitySystem_SekiroAttributeSet_h_21_RPC_WRAPPERS_NO_PURE_DECLS \
 	DECLARE_FUNCTION(execOnRep_MaxPosture); \
 	DECLARE_FUNCTION(execOnRep_Posture); \
+	DECLARE_FUNCTION(execOnRep_MaxStamina); \
+	DECLARE_FUNCTION(execOnRep_Stamina); \
 	DECLARE_FUNCTION(execOnRep_MaxHealth); \
 	DECLARE_FUNCTION(execOnRep_Health);
 
@@ -35,6 +37,8 @@ public: \
 		NETFIELD_REP_START=(uint16)((int32)Super::ENetFields_Private::NETFIELD_REP_END + (int32)1), \
 		Health=NETFIELD_REP_START, \
 		MaxHealth, \
+		Stamina, \
+		MaxStamina, \
 		Posture, \
 		MaxPosture, \
 		NETFIELD_REP_END=MaxPosture	}; \

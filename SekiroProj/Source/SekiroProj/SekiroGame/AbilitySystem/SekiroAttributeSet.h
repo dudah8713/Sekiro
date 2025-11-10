@@ -33,6 +33,14 @@ public:
 	FGameplayAttributeData MaxHealth;
 	ATTRIBUTE_ACCESSORS(USekiroAttributeSet, MaxHealth);
 
+	UPROPERTY(BlueprintReadOnly, ReplicatedUsing = OnRep_Stamina, Category = "Vital Attributes")
+	FGameplayAttributeData Stamina;
+	ATTRIBUTE_ACCESSORS(USekiroAttributeSet, Stamina);
+	
+	UPROPERTY(BlueprintReadOnly, ReplicatedUsing = OnRep_MaxStamina, Category = "Vital Attributes")
+	FGameplayAttributeData MaxStamina;
+	ATTRIBUTE_ACCESSORS(USekiroAttributeSet, MaxStamina);
+	
 	UPROPERTY(BlueprintReadOnly, ReplicatedUsing = OnRep_Posture, Category = "Vital Attributes")
 	FGameplayAttributeData Posture; //체간
 	ATTRIBUTE_ACCESSORS(USekiroAttributeSet, Posture);
@@ -47,6 +55,12 @@ public:
 	UFUNCTION()
 	void OnRep_MaxHealth(const FGameplayAttributeData& OldMaxHealth) const;
 
+	UFUNCTION()
+	void OnRep_Stamina(const FGameplayAttributeData& OldStamina) const;
+
+	UFUNCTION()
+	void OnRep_MaxStamina(const FGameplayAttributeData& OldMaxStamina) const;
+	
 	UFUNCTION()
 	void OnRep_Posture(const FGameplayAttributeData& OldPosture) const;
 
