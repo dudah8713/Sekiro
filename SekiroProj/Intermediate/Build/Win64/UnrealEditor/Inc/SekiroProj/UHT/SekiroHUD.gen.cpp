@@ -53,7 +53,13 @@ struct Z_Construct_UClass_ASekiroHUD_Statics
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_OverlayWidgetControllerClass_MetaData[] = {
 		{ "Category", "SekiroHUD" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "// \xec\x83\x9d\xec\x84\xb1\xed\x95\xa0 \xec\xbb\xa8\xed\x8a\xb8\xeb\xa1\xa4\xeb\x9f\xac\xec\x9d\x98 \xed\x81\xb4\xeb\x9e\x98\xec\x8a\xa4 \xed\x83\x80\xec\x9e\x85\xec\x9d\x84 \xec\x97\x90\xeb\x94\x94\xed\x84\xb0\xec\x97\x90\xec\x84\x9c \xec\xa7\x80\xec\xa0\x95\xed\x95\x98\xea\xb8\xb0 \xec\x9c\x84\xed\x95\x9c \xed\x81\xb4\xeb\x9e\x98\xec\x8a\xa4 \xeb\xb3\x80\xec\x88\x98\n" },
+#endif
 		{ "ModuleRelativePath", "SekiroGame/UI/SekiroHUD.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "\xec\x83\x9d\xec\x84\xb1\xed\x95\xa0 \xec\xbb\xa8\xed\x8a\xb8\xeb\xa1\xa4\xeb\x9f\xac\xec\x9d\x98 \xed\x81\xb4\xeb\x9e\x98\xec\x8a\xa4 \xed\x83\x80\xec\x9e\x85\xec\x9d\x84 \xec\x97\x90\xeb\x94\x94\xed\x84\xb0\xec\x97\x90\xec\x84\x9c \xec\xa7\x80\xec\xa0\x95\xed\x95\x98\xea\xb8\xb0 \xec\x9c\x84\xed\x95\x9c \xed\x81\xb4\xeb\x9e\x98\xec\x8a\xa4 \xeb\xb3\x80\xec\x88\x98" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_OverlayWidget;
@@ -119,10 +125,10 @@ ASekiroHUD::~ASekiroHUD() {}
 struct Z_CompiledInDeferFile_FID_Work_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_UI_SekiroHUD_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_ASekiroHUD, ASekiroHUD::StaticClass, TEXT("ASekiroHUD"), &Z_Registration_Info_UClass_ASekiroHUD, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ASekiroHUD), 3648107205U) },
+		{ Z_Construct_UClass_ASekiroHUD, ASekiroHUD::StaticClass, TEXT("ASekiroHUD"), &Z_Registration_Info_UClass_ASekiroHUD, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ASekiroHUD), 4173960276U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Work_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_UI_SekiroHUD_h_2656634631(TEXT("/Script/SekiroProj"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Work_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_UI_SekiroHUD_h_1113076345(TEXT("/Script/SekiroProj"),
 	Z_CompiledInDeferFile_FID_Work_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_UI_SekiroHUD_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Work_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_UI_SekiroHUD_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

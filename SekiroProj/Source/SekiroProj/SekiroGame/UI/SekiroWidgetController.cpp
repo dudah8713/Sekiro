@@ -14,3 +14,7 @@ void USekiroWidgetController::SetWidgetControllerParams(const FWidgetControllerP
 void USekiroWidgetController::BroadcastInitialValues()
 {
 }
+
+void USekiroWidgetController::BindCallbacksToDependencies()
+{
+}

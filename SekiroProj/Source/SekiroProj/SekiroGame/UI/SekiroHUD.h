@@ -33,6 +33,7 @@ private:
 	UPROPERTY()
 	TObjectPtr<UOverlayWidgetController> OverlayWidgetController;
 
+	// 생성할 컨트롤러의 클래스 타입을 에디터에서 지정하기 위한 클래스 변수
 	UPROPERTY(EditAnywhere)
 	TSubclassOf<UOverlayWidgetController> OverlayWidgetControllerClass;
 };

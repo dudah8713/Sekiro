@@ -10,3 +10,25 @@ void UOverlayWidgetController::BroadcastInitialValues()
 	OnHealthChanged.Broadcast(SekiroAttributeSet->GetHealth());
 	OnMaxHealthChanged.Broadcast(SekiroAttributeSet->GetMaxHealth());
 }
+
+void UOverlayWidgetController::BindCallbacksToDependencies()
+{
+	const USekiroAttributeSet* SekiroAttributeSet = CastChecked<USekiroAttributeSet>(AttributeSet);
+
+	AbilitySystemComponent->GetGameplayAttributeValueChangeDelegate(
+		SekiroAttributeSet->GetHealthAttribute()).AddUObject(this, &UOverlayWidgetController::HealthChanged);
+
+	AbilitySystemComponent->GetGameplayAttributeValueChangeDelegate(
+	SekiroAttributeSet->GetMaxHealthAttribute()).AddUObject(this, &UOverlayWidgetController::MaxHealthChanged);
+}
+
+void UOverlayWidgetController::HealthChanged(const FOnAttributeChangeData& Data) const
+{
+	OnHealthChanged.Broadcast(Data.NewValue);
+}
+
+void UOverlayWidgetController::MaxHealthChanged(const FOnAttributeChangeData& Data) const
+{
+	OnMaxHealthChanged.Broadcast(Data.NewValue);
+}
+
