@@ -3,7 +3,9 @@
 #include "SekiroGame/Character/SekiroSamurai.h"
 #include "SekiroGame/Player/SekiroPlayerState.h"
 #include "AbilitySystemComponent.h"
+#include "EnhancedInputSubsystems.h"
 #include "../Player/SekiroPlayerController.h"
+#include "SekiroGame/Player/DataAsset_InputConfig.h"
 #include "SekiroGame/UI/SekiroHUD.h"
 
 void ASekiroSamurai::InitAbilityActorInfo()
@@ -38,5 +40,27 @@ void ASekiroSamurai::OnRep_PlayerState()
 
 	//for Client
 	InitAbilityActorInfo();
+}
+
+void ASekiroSamurai::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
+{
+	Super::SetupPlayerInputComponent(PlayerInputComponent);
+
+	checkf(InputConfigDataAsset, TEXT("Forgot to assign a valid data asset as input config"))
+	ULocalPlayer* LocalPlayer = GetController<APlayerController>()->GetLocalPlayer();
+	UEnhancedInputLocalPlayerSubsystem* SubSystem = ULocalPlayer::GetSubsystem<UEnhancedInputLocalPlayerSubsystem>(LocalPlayer);
+
+	check(SubSystem);
+	SubSystem->AddMappingContext(InputConfigDataAsset->DefaultMappingContext, 0);
+
+	USekiroEnhancedIn
+}
+
+void ASekiroSamurai::Input_AbilityInputPressed(const FGameplayTag InInputTag)
+{
+}
+
+void ASekiroSamurai::Input_AbilityInputReleased(const FGameplayTag InInputTag)
+{
 }
 

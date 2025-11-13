@@ -8,7 +8,8 @@ USekiroAttributeSet::USekiroAttributeSet()
 {
 	InitHealth(100.f);
 	InitMaxHealth(200.f);
-	InitStamina(60.0f);
+	InitStamina(50.0f);
+	InitMaxStamina(100.0f);
 }
 
 void USekiroAttributeSet::GetLifetimeReplicatedProps(TArray<class FLifetimeProperty>& OutLifetimeProps) const
@@ -35,12 +36,12 @@ void USekiroAttributeSet::OnRep_MaxHealth(const FGameplayAttributeData& OldMaxHe
 
 void USekiroAttributeSet::OnRep_Stamina(const FGameplayAttributeData& OldStamina) const
 {
-	GAMEPLAYATTRIBUTE_REPNOTIFY(USekiroAttributeSet, Posture, OldStamina)
+	GAMEPLAYATTRIBUTE_REPNOTIFY(USekiroAttributeSet, Stamina, OldStamina)
 }
 
 void USekiroAttributeSet::OnRep_MaxStamina(const FGameplayAttributeData& OldMaxStamina) const
 {
-	GAMEPLAYATTRIBUTE_REPNOTIFY(USekiroAttributeSet, Posture, OldMaxStamina)
+	GAMEPLAYATTRIBUTE_REPNOTIFY(USekiroAttributeSet, MaxStamina, OldMaxStamina)
 }
 
 void USekiroAttributeSet::OnRep_Posture(const FGameplayAttributeData& OldPosture) const
