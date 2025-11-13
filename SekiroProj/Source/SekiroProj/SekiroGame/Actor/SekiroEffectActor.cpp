@@ -24,7 +24,7 @@ void ASekiroEffectActor::OnOverlap(UPrimitiveComponent* OverlappedComponent, AAc
 	{
 		const USekiroAttributeSet* SekiroAttributeSet = Cast<USekiroAttributeSet>(ASCInterface->GetAbilitySystemComponent()->GetAttributeSet(USekiroAttributeSet::StaticClass()));
 		USekiroAttributeSet* MutableSekiroAttributeSet = const_cast<USekiroAttributeSet*>(SekiroAttributeSet);
-		MutableSekiroAttributeSet->SetHealth(MutableSekiroAttributeSet->GetHealth() + 25.0f);
+		MutableSekiroAttributeSet->SetStamina(MutableSekiroAttributeSet->GetStamina() + 25.0f);
 		Destroy();
 	}
 }
