@@ -22,7 +22,15 @@ SEKIROPROJ_API void FOnHealthChangedSignature_DelegateWrapper(const FMulticastSc
 SEKIROPROJ_API void FOnMaxHealthChangedSignature_DelegateWrapper(const FMulticastScriptDelegate& OnMaxHealthChangedSignature, float NewMaxHealth);
 
 
-#define FID_Work_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_UI_OverlayWidgetController_h_17_INCLASS_NO_PURE_DECLS \
+#define FID_Work_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_UI_OverlayWidgetController_h_11_DELEGATE \
+SEKIROPROJ_API void FOnStaminaChangedSignature_DelegateWrapper(const FMulticastScriptDelegate& OnStaminaChangedSignature, float NewStamina);
+
+
+#define FID_Work_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_UI_OverlayWidgetController_h_12_DELEGATE \
+SEKIROPROJ_API void FOnMaxStaminaChangedSignature_DelegateWrapper(const FMulticastScriptDelegate& OnMaxStaminaChangedSignature, float NewMaxStamina);
+
+
+#define FID_Work_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_UI_OverlayWidgetController_h_19_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUOverlayWidgetController(); \
 	friend struct Z_Construct_UClass_UOverlayWidgetController_Statics; \
@@ -31,7 +39,7 @@ public: \
 	DECLARE_SERIALIZER(UOverlayWidgetController)
 
 
-#define FID_Work_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_UI_OverlayWidgetController_h_17_ENHANCED_CONSTRUCTORS \
+#define FID_Work_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_UI_OverlayWidgetController_h_19_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UOverlayWidgetController(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 private: \
@@ -45,12 +53,12 @@ public: \
 	NO_API virtual ~UOverlayWidgetController();
 
 
-#define FID_Work_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_UI_OverlayWidgetController_h_14_PROLOG
-#define FID_Work_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_UI_OverlayWidgetController_h_17_GENERATED_BODY \
+#define FID_Work_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_UI_OverlayWidgetController_h_16_PROLOG
+#define FID_Work_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_UI_OverlayWidgetController_h_19_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Work_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_UI_OverlayWidgetController_h_17_INCLASS_NO_PURE_DECLS \
-	FID_Work_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_UI_OverlayWidgetController_h_17_ENHANCED_CONSTRUCTORS \
+	FID_Work_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_UI_OverlayWidgetController_h_19_INCLASS_NO_PURE_DECLS \
+	FID_Work_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_UI_OverlayWidgetController_h_19_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
