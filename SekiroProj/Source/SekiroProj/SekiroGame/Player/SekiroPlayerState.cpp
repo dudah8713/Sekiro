@@ -1,15 +1,15 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
 
-#include "SekiroGame/Player/SekiroPlayerState.h"
-#include "SekiroGame/AbilitySystem/SekiroAbilitySystemComponent.h"
-#include "SekiroGame/AbilitySystem/SekiroAttributeSet.h"
+#include "Player/SekiroPlayerState.h"
+#include "AbilitySystem/SekiroAbilitySystemComponent.h"
+#include "AbilitySystem/SekiroAttributeSet.h"
 
 ASekiroPlayerState::ASekiroPlayerState()
 {
-	AbilitySystemComponent = CreateDefaultSubobject<USekiroAbilitySystemComponent>("AbilitySystemComponent");
-	AbilitySystemComponent->SetIsReplicated(true);
-	AbilitySystemComponent->SetReplicationMode(EGameplayEffectReplicationMode::Mixed);
+	SekiroASC = CreateDefaultSubobject<USekiroAbilitySystemComponent>("AbilitySystemComponent");
+	SekiroASC->SetIsReplicated(true);
+	SekiroASC->SetReplicationMode(EGameplayEffectReplicationMode::Mixed);
 	
 	AttributeSet = CreateDefaultSubobject<USekiroAttributeSet>("AttributeSet");
 	
@@ -19,5 +19,6 @@ ASekiroPlayerState::ASekiroPlayerState()
 
 UAbilitySystemComponent* ASekiroPlayerState::GetAbilitySystemComponent() const
 {
-	return AbilitySystemComponent;
+	return GetSekiroAbilitySystemComponent();
 }
+

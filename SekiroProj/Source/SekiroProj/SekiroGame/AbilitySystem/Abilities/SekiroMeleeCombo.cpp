@@ -1,9 +1,9 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
 
-#include "SekiroGame/AbilitySystem/Abilities/SekiroMeleeCombo.h"
+#include "AbilitySystem/Abilities/SekiroMeleeCombo.h"
 
-#include "SekiroGame/AbilitySystem/SekiroAttributeSet.h"
+#include "AbilitySystem/SekiroAttributeSet.h"
 
 USekiroMeleeCombo::USekiroMeleeCombo()
 {

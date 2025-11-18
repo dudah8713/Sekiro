@@ -3,7 +3,7 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "SekiroGame/Character/SekiroCharacterBase.h"
+#include "Character/SekiroCharacterBase.h"
 #include "GameplayTagContainer.h"
 #include "SekiroSamurai.generated.h"
 
@@ -22,12 +22,14 @@ public:
 	virtual void PossessedBy(AController* NewController) override;
 	virtual void OnRep_PlayerState() override;
 
+	// BP_Samurai의 Default 설정의 Input에 USekiroEnhancedInputComponent를 추가
 	virtual void SetupPlayerInputComponent(UInputComponent* PlayerInputComponent) override;
 	
 private:
 	void InitAbilityActorInfo();
 
 #pragma region Inputs
+	// BP_Samurai의 Default 설정의 CharacterData에 DA_InputConfig를 추가
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "CharacterData", meta = (AllowPrivateAccess = "true"))
 	TObjectPtr<UDataAsset_InputConfig> InputConfigDataAsset;
 

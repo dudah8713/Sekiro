@@ -1,7 +1,7 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
 
-#include "SekiroGame/Actor/SekiroEffectActor.h"
+#include "Actor/SekiroEffectActor.h"
 #include "Components/SphereComponent.h"
 #include "AbilitySystemInterface.h"
 #include "../AbilitySystem/SekiroAttributeSet.h"
@@ -24,7 +24,7 @@ void ASekiroEffectActor::OnOverlap(UPrimitiveComponent* OverlappedComponent, AAc
 	{
 		const USekiroAttributeSet* SekiroAttributeSet = Cast<USekiroAttributeSet>(ASCInterface->GetAbilitySystemComponent()->GetAttributeSet(USekiroAttributeSet::StaticClass()));
 		USekiroAttributeSet* MutableSekiroAttributeSet = const_cast<USekiroAttributeSet*>(SekiroAttributeSet);
-		MutableSekiroAttributeSet->SetStamina(MutableSekiroAttributeSet->GetStamina() + 25.0f);
+		MutableSekiroAttributeSet->SetHealth(MutableSekiroAttributeSet->GetHealth() + 25.0f);
 		Destroy();
 	}
 }

@@ -1,7 +1,7 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
 
-#include "SekiroGame/UI/SekiroWidgetController.h"
+#include "UI/SekiroWidgetController.h"
 
 void USekiroWidgetController::SetWidgetControllerParams(const FWidgetControllerParams& WCParams)
 {

@@ -3,7 +3,7 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "SekiroGame/Character/SekiroCharacterBase.h"
+#include "Character/SekiroCharacterBase.h"
 #include "SekiroEnemy.generated.h"
 
 /**

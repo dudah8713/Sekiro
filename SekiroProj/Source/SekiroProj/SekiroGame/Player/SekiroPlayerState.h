@@ -7,7 +7,7 @@
 #include "GameFramework/PlayerState.h"
 #include "SekiroPlayerState.generated.h"
 
-class UAbilitySystemComponent;
+class USekiroAbilitySystemComponent;
 class UAttributeSet;
 /**
  * 
@@ -21,11 +21,12 @@ public:
 	ASekiroPlayerState();
 
 	virtual UAbilitySystemComponent* GetAbilitySystemComponent() const override;
+	USekiroAbilitySystemComponent* GetSekiroAbilitySystemComponent() const { return SekiroASC; }
 	UAttributeSet* GetAttributeSet() const { return AttributeSet; }
 	
 protected:
 	UPROPERTY()
-	TObjectPtr<UAbilitySystemComponent> AbilitySystemComponent;
+	TObjectPtr<USekiroAbilitySystemComponent> SekiroASC;
 
 	UPROPERTY()
 	TObjectPtr<UAttributeSet> AttributeSet;

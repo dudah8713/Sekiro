@@ -1,12 +1,15 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
-#include "SekiroGame/Character/SekiroSamurai.h"
-#include "SekiroGame/Player/SekiroPlayerState.h"
+#include "Character/SekiroSamurai.h"
+#include "Player/SekiroPlayerState.h"
 #include "AbilitySystemComponent.h"
 #include "EnhancedInputSubsystems.h"
-#include "../Player/SekiroPlayerController.h"
-#include "SekiroGame/Player/DataAsset_InputConfig.h"
-#include "SekiroGame/UI/SekiroHUD.h"
+#include "AbilitySystem/SekiroAbilitySystemComponent.h"
+#include "Player/SekiroPlayerController.h"
+#include "DataAssets/Input/DataAsset_InputConfig.h"
+#include "Components/Input/SekiroEnhancedInputComponent.h"
+#include "DataAssets/StartUpData/DataAsset_StartUpDataBase.h"
+#include "UI/SekiroHUD.h"
 
 void ASekiroSamurai::InitAbilityActorInfo()
 {
@@ -14,14 +17,14 @@ void ASekiroSamurai::InitAbilityActorInfo()
 	check(SekiroPlayerState);
 
 	SekiroPlayerState->GetAbilitySystemComponent()->InitAbilityActorInfo(SekiroPlayerState, this);
-	AbilitySystemComponent = SekiroPlayerState->GetAbilitySystemComponent();
+	SekiroASC = SekiroPlayerState->GetSekiroAbilitySystemComponent();
 	AttributeSet = SekiroPlayerState->GetAttributeSet();
 
 	if (ASekiroPlayerController* SekiroPlayerController = Cast<ASekiroPlayerController>(GetController()))
 	{
 		if (ASekiroHUD* SekiroHUD = Cast<ASekiroHUD>(SekiroPlayerController->GetHUD()))
 		{
-			SekiroHUD->InitOverlay(SekiroPlayerController, SekiroPlayerState, AbilitySystemComponent, AttributeSet);
+			SekiroHUD->InitOverlay(SekiroPlayerController, SekiroPlayerState, SekiroASC, AttributeSet);
 		}
 	}
 }
@@ -32,6 +35,15 @@ void ASekiroSamurai::PossessedBy(AController* NewController)
 
 	// for Server
 	InitAbilityActorInfo();
+
+	if (!CharacterStartUpData.IsNull())
+	{
+		if (UDataAsset_StartUpDataBase* LoadedData = CharacterStartUpData.LoadSynchronous())
+		{
+			int32 AbilityApplyLevel = 1;
+			LoadedData->GiveToAbilitySystemComponent(SekiroASC, AbilityApplyLevel);
+		}
+	}
 }
 
 void ASekiroSamurai::OnRep_PlayerState()
@@ -53,14 +65,19 @@ void ASekiroSamurai::SetupPlayerInputComponent(UInputComponent* PlayerInputCompo
 	check(SubSystem);
 	SubSystem->AddMappingContext(InputConfigDataAsset->DefaultMappingContext, 0);
 
-	USekiroEnhancedIn
+	USekiroEnhancedInputComponent* SekiroInputComponent = CastChecked<USekiroEnhancedInputComponent>(PlayerInputComponent);
+
+	SekiroInputComponent->BindAbilityInputAction(InputConfigDataAsset, this, &ThisClass::Input_AbilityInputPressed, &ThisClass::Input_AbilityInputReleased);
+	
 }
 
 void ASekiroSamurai::Input_AbilityInputPressed(const FGameplayTag InInputTag)
 {
+	SekiroASC->OnAbilityInputPressed(InInputTag);
 }
 
 void ASekiroSamurai::Input_AbilityInputReleased(const FGameplayTag InInputTag)
 {
+	SekiroASC->OnAbilityInputReleased(InInputTag);
 }
 

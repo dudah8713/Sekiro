@@ -1,7 +1,7 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
 
-#include "SekiroGame/UI/SekiroHUD.h"
+#include "UI/SekiroHUD.h"
 #include "../UI/SekiroUserWidget.h"
 
 UOverlayWidgetController* ASekiroHUD::GetOverlayWidgetController(const FWidgetControllerParams& WCParams)
