@@ -1,0 +1,14 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\work\\sekiro\\sekiroproj\\intermediate\\build\\win64\\unrealeditor\\inc\\sekiroproj\\uht\\sekiroenumtypes.gen.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\work\\sekiro\\sekiroproj\\intermediate\\build\\win64\\x64\\sekiroprojeditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.cpp20.h.pch",
+        "Includes": [
+            "c:\\work\\sekiro\\sekiroproj\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\sekiroproj\\definitions.sekiroproj.h",
+            "c:\\work\\sekiro\\sekiroproj\\source\\sekiroproj\\sekirogame\\sekirotypes\\sekiroenumtypes.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

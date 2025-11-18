@@ -12,7 +12,9 @@ public class SekiroProj : ModuleRules
 
 		PrivateDependencyModuleNames.AddRange(new string[] {  });
 
-		PublicIncludePaths.Add("SekiroProj/");
+		PublicIncludePaths.AddRange(new string[] {
+			"SekiroProj/SekiroGame/"
+		});
 		PrivateDependencyModuleNames.AddRange(new string[] { "GameplayAbilities", "GameplayTags", "GameplayTasks" });
 		
 		// Uncomment if you are using Slate UI

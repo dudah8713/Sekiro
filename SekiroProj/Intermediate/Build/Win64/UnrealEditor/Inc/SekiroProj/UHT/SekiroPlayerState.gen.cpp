@@ -11,11 +11,11 @@ void EmptyLinkFunctionForGeneratedCodeSekiroPlayerState() {}
 
 // Begin Cross Module References
 ENGINE_API UClass* Z_Construct_UClass_APlayerState();
-GAMEPLAYABILITIES_API UClass* Z_Construct_UClass_UAbilitySystemComponent_NoRegister();
 GAMEPLAYABILITIES_API UClass* Z_Construct_UClass_UAbilitySystemInterface_NoRegister();
 GAMEPLAYABILITIES_API UClass* Z_Construct_UClass_UAttributeSet_NoRegister();
 SEKIROPROJ_API UClass* Z_Construct_UClass_ASekiroPlayerState();
 SEKIROPROJ_API UClass* Z_Construct_UClass_ASekiroPlayerState_NoRegister();
+SEKIROPROJ_API UClass* Z_Construct_UClass_USekiroAbilitySystemComponent_NoRegister();
 UPackage* Z_Construct_UPackage__Script_SekiroProj();
 // End Cross Module References
 
@@ -40,7 +40,7 @@ struct Z_Construct_UClass_ASekiroPlayerState_Statics
 		{ "ModuleRelativePath", "SekiroGame/Player/SekiroPlayerState.h" },
 		{ "ShowCategories", "Input|MouseInput Input|TouchInput" },
 	};
-	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_AbilitySystemComponent_MetaData[] = {
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_SekiroASC_MetaData[] = {
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "SekiroGame/Player/SekiroPlayerState.h" },
 	};
@@ -49,7 +49,7 @@ struct Z_Construct_UClass_ASekiroPlayerState_Statics
 		{ "ModuleRelativePath", "SekiroGame/Player/SekiroPlayerState.h" },
 	};
 #endif // WITH_METADATA
-	static const UECodeGen_Private::FObjectPropertyParams NewProp_AbilitySystemComponent;
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_SekiroASC;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_AttributeSet;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
@@ -59,10 +59,10 @@ struct Z_Construct_UClass_ASekiroPlayerState_Statics
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
 };
-const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ASekiroPlayerState_Statics::NewProp_AbilitySystemComponent = { "AbilitySystemComponent", nullptr, (EPropertyFlags)0x0124080000080008, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ASekiroPlayerState, AbilitySystemComponent), Z_Construct_UClass_UAbilitySystemComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_AbilitySystemComponent_MetaData), NewProp_AbilitySystemComponent_MetaData) };
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ASekiroPlayerState_Statics::NewProp_SekiroASC = { "SekiroASC", nullptr, (EPropertyFlags)0x0124080000080008, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ASekiroPlayerState, SekiroASC), Z_Construct_UClass_USekiroAbilitySystemComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_SekiroASC_MetaData), NewProp_SekiroASC_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ASekiroPlayerState_Statics::NewProp_AttributeSet = { "AttributeSet", nullptr, (EPropertyFlags)0x0124080000080008, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ASekiroPlayerState, AttributeSet), Z_Construct_UClass_UAttributeSet_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_AttributeSet_MetaData), NewProp_AttributeSet_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ASekiroPlayerState_Statics::PropPointers[] = {
-	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASekiroPlayerState_Statics::NewProp_AbilitySystemComponent,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASekiroPlayerState_Statics::NewProp_SekiroASC,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASekiroPlayerState_Statics::NewProp_AttributeSet,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_ASekiroPlayerState_Statics::PropPointers) < 2048);
@@ -109,10 +109,10 @@ ASekiroPlayerState::~ASekiroPlayerState() {}
 struct Z_CompiledInDeferFile_FID_Work_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_Player_SekiroPlayerState_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_ASekiroPlayerState, ASekiroPlayerState::StaticClass, TEXT("ASekiroPlayerState"), &Z_Registration_Info_UClass_ASekiroPlayerState, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ASekiroPlayerState), 2685195976U) },
+		{ Z_Construct_UClass_ASekiroPlayerState, ASekiroPlayerState::StaticClass, TEXT("ASekiroPlayerState"), &Z_Registration_Info_UClass_ASekiroPlayerState, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ASekiroPlayerState), 1724374281U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Work_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_Player_SekiroPlayerState_h_2674064651(TEXT("/Script/SekiroProj"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Work_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_Player_SekiroPlayerState_h_697472716(TEXT("/Script/SekiroProj"),
 	Z_CompiledInDeferFile_FID_Work_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_Player_SekiroPlayerState_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Work_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_Player_SekiroPlayerState_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

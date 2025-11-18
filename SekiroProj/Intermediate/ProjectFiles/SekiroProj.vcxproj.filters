@@ -13,6 +13,7 @@
     </None>
     <None Include="..\..\.vsconfig" />
     <None Include="..\..\SekiroProj.sln.DotSettings.user" />
+    <None Include="..\..\SekiroProj.uproject.DotSettings.user" />
     <Filter Include="Config">
       <UniqueIdentifier>{FA535FFB-25E1-3D20-B416-52F9BE21E06E}</UniqueIdentifier>
     </Filter>
@@ -49,6 +50,45 @@
     <Filter Include="Source\SekiroProj\SekiroGame">
       <UniqueIdentifier>{824EEF80-6EF6-3A83-8085-7BE4C39917B1}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\SekiroProj\SekiroGame\SekiroGameplayTags.cpp">
+      <Filter>Source\SekiroProj\SekiroGame</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\SekiroProj\SekiroGame\SekiroGameplayTags.h">
+      <Filter>Source\SekiroProj\SekiroGame</Filter>
+    </ClCompile>
+    <Filter Include="Source\SekiroProj\SekiroGame\AbilitySystem">
+      <UniqueIdentifier>{7C1204AE-143F-3B22-A4F0-F797E38C0697}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\SekiroProj\SekiroGame\AbilitySystem\SekiroAbilitySystemComponent.cpp">
+      <Filter>Source\SekiroProj\SekiroGame\AbilitySystem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\SekiroProj\SekiroGame\AbilitySystem\SekiroAbilitySystemComponent.h">
+      <Filter>Source\SekiroProj\SekiroGame\AbilitySystem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\SekiroProj\SekiroGame\AbilitySystem\SekiroAttributeSet.cpp">
+      <Filter>Source\SekiroProj\SekiroGame\AbilitySystem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\SekiroProj\SekiroGame\AbilitySystem\SekiroAttributeSet.h">
+      <Filter>Source\SekiroProj\SekiroGame\AbilitySystem</Filter>
+    </ClCompile>
+    <Filter Include="Source\SekiroProj\SekiroGame\AbilitySystem\Abilities">
+      <UniqueIdentifier>{13DFDE4B-1938-3B27-8716-82D0A296F1DC}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\SekiroProj\SekiroGame\AbilitySystem\Abilities\SekiroMeleeCombo.cpp">
+      <Filter>Source\SekiroProj\SekiroGame\AbilitySystem\Abilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\SekiroProj\SekiroGame\AbilitySystem\Abilities\SekiroMeleeCombo.h">
+      <Filter>Source\SekiroProj\SekiroGame\AbilitySystem\Abilities</Filter>
+    </ClCompile>
+    <Filter Include="Source\SekiroProj\SekiroGame\Actor">
+      <UniqueIdentifier>{0F5F1124-1232-3C2C-B43D-E3D9B213A06D}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\SekiroProj\SekiroGame\Actor\SekiroEffectActor.cpp">
+      <Filter>Source\SekiroProj\SekiroGame\Actor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\SekiroProj\SekiroGame\Actor\SekiroEffectActor.h">
+      <Filter>Source\SekiroProj\SekiroGame\Actor</Filter>
+    </ClCompile>
     <Filter Include="Source\SekiroProj\SekiroGame\Character">
       <UniqueIdentifier>{9A5A6A4F-6F44-34ED-AE6B-CA0958964B69}</UniqueIdentifier>
     </Filter>
@@ -57,6 +97,84 @@
     </ClCompile>
     <ClCompile Include="..\..\Source\SekiroProj\SekiroGame\Character\SekiroCharacterBase.h">
       <Filter>Source\SekiroProj\SekiroGame\Character</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\SekiroProj\SekiroGame\Character\SekiroEnemy.cpp">
+      <Filter>Source\SekiroProj\SekiroGame\Character</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\SekiroProj\SekiroGame\Character\SekiroEnemy.h">
+      <Filter>Source\SekiroProj\SekiroGame\Character</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\SekiroProj\SekiroGame\Character\SekiroSamurai.cpp">
+      <Filter>Source\SekiroProj\SekiroGame\Character</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\SekiroProj\SekiroGame\Character\SekiroSamurai.h">
+      <Filter>Source\SekiroProj\SekiroGame\Character</Filter>
+    </ClCompile>
+    <Filter Include="Source\SekiroProj\SekiroGame\Component">
+      <UniqueIdentifier>{1E35CF74-BEFC-3CB5-ABE9-C1FF6A112EE8}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\SekiroProj\SekiroGame\Component\SekiroEnhancedInputComponent.cpp">
+      <Filter>Source\SekiroProj\SekiroGame\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\SekiroProj\SekiroGame\Component\SekiroEnhancedInputComponent.h">
+      <Filter>Source\SekiroProj\SekiroGame\Component</Filter>
+    </ClCompile>
+    <Filter Include="Source\SekiroProj\SekiroGame\DataAssets">
+      <UniqueIdentifier>{C01F6770-68C4-397E-8940-E9825A9CB565}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\SekiroProj\SekiroGame\DataAssets\DataAsset_InputConfig.cpp">
+      <Filter>Source\SekiroProj\SekiroGame\DataAssets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\SekiroProj\SekiroGame\DataAssets\DataAsset_InputConfig.h">
+      <Filter>Source\SekiroProj\SekiroGame\DataAssets</Filter>
+    </ClCompile>
+    <Filter Include="Source\SekiroProj\SekiroGame\Player">
+      <UniqueIdentifier>{2F117F5F-68D6-3169-BE82-26F0EC8DAD68}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\SekiroProj\SekiroGame\Player\DataAsset_InputConfig.cpp">
+      <Filter>Source\SekiroProj\SekiroGame\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\SekiroProj\SekiroGame\Player\DataAsset_InputConfig.h">
+      <Filter>Source\SekiroProj\SekiroGame\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\SekiroProj\SekiroGame\Player\SekiroPlayerController.cpp">
+      <Filter>Source\SekiroProj\SekiroGame\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\SekiroProj\SekiroGame\Player\SekiroPlayerController.h">
+      <Filter>Source\SekiroProj\SekiroGame\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\SekiroProj\SekiroGame\Player\SekiroPlayerState.cpp">
+      <Filter>Source\SekiroProj\SekiroGame\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\SekiroProj\SekiroGame\Player\SekiroPlayerState.h">
+      <Filter>Source\SekiroProj\SekiroGame\Player</Filter>
+    </ClCompile>
+    <Filter Include="Source\SekiroProj\SekiroGame\UI">
+      <UniqueIdentifier>{71A4EEC6-AA4C-302E-8606-1671F4029F25}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\SekiroProj\SekiroGame\UI\OverlayWidgetController.cpp">
+      <Filter>Source\SekiroProj\SekiroGame\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\SekiroProj\SekiroGame\UI\OverlayWidgetController.h">
+      <Filter>Source\SekiroProj\SekiroGame\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\SekiroProj\SekiroGame\UI\SekiroHUD.cpp">
+      <Filter>Source\SekiroProj\SekiroGame\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\SekiroProj\SekiroGame\UI\SekiroHUD.h">
+      <Filter>Source\SekiroProj\SekiroGame\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\SekiroProj\SekiroGame\UI\SekiroUserWidget.cpp">
+      <Filter>Source\SekiroProj\SekiroGame\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\SekiroProj\SekiroGame\UI\SekiroUserWidget.h">
+      <Filter>Source\SekiroProj\SekiroGame\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\SekiroProj\SekiroGame\UI\SekiroWidgetController.cpp">
+      <Filter>Source\SekiroProj\SekiroGame\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\SekiroProj\SekiroGame\UI\SekiroWidgetController.h">
+      <Filter>Source\SekiroProj\SekiroGame\UI</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

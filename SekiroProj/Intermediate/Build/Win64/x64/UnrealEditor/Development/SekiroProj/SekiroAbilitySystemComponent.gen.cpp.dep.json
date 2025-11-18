@@ -59,7 +59,11 @@
             "c:\\program files\\epic games\\ue_5.5\\engine\\plugins\\runtime\\gameplayabilities\\source\\gameplayabilities\\public\\abilitysystemreplicationproxyinterface.h",
             "c:\\program files\\epic games\\ue_5.5\\engine\\plugins\\runtime\\gameplayabilities\\intermediate\\build\\win64\\unrealeditor\\inc\\gameplayabilities\\uht\\abilitysystemreplicationproxyinterface.generated.h",
             "c:\\program files\\epic games\\ue_5.5\\engine\\plugins\\runtime\\gameplayabilities\\intermediate\\build\\win64\\unrealeditor\\inc\\gameplayabilities\\uht\\abilitysystemcomponent.generated.h",
-            "c:\\work\\sekiro\\sekiroproj\\intermediate\\build\\win64\\unrealeditor\\inc\\sekiroproj\\uht\\sekiroabilitysystemcomponent.generated.h"
+            "c:\\work\\sekiro\\sekiroproj\\intermediate\\build\\win64\\unrealeditor\\inc\\sekiroproj\\uht\\sekiroabilitysystemcomponent.generated.h",
+            "c:\\work\\sekiro\\sekiroproj\\source\\sekiroproj\\sekirogame\\sekirotypes\\sekirostructtypes.h",
+            "c:\\work\\sekiro\\sekiroproj\\source\\sekiroproj\\sekirogame\\abilitysystem\\abilities\\sekirogameplayability.h",
+            "c:\\work\\sekiro\\sekiroproj\\intermediate\\build\\win64\\unrealeditor\\inc\\sekiroproj\\uht\\sekirogameplayability.generated.h",
+            "c:\\work\\sekiro\\sekiroproj\\intermediate\\build\\win64\\unrealeditor\\inc\\sekiroproj\\uht\\sekirostructtypes.generated.h"
         ],
         "ImportedModules": [],
         "ImportedHeaderUnits": []

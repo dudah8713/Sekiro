@@ -1,0 +1,121 @@
+// Copyright Epic Games, Inc. All Rights Reserved.
+/*===========================================================================
+	Generated code exported from UnrealHeaderTool.
+	DO NOT modify this manually! Edit the corresponding .h files instead!
+===========================================================================*/
+
+#include "UObject/GeneratedCppIncludes.h"
+#include "SekiroProj/SekiroGame/DataAssets/StartUpData/DataAsset_StartUpDataBase.h"
+PRAGMA_DISABLE_DEPRECATION_WARNINGS
+void EmptyLinkFunctionForGeneratedCodeDataAsset_StartUpDataBase() {}
+
+// Begin Cross Module References
+COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
+ENGINE_API UClass* Z_Construct_UClass_UDataAsset();
+GAMEPLAYABILITIES_API UClass* Z_Construct_UClass_UGameplayEffect_NoRegister();
+SEKIROPROJ_API UClass* Z_Construct_UClass_UDataAsset_StartUpDataBase();
+SEKIROPROJ_API UClass* Z_Construct_UClass_UDataAsset_StartUpDataBase_NoRegister();
+SEKIROPROJ_API UClass* Z_Construct_UClass_USekiroGameplayAbility_NoRegister();
+UPackage* Z_Construct_UPackage__Script_SekiroProj();
+// End Cross Module References
+
+// Begin Class UDataAsset_StartUpDataBase
+void UDataAsset_StartUpDataBase::StaticRegisterNativesUDataAsset_StartUpDataBase()
+{
+}
+IMPLEMENT_CLASS_NO_AUTO_REGISTRATION(UDataAsset_StartUpDataBase);
+UClass* Z_Construct_UClass_UDataAsset_StartUpDataBase_NoRegister()
+{
+	return UDataAsset_StartUpDataBase::StaticClass();
+}
+struct Z_Construct_UClass_UDataAsset_StartUpDataBase_Statics
+{
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "/**\n * \n */" },
+#endif
+		{ "IncludePath", "SekiroGame/DataAssets/StartUpData/DataAsset_StartUpDataBase.h" },
+		{ "ModuleRelativePath", "SekiroGame/DataAssets/StartUpData/DataAsset_StartUpDataBase.h" },
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ActivateOnGivenAbilities_MetaData[] = {
+		{ "Category", "StartUp Data" },
+		{ "ModuleRelativePath", "SekiroGame/DataAssets/StartUpData/DataAsset_StartUpDataBase.h" },
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_StartUpGameplayEffects_MetaData[] = {
+		{ "Category", "StartUp Data" },
+		{ "ModuleRelativePath", "SekiroGame/DataAssets/StartUpData/DataAsset_StartUpDataBase.h" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FClassPropertyParams NewProp_ActivateOnGivenAbilities_Inner;
+	static const UECodeGen_Private::FArrayPropertyParams NewProp_ActivateOnGivenAbilities;
+	static const UECodeGen_Private::FClassPropertyParams NewProp_StartUpGameplayEffects_Inner;
+	static const UECodeGen_Private::FArrayPropertyParams NewProp_StartUpGameplayEffects;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+	static UObject* (*const DependentSingletons[])();
+	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
+		TCppClassTypeTraits<UDataAsset_StartUpDataBase>::IsAbstract,
+	};
+	static const UECodeGen_Private::FClassParams ClassParams;
+};
+const UECodeGen_Private::FClassPropertyParams Z_Construct_UClass_UDataAsset_StartUpDataBase_Statics::NewProp_ActivateOnGivenAbilities_Inner = { "ActivateOnGivenAbilities", nullptr, (EPropertyFlags)0x0004000000000000, UECodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UClass_UClass, Z_Construct_UClass_USekiroGameplayAbility_NoRegister, METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UDataAsset_StartUpDataBase_Statics::NewProp_ActivateOnGivenAbilities = { "ActivateOnGivenAbilities", nullptr, (EPropertyFlags)0x0024080000010015, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UDataAsset_StartUpDataBase, ActivateOnGivenAbilities), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ActivateOnGivenAbilities_MetaData), NewProp_ActivateOnGivenAbilities_MetaData) };
+const UECodeGen_Private::FClassPropertyParams Z_Construct_UClass_UDataAsset_StartUpDataBase_Statics::NewProp_StartUpGameplayEffects_Inner = { "StartUpGameplayEffects", nullptr, (EPropertyFlags)0x0004000000000000, UECodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UClass_UClass, Z_Construct_UClass_UGameplayEffect_NoRegister, METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UDataAsset_StartUpDataBase_Statics::NewProp_StartUpGameplayEffects = { "StartUpGameplayEffects", nullptr, (EPropertyFlags)0x0024080000010015, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UDataAsset_StartUpDataBase, StartUpGameplayEffects), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_StartUpGameplayEffects_MetaData), NewProp_StartUpGameplayEffects_MetaData) };
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UDataAsset_StartUpDataBase_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UDataAsset_StartUpDataBase_Statics::NewProp_ActivateOnGivenAbilities_Inner,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UDataAsset_StartUpDataBase_Statics::NewProp_ActivateOnGivenAbilities,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UDataAsset_StartUpDataBase_Statics::NewProp_StartUpGameplayEffects_Inner,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UDataAsset_StartUpDataBase_Statics::NewProp_StartUpGameplayEffects,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_UDataAsset_StartUpDataBase_Statics::PropPointers) < 2048);
+UObject* (*const Z_Construct_UClass_UDataAsset_StartUpDataBase_Statics::DependentSingletons[])() = {
+	(UObject* (*)())Z_Construct_UClass_UDataAsset,
+	(UObject* (*)())Z_Construct_UPackage__Script_SekiroProj,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_UDataAsset_StartUpDataBase_Statics::DependentSingletons) < 16);
+const UECodeGen_Private::FClassParams Z_Construct_UClass_UDataAsset_StartUpDataBase_Statics::ClassParams = {
+	&UDataAsset_StartUpDataBase::StaticClass,
+	nullptr,
+	&StaticCppClassTypeInfo,
+	DependentSingletons,
+	nullptr,
+	Z_Construct_UClass_UDataAsset_StartUpDataBase_Statics::PropPointers,
+	nullptr,
+	UE_ARRAY_COUNT(DependentSingletons),
+	0,
+	UE_ARRAY_COUNT(Z_Construct_UClass_UDataAsset_StartUpDataBase_Statics::PropPointers),
+	0,
+	0x001000A0u,
+	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UDataAsset_StartUpDataBase_Statics::Class_MetaDataParams), Z_Construct_UClass_UDataAsset_StartUpDataBase_Statics::Class_MetaDataParams)
+};
+UClass* Z_Construct_UClass_UDataAsset_StartUpDataBase()
+{
+	if (!Z_Registration_Info_UClass_UDataAsset_StartUpDataBase.OuterSingleton)
+	{
+		UECodeGen_Private::ConstructUClass(Z_Registration_Info_UClass_UDataAsset_StartUpDataBase.OuterSingleton, Z_Construct_UClass_UDataAsset_StartUpDataBase_Statics::ClassParams);
+	}
+	return Z_Registration_Info_UClass_UDataAsset_StartUpDataBase.OuterSingleton;
+}
+template<> SEKIROPROJ_API UClass* StaticClass<UDataAsset_StartUpDataBase>()
+{
+	return UDataAsset_StartUpDataBase::StaticClass();
+}
+UDataAsset_StartUpDataBase::UDataAsset_StartUpDataBase(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {}
+DEFINE_VTABLE_PTR_HELPER_CTOR(UDataAsset_StartUpDataBase);
+UDataAsset_StartUpDataBase::~UDataAsset_StartUpDataBase() {}
+// End Class UDataAsset_StartUpDataBase
+
+// Begin Registration
+struct Z_CompiledInDeferFile_FID_Work_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_DataAssets_StartUpData_DataAsset_StartUpDataBase_h_Statics
+{
+	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
+		{ Z_Construct_UClass_UDataAsset_StartUpDataBase, UDataAsset_StartUpDataBase::StaticClass, TEXT("UDataAsset_StartUpDataBase"), &Z_Registration_Info_UClass_UDataAsset_StartUpDataBase, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UDataAsset_StartUpDataBase), 1004085177U) },
+	};
+};
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Work_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_DataAssets_StartUpData_DataAsset_StartUpDataBase_h_2903043604(TEXT("/Script/SekiroProj"),
+	Z_CompiledInDeferFile_FID_Work_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_DataAssets_StartUpData_DataAsset_StartUpDataBase_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Work_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_DataAssets_StartUpData_DataAsset_StartUpDataBase_h_Statics::ClassInfo),
+	nullptr, 0,
+	nullptr, 0);
+// End Registration
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
