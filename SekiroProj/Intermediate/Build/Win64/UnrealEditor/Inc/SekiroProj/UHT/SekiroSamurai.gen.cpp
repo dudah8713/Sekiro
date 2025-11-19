@@ -100,14 +100,14 @@ ASekiroSamurai::~ASekiroSamurai() {}
 // End Class ASekiroSamurai
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_Work_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_Character_SekiroSamurai_h_Statics
+struct Z_CompiledInDeferFile_FID_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_Character_SekiroSamurai_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
 		{ Z_Construct_UClass_ASekiroSamurai, ASekiroSamurai::StaticClass, TEXT("ASekiroSamurai"), &Z_Registration_Info_UClass_ASekiroSamurai, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ASekiroSamurai), 1019300546U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Work_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_Character_SekiroSamurai_h_2934450891(TEXT("/Script/SekiroProj"),
-	Z_CompiledInDeferFile_FID_Work_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_Character_SekiroSamurai_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Work_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_Character_SekiroSamurai_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_Character_SekiroSamurai_h_2934450891(TEXT("/Script/SekiroProj"),
+	Z_CompiledInDeferFile_FID_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_Character_SekiroSamurai_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_Character_SekiroSamurai_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration

@@ -1,11 +1,11 @@
 {
     "Version": "1.2",
     "Data": {
-        "Source": "c:\\work\\sekiro\\sekiroproj\\intermediate\\build\\win64\\unrealeditor\\inc\\sekiroproj\\uht\\sekiroproj.init.gen.cpp",
+        "Source": "w:\\sekiro\\sekiroproj\\intermediate\\build\\win64\\unrealeditor\\inc\\sekiroproj\\uht\\sekiroproj.init.gen.cpp",
         "ProvidedModule": "",
-        "PCH": "c:\\work\\sekiro\\sekiroproj\\intermediate\\build\\win64\\x64\\sekiroprojeditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.cpp20.h.pch",
+        "PCH": "w:\\sekiro\\sekiroproj\\intermediate\\build\\win64\\x64\\sekiroprojeditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.cpp20.h.pch",
         "Includes": [
-            "c:\\work\\sekiro\\sekiroproj\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\sekiroproj\\definitions.sekiroproj.h"
+            "w:\\sekiro\\sekiroproj\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\sekiroproj\\definitions.sekiroproj.h"
         ],
         "ImportedModules": [],
         "ImportedHeaderUnits": []

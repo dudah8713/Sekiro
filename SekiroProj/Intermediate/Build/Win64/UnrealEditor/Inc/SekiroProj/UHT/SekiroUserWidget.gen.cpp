@@ -172,14 +172,14 @@ USekiroUserWidget::~USekiroUserWidget() {}
 // End Class USekiroUserWidget
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_Work_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_UI_SekiroUserWidget_h_Statics
+struct Z_CompiledInDeferFile_FID_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_UI_SekiroUserWidget_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
 		{ Z_Construct_UClass_USekiroUserWidget, USekiroUserWidget::StaticClass, TEXT("USekiroUserWidget"), &Z_Registration_Info_UClass_USekiroUserWidget, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(USekiroUserWidget), 1266732928U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Work_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_UI_SekiroUserWidget_h_3731131534(TEXT("/Script/SekiroProj"),
-	Z_CompiledInDeferFile_FID_Work_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_UI_SekiroUserWidget_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Work_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_UI_SekiroUserWidget_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_UI_SekiroUserWidget_h_3731131534(TEXT("/Script/SekiroProj"),
+	Z_CompiledInDeferFile_FID_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_UI_SekiroUserWidget_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_UI_SekiroUserWidget_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration

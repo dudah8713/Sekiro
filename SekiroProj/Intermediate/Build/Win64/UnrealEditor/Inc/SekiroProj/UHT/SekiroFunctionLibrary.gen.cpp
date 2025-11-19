@@ -146,14 +146,14 @@ USekiroFunctionLibrary::~USekiroFunctionLibrary() {}
 // End Class USekiroFunctionLibrary
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_Work_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_SekiroFunctionLibrary_h_Statics
+struct Z_CompiledInDeferFile_FID_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_SekiroFunctionLibrary_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
 		{ Z_Construct_UClass_USekiroFunctionLibrary, USekiroFunctionLibrary::StaticClass, TEXT("USekiroFunctionLibrary"), &Z_Registration_Info_UClass_USekiroFunctionLibrary, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(USekiroFunctionLibrary), 3046652139U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Work_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_SekiroFunctionLibrary_h_3709104672(TEXT("/Script/SekiroProj"),
-	Z_CompiledInDeferFile_FID_Work_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_SekiroFunctionLibrary_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Work_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_SekiroFunctionLibrary_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_SekiroFunctionLibrary_h_3709104672(TEXT("/Script/SekiroProj"),
+	Z_CompiledInDeferFile_FID_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_SekiroFunctionLibrary_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_SekiroFunctionLibrary_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration
