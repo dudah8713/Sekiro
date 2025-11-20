@@ -2,16 +2,16 @@
 	"RemapUnityFiles": 
 	{
 		"Module.SekiroProj.cpp.obj": [
+			"SamuriGameplayAbility.gen.cpp.obj",
 			"PerModuleInline.gen.cpp.obj",
-			"SekiroGameplayAbility.cpp.obj",
 			"SekiroMeleeCombo.cpp.obj",
 			"SekiroAbilitySystemComponent.cpp.obj",
 			"SekiroAttributeSet.cpp.obj",
 			"SekiroEffectActor.cpp.obj",
 			"SekiroCharacterBase.cpp.obj",
 			"SekiroEnemy.cpp.obj",
-			"SekiroSamurai.cpp.obj",
 			"SekiroEnhancedInputComponent.cpp.obj",
+			"PawnExtensionComponentBase.cpp.obj",
 			"DataAsset_InputConfig.cpp.obj",
 			"DataAsset_SamuraiStartUpDataBase.cpp.obj",
 			"DataAsset_StartUpDataBase.cpp.obj",
@@ -20,7 +20,6 @@
 			"SekiroPlayerController.cpp.obj",
 			"SekiroPlayerState.cpp.obj",
 			"SekiroFunctionLibrary.cpp.obj",
-			"SekiroGameplayTags.cpp.obj",
 			"SekiroStructTypes.cpp.obj",
 			"OverlayWidgetController.cpp.obj",
 			"SekiroHUD.cpp.obj",
@@ -32,7 +31,9 @@
 			"DataAsset_SamuraiStartUpDataBase.gen.cpp.obj",
 			"DataAsset_StartUpDataBase.gen.cpp.obj",
 			"OverlayWidgetController.gen.cpp.obj",
+			"PawnCombatComponent.gen.cpp.obj",
 			"PawnExtensionComponentBase.gen.cpp.obj",
+			"PlayerCombatComponent.gen.cpp.obj",
 			"SekiroAbilitySystemComponent.gen.cpp.obj",
 			"SekiroAttributeSet.gen.cpp.obj",
 			"SekiroCharacterBase.gen.cpp.obj",
@@ -54,7 +55,12 @@
 			"SekiroWeaponBase.gen.cpp.obj",
 			"SekiroWeaponKatana.gen.cpp.obj",
 			"SekiroWidgetController.gen.cpp.obj",
-			"PawnExtensionComponentBase.cpp.obj"
+			"SamuriGameplayAbility.cpp.obj",
+			"SekiroGameplayAbility.cpp.obj",
+			"SekiroSamurai.cpp.obj",
+			"PawnCombatComponent.cpp.obj",
+			"PlayerCombatComponent.cpp.obj",
+			"SekiroGameplayTags.cpp.obj"
 		]
 	}
 }

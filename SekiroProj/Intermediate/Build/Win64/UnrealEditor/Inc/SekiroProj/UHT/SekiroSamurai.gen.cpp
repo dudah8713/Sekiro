@@ -14,6 +14,7 @@ SEKIROPROJ_API UClass* Z_Construct_UClass_ASekiroCharacterBase();
 SEKIROPROJ_API UClass* Z_Construct_UClass_ASekiroSamurai();
 SEKIROPROJ_API UClass* Z_Construct_UClass_ASekiroSamurai_NoRegister();
 SEKIROPROJ_API UClass* Z_Construct_UClass_UDataAsset_InputConfig_NoRegister();
+SEKIROPROJ_API UClass* Z_Construct_UClass_UPlayerCombatComponent_NoRegister();
 UPackage* Z_Construct_UPackage__Script_SekiroProj();
 // End Cross Module References
 
@@ -37,6 +38,12 @@ struct Z_Construct_UClass_ASekiroSamurai_Statics
 		{ "IncludePath", "SekiroGame/Character/SekiroSamurai.h" },
 		{ "ModuleRelativePath", "SekiroGame/Character/SekiroSamurai.h" },
 	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_PlayerCombatComponent_MetaData[] = {
+		{ "AllowPrivateAccess", "true" },
+		{ "Category", "Combat" },
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "SekiroGame/Character/SekiroSamurai.h" },
+	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_InputConfigDataAsset_MetaData[] = {
 		{ "AllowPrivateAccess", "true" },
 		{ "Category", "CharacterData" },
@@ -49,6 +56,7 @@ struct Z_Construct_UClass_ASekiroSamurai_Statics
 #endif
 	};
 #endif // WITH_METADATA
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_PlayerCombatComponent;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_InputConfigDataAsset;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
@@ -57,8 +65,10 @@ struct Z_Construct_UClass_ASekiroSamurai_Statics
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
 };
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ASekiroSamurai_Statics::NewProp_PlayerCombatComponent = { "PlayerCombatComponent", nullptr, (EPropertyFlags)0x01440000000a001d, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ASekiroSamurai, PlayerCombatComponent), Z_Construct_UClass_UPlayerCombatComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_PlayerCombatComponent_MetaData), NewProp_PlayerCombatComponent_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ASekiroSamurai_Statics::NewProp_InputConfigDataAsset = { "InputConfigDataAsset", nullptr, (EPropertyFlags)0x0144000000010015, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ASekiroSamurai, InputConfigDataAsset), Z_Construct_UClass_UDataAsset_InputConfig_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_InputConfigDataAsset_MetaData), NewProp_InputConfigDataAsset_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ASekiroSamurai_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASekiroSamurai_Statics::NewProp_PlayerCombatComponent,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASekiroSamurai_Statics::NewProp_InputConfigDataAsset,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_ASekiroSamurai_Statics::PropPointers) < 2048);
@@ -94,20 +104,19 @@ template<> SEKIROPROJ_API UClass* StaticClass<ASekiroSamurai>()
 {
 	return ASekiroSamurai::StaticClass();
 }
-ASekiroSamurai::ASekiroSamurai() {}
 DEFINE_VTABLE_PTR_HELPER_CTOR(ASekiroSamurai);
 ASekiroSamurai::~ASekiroSamurai() {}
 // End Class ASekiroSamurai
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_Character_SekiroSamurai_h_Statics
+struct Z_CompiledInDeferFile_FID_Work_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_Character_SekiroSamurai_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_ASekiroSamurai, ASekiroSamurai::StaticClass, TEXT("ASekiroSamurai"), &Z_Registration_Info_UClass_ASekiroSamurai, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ASekiroSamurai), 1019300546U) },
+		{ Z_Construct_UClass_ASekiroSamurai, ASekiroSamurai::StaticClass, TEXT("ASekiroSamurai"), &Z_Registration_Info_UClass_ASekiroSamurai, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ASekiroSamurai), 2220262540U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_Character_SekiroSamurai_h_2934450891(TEXT("/Script/SekiroProj"),
-	Z_CompiledInDeferFile_FID_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_Character_SekiroSamurai_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_Character_SekiroSamurai_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Work_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_Character_SekiroSamurai_h_91664430(TEXT("/Script/SekiroProj"),
+	Z_CompiledInDeferFile_FID_Work_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_Character_SekiroSamurai_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Work_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_Character_SekiroSamurai_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration

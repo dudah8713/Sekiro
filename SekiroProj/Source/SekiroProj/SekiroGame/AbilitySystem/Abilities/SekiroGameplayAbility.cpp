@@ -3,16 +3,8 @@
 
 #include "SekiroGameplayAbility.h"
 #include "AbilitySystemComponent.h"
-#include "Character/SekiroSamurai.h"
-
-ASekiroSamurai* USekiroGameplayAbility::GetSamuraiCharacterFromActorInfo()
-{
-	if (!CachedSamuraiCharacter.IsValid())
-	{
-		CachedSamuraiCharacter = Cast<ASekiroSamurai>(CurrentActorInfo->AvatarActor);
-	}
-	return CachedSamuraiCharacter.IsValid() ? CachedSamuraiCharacter.Get() : nullptr;
-}
+#include "AbilitySystem/SekiroAbilitySystemComponent.h"
+#include "Components/Combat/PawnCombatComponent.h"
 
 void USekiroGameplayAbility::OnGiveAbility(const FGameplayAbilityActorInfo* ActorInfo, const FGameplayAbilitySpec& Spec)
 {
@@ -40,4 +32,14 @@ void USekiroGameplayAbility::EndAbility(const FGameplayAbilitySpecHandle Handle,
 			ActorInfo->AbilitySystemComponent->ClearAbility(Handle);
 		}
 	}
+}
+
+UPawnCombatComponent* USekiroGameplayAbility::GetPawnCombatComponentFromActorInfo() const
+{
+	return GetAvatarActorFromActorInfo()->FindComponentByClass<UPawnCombatComponent>();
+}
+
+USekiroAbilitySystemComponent* USekiroGameplayAbility::GetSekiroASCFromActorInfo() const
+{
+	return Cast<USekiroAbilitySystemComponent>(CurrentActorInfo->AbilitySystemComponent);
 }

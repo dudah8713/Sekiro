@@ -3,3 +3,8 @@
 
 #include "SekiroModeBase.h"
 
+ASekiroModeBase::ASekiroModeBase()
+{
+	PrimaryActorTick.bCanEverTick = true;
+	PrimaryActorTick.bStartWithTickEnabled = true;
+}

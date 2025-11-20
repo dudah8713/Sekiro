@@ -16,7 +16,7 @@ struct FGameplayAttributeData;
 #endif
 #define SEKIROPROJ_SekiroAttributeSet_generated_h
 
-#define FID_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_AbilitySystem_SekiroAttributeSet_h_21_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FID_Work_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_AbilitySystem_SekiroAttributeSet_h_21_RPC_WRAPPERS_NO_PURE_DECLS \
 	DECLARE_FUNCTION(execOnRep_MaxPosture); \
 	DECLARE_FUNCTION(execOnRep_Posture); \
 	DECLARE_FUNCTION(execOnRep_MaxStamina); \
@@ -25,7 +25,7 @@ struct FGameplayAttributeData;
 	DECLARE_FUNCTION(execOnRep_Health);
 
 
-#define FID_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_AbilitySystem_SekiroAttributeSet_h_21_INCLASS_NO_PURE_DECLS \
+#define FID_Work_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_AbilitySystem_SekiroAttributeSet_h_21_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUSekiroAttributeSet(); \
 	friend struct Z_Construct_UClass_USekiroAttributeSet_Statics; \
@@ -48,7 +48,7 @@ private: \
 public:
 
 
-#define FID_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_AbilitySystem_SekiroAttributeSet_h_21_ENHANCED_CONSTRUCTORS \
+#define FID_Work_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_AbilitySystem_SekiroAttributeSet_h_21_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	USekiroAttributeSet(USekiroAttributeSet&&); \
@@ -60,13 +60,13 @@ public: \
 	NO_API virtual ~USekiroAttributeSet();
 
 
-#define FID_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_AbilitySystem_SekiroAttributeSet_h_18_PROLOG
-#define FID_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_AbilitySystem_SekiroAttributeSet_h_21_GENERATED_BODY \
+#define FID_Work_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_AbilitySystem_SekiroAttributeSet_h_18_PROLOG
+#define FID_Work_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_AbilitySystem_SekiroAttributeSet_h_21_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_AbilitySystem_SekiroAttributeSet_h_21_RPC_WRAPPERS_NO_PURE_DECLS \
-	FID_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_AbilitySystem_SekiroAttributeSet_h_21_INCLASS_NO_PURE_DECLS \
-	FID_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_AbilitySystem_SekiroAttributeSet_h_21_ENHANCED_CONSTRUCTORS \
+	FID_Work_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_AbilitySystem_SekiroAttributeSet_h_21_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_Work_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_AbilitySystem_SekiroAttributeSet_h_21_INCLASS_NO_PURE_DECLS \
+	FID_Work_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_AbilitySystem_SekiroAttributeSet_h_21_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -74,7 +74,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 template<> SEKIROPROJ_API UClass* StaticClass<class USekiroAttributeSet>();
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_AbilitySystem_SekiroAttributeSet_h
+#define CURRENT_FILE_ID FID_Work_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_AbilitySystem_SekiroAttributeSet_h
 
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

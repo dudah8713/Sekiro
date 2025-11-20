@@ -1,12 +1,12 @@
-"W:\Sekiro\SekiroProj\Intermediate\Build\Win64\UnrealEditor\Inc\SekiroProj\UHT\SekiroPlayerController.gen.cpp"
-/FI"W:\Sekiro\SekiroProj\Intermediate\Build\Win64\x64\SekiroProjEditor\Development\UnrealEd\SharedPCH.UnrealEd.Project.ValApi.Cpp20.h"
-/FI"W:\Sekiro\SekiroProj\Intermediate\Build\Win64\x64\UnrealEditor\Development\SekiroProj\Definitions.SekiroProj.h"
-/Yu"W:\Sekiro\SekiroProj\Intermediate\Build\Win64\x64\SekiroProjEditor\Development\UnrealEd\SharedPCH.UnrealEd.Project.ValApi.Cpp20.h"
-/Fp"W:\Sekiro\SekiroProj\Intermediate\Build\Win64\x64\SekiroProjEditor\Development\UnrealEd\SharedPCH.UnrealEd.Project.ValApi.Cpp20.h.pch"
-/Fo"W:\Sekiro\SekiroProj\Intermediate\Build\Win64\x64\UnrealEditor\Development\SekiroProj\SekiroPlayerController.gen.cpp.obj"
-/experimental:log "W:\Sekiro\SekiroProj\Intermediate\Build\Win64\x64\UnrealEditor\Development\SekiroProj\SekiroPlayerController.gen.cpp.sarif"
-/sourceDependencies "W:\Sekiro\SekiroProj\Intermediate\Build\Win64\x64\UnrealEditor\Development\SekiroProj\SekiroPlayerController.gen.cpp.dep.json"
-@"W:\Sekiro\SekiroProj\Intermediate\Build\Win64\x64\UnrealEditor\Development\SekiroProj\SekiroProj.Shared.rsp"
+"C:\Work\Sekiro\SekiroProj\Intermediate\Build\Win64\UnrealEditor\Inc\SekiroProj\UHT\SekiroPlayerController.gen.cpp"
+/FI"C:\Work\Sekiro\SekiroProj\Intermediate\Build\Win64\x64\SekiroProjEditor\Development\UnrealEd\SharedPCH.UnrealEd.Project.ValApi.Cpp20.h"
+/FI"C:\Work\Sekiro\SekiroProj\Intermediate\Build\Win64\x64\UnrealEditor\Development\SekiroProj\Definitions.SekiroProj.h"
+/Yu"C:\Work\Sekiro\SekiroProj\Intermediate\Build\Win64\x64\SekiroProjEditor\Development\UnrealEd\SharedPCH.UnrealEd.Project.ValApi.Cpp20.h"
+/Fp"C:\Work\Sekiro\SekiroProj\Intermediate\Build\Win64\x64\SekiroProjEditor\Development\UnrealEd\SharedPCH.UnrealEd.Project.ValApi.Cpp20.h.pch"
+/Fo"C:\Work\Sekiro\SekiroProj\Intermediate\Build\Win64\x64\UnrealEditor\Development\SekiroProj\SekiroPlayerController.gen.cpp.obj"
+/experimental:log "C:\Work\Sekiro\SekiroProj\Intermediate\Build\Win64\x64\UnrealEditor\Development\SekiroProj\SekiroPlayerController.gen.cpp.sarif"
+/sourceDependencies "C:\Work\Sekiro\SekiroProj\Intermediate\Build\Win64\x64\UnrealEditor\Development\SekiroProj\SekiroPlayerController.gen.cpp.dep.json"
+@"C:\Work\Sekiro\SekiroProj\Intermediate\Build\Win64\x64\UnrealEditor\Development\SekiroProj\SekiroProj.Shared.rsp"
 /d2ssa-cfg-question-
 /Zc:inline
 /nologo

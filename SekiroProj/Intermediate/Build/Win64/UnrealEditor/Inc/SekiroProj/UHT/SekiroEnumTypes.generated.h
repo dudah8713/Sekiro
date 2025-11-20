@@ -16,7 +16,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #define SEKIROPROJ_SekiroEnumTypes_generated_h
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_SekiroTypes_SekiroEnumTypes_h
+#define CURRENT_FILE_ID FID_Work_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_SekiroTypes_SekiroEnumTypes_h
 
 
 #define FOREACH_ENUM_ESEKIROCONFIRMTYPE(op) \

@@ -75,19 +75,20 @@ template<> SEKIROPROJ_API UClass* StaticClass<ASekiroPlayerController>()
 {
 	return ASekiroPlayerController::StaticClass();
 }
+ASekiroPlayerController::ASekiroPlayerController(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {}
 DEFINE_VTABLE_PTR_HELPER_CTOR(ASekiroPlayerController);
 ASekiroPlayerController::~ASekiroPlayerController() {}
 // End Class ASekiroPlayerController
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_Player_SekiroPlayerController_h_Statics
+struct Z_CompiledInDeferFile_FID_Work_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_Player_SekiroPlayerController_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
 		{ Z_Construct_UClass_ASekiroPlayerController, ASekiroPlayerController::StaticClass, TEXT("ASekiroPlayerController"), &Z_Registration_Info_UClass_ASekiroPlayerController, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ASekiroPlayerController), 862662637U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_Player_SekiroPlayerController_h_3926391555(TEXT("/Script/SekiroProj"),
-	Z_CompiledInDeferFile_FID_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_Player_SekiroPlayerController_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_Player_SekiroPlayerController_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Work_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_Player_SekiroPlayerController_h_3926391555(TEXT("/Script/SekiroProj"),
+	Z_CompiledInDeferFile_FID_Work_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_Player_SekiroPlayerController_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Work_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_Player_SekiroPlayerController_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration

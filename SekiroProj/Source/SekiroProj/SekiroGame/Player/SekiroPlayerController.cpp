@@ -3,12 +3,12 @@
 
 #include "Player/SekiroPlayerController.h"
 
-ASekiroPlayerController::ASekiroPlayerController()
-{
-	bReplicates = true;
-}
+// ASekiroPlayerController::ASekiroPlayerController()
+// {
+// 	bReplicates = true;
+// }
 
-void ASekiroPlayerController::BeginPlay()
-{
-	Super::BeginPlay();
-}
+// void ASekiroPlayerController::BeginPlay()
+// {
+// 	Super::BeginPlay();
+// }

@@ -4,9 +4,12 @@
 
 #include "CoreMinimal.h"
 #include "Abilities/GameplayAbility.h"
+
 #include "SekiroGameplayAbility.generated.h"
 
 class ASekiroSamurai;
+class USekiroAbilitySystemComponent;
+class UPawnCombatComponent;
 
 UENUM(BlueprintType)
 enum class ESekiroAbilityActivationPolicy : uint8
@@ -23,17 +26,18 @@ class SEKIROPROJ_API USekiroGameplayAbility : public UGameplayAbility
 {
 	GENERATED_BODY()
 public:
-	UFUNCTION(BlueprintPure, Category = "GAS|Ability")
-	ASekiroSamurai* GetSamuraiCharacterFromActorInfo();
-	
+
 protected:
 	virtual void OnGiveAbility(const FGameplayAbilityActorInfo* ActorInfo, const FGameplayAbilitySpec& Spec) override;
 	virtual void EndAbility(const FGameplayAbilitySpecHandle Handle, const FGameplayAbilityActorInfo* ActorInfo, const FGameplayAbilityActivationInfo ActivationInfo, bool bReplicateEndAbility, bool bWasCancelled) override;
 
+	UFUNCTION(BlueprintPure, Category = "GAS|Ability")
+	UPawnCombatComponent* GetPawnCombatComponentFromActorInfo() const;
+
+	UFUNCTION(BlueprintPure, Category ="GAS|Ability")
+	USekiroAbilitySystemComponent* GetSekiroASCFromActorInfo() const;
 protected:
 	UPROPERTY(EditDefaultsOnly, Category ="SekiroAbility")
 	ESekiroAbilityActivationPolicy AbilityActivationPolicy = ESekiroAbilityActivationPolicy::OnTriggered;
 
-private:
-	TWeakObjectPtr<ASekiroSamurai> CachedSamuraiCharacter;
 };

@@ -28,8 +28,8 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "Combat")
 	ASekiroWeaponBase* GetCharacterCurrentEquippedWeapon() const;
 
-	virtual void OnHitTargetActor(AActor* HitActor);
-	virtual void OnWeaponPulledFromTargetActor(AActor* InteractedActor);
+	//virtual void OnHitTargetActor(AActor* HitActor);
+	//virtual void OnWeaponPulledFromTargetActor(AActor* InteractedActor);
 
 private:
 	UPROPERTY()

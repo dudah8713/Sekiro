@@ -13,5 +13,9 @@ namespace SekiroGameplayTags
 	UE_DEFINE_GAMEPLAY_TAG(PlayerTag_Weapon_Katana, "PlayerTag.Weapon.Katana")
 	UE_DEFINE_GAMEPLAY_TAG(PlayerTag_Ability_Equip_Katana, "PlayerTag.Ability.Equip.Katana")
 	UE_DEFINE_GAMEPLAY_TAG(PlayerTag_Ability_MeleeAttack_Katana, "PlayerTag.Ability.MeleeAttack.Katana")
+
+	UE_DEFINE_GAMEPLAY_TAG(Player_Event_Eqip_Katana, "Player.Event.Equip.Katana")
+	
+	UE_DEFINE_GAMEPLAY_TAG(Player_Weapon_Katana, "Player.Weapon.Katana")
 	
 }

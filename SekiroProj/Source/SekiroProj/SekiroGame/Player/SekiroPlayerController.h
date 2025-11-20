@@ -15,8 +15,8 @@ class SEKIROPROJ_API ASekiroPlayerController : public APlayerController
 	GENERATED_BODY()
 
 public:
-	ASekiroPlayerController();
+	//ASekiroPlayerController();
 
 protected:
-	virtual void BeginPlay() override;
+	//virtual void BeginPlay() override;
 };

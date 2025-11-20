@@ -13,5 +13,7 @@ UCLASS()
 class SEKIROPROJ_API ASekiroModeBase : public AGameModeBase
 {
 	GENERATED_BODY()
-	
+
+public:
+	ASekiroModeBase();
 };

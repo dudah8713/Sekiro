@@ -9,7 +9,14 @@
 #include "DataAssets/Input/DataAsset_InputConfig.h"
 #include "Components/Input/SekiroEnhancedInputComponent.h"
 #include "DataAssets/StartUpData/DataAsset_StartUpDataBase.h"
+#include "Components/Combat/PlayerCombatComponent.h"
 #include "UI/SekiroHUD.h"
+
+
+ASekiroSamurai::ASekiroSamurai()
+{
+	PlayerCombatComponent = CreateDefaultSubobject<UPlayerCombatComponent>("PlayerCombatComponent");
+}
 
 void ASekiroSamurai::InitAbilityActorInfo()
 {
@@ -68,7 +75,6 @@ void ASekiroSamurai::SetupPlayerInputComponent(UInputComponent* PlayerInputCompo
 	USekiroEnhancedInputComponent* SekiroInputComponent = CastChecked<USekiroEnhancedInputComponent>(PlayerInputComponent);
 
 	SekiroInputComponent->BindAbilityInputAction(InputConfigDataAsset, this, &ThisClass::Input_AbilityInputPressed, &ThisClass::Input_AbilityInputReleased);
-	
 }
 
 void ASekiroSamurai::Input_AbilityInputPressed(const FGameplayTag InInputTag)

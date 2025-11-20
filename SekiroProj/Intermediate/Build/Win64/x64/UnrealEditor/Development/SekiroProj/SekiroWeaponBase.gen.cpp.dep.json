@@ -1,13 +1,13 @@
 {
     "Version": "1.2",
     "Data": {
-        "Source": "w:\\sekiro\\sekiroproj\\intermediate\\build\\win64\\unrealeditor\\inc\\sekiroproj\\uht\\sekiroweaponbase.gen.cpp",
+        "Source": "c:\\work\\sekiro\\sekiroproj\\intermediate\\build\\win64\\unrealeditor\\inc\\sekiroproj\\uht\\sekiroweaponbase.gen.cpp",
         "ProvidedModule": "",
-        "PCH": "w:\\sekiro\\sekiroproj\\intermediate\\build\\win64\\x64\\sekiroprojeditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.cpp20.h.pch",
+        "PCH": "c:\\work\\sekiro\\sekiroproj\\intermediate\\build\\win64\\x64\\sekiroprojeditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.cpp20.h.pch",
         "Includes": [
-            "w:\\sekiro\\sekiroproj\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\sekiroproj\\definitions.sekiroproj.h",
-            "w:\\sekiro\\sekiroproj\\source\\sekiroproj\\sekirogame\\items\\weapons\\sekiroweaponbase.h",
-            "w:\\sekiro\\sekiroproj\\intermediate\\build\\win64\\unrealeditor\\inc\\sekiroproj\\uht\\sekiroweaponbase.generated.h"
+            "c:\\work\\sekiro\\sekiroproj\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\sekiroproj\\definitions.sekiroproj.h",
+            "c:\\work\\sekiro\\sekiroproj\\source\\sekiroproj\\sekirogame\\items\\weapons\\sekiroweaponbase.h",
+            "c:\\work\\sekiro\\sekiroproj\\intermediate\\build\\win64\\unrealeditor\\inc\\sekiroproj\\uht\\sekiroweaponbase.generated.h"
         ],
         "ImportedModules": [],
         "ImportedHeaderUnits": []

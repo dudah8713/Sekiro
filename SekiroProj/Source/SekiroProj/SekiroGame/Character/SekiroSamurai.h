@@ -10,6 +10,7 @@
 struct FInputActionValue;
 
 class UDataAsset_InputConfig;
+class UPlayerCombatComponent;
 /**
  * 
  */
@@ -19,15 +20,21 @@ class SEKIROPROJ_API ASekiroSamurai : public ASekiroCharacterBase
 	GENERATED_BODY()
 
 public:
+	ASekiroSamurai();
+	
 	virtual void PossessedBy(AController* NewController) override;
 	virtual void OnRep_PlayerState() override;
 
-	// BP_Samurai의 Default 설정의 Input에 USekiroEnhancedInputComponent를 추가
 	virtual void SetupPlayerInputComponent(UInputComponent* PlayerInputComponent) override;
-	
+
+	FORCEINLINE UPlayerCombatComponent* GetPlayerCombatComponent() const {return PlayerCombatComponent;} 
 private:
 	void InitAbilityActorInfo();
-
+#pragma region component
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Combat", meta = (AllowPrivateAccess = "true"))
+	TObjectPtr<UPlayerCombatComponent> PlayerCombatComponent;
+#pragma endregion
+	
 #pragma region Inputs
 	// BP_Samurai의 Default 설정의 CharacterData에 DA_InputConfig를 추가
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "CharacterData", meta = (AllowPrivateAccess = "true"))

@@ -15,18 +15,18 @@ struct FWidgetControllerParams;
 #endif
 #define SEKIROPROJ_SekiroWidgetController_generated_h
 
-#define FID_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_UI_SekiroWidgetController_h_16_GENERATED_BODY \
+#define FID_Work_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_UI_SekiroWidgetController_h_16_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FWidgetControllerParams_Statics; \
 	SEKIROPROJ_API static class UScriptStruct* StaticStruct();
 
 
 template<> SEKIROPROJ_API UScriptStruct* StaticStruct<struct FWidgetControllerParams>();
 
-#define FID_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_UI_SekiroWidgetController_h_45_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FID_Work_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_UI_SekiroWidgetController_h_45_RPC_WRAPPERS_NO_PURE_DECLS \
 	DECLARE_FUNCTION(execSetWidgetControllerParams);
 
 
-#define FID_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_UI_SekiroWidgetController_h_45_INCLASS_NO_PURE_DECLS \
+#define FID_Work_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_UI_SekiroWidgetController_h_45_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUSekiroWidgetController(); \
 	friend struct Z_Construct_UClass_USekiroWidgetController_Statics; \
@@ -35,7 +35,7 @@ public: \
 	DECLARE_SERIALIZER(USekiroWidgetController)
 
 
-#define FID_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_UI_SekiroWidgetController_h_45_ENHANCED_CONSTRUCTORS \
+#define FID_Work_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_UI_SekiroWidgetController_h_45_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API USekiroWidgetController(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 private: \
@@ -49,13 +49,13 @@ public: \
 	NO_API virtual ~USekiroWidgetController();
 
 
-#define FID_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_UI_SekiroWidgetController_h_42_PROLOG
-#define FID_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_UI_SekiroWidgetController_h_45_GENERATED_BODY \
+#define FID_Work_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_UI_SekiroWidgetController_h_42_PROLOG
+#define FID_Work_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_UI_SekiroWidgetController_h_45_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_UI_SekiroWidgetController_h_45_RPC_WRAPPERS_NO_PURE_DECLS \
-	FID_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_UI_SekiroWidgetController_h_45_INCLASS_NO_PURE_DECLS \
-	FID_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_UI_SekiroWidgetController_h_45_ENHANCED_CONSTRUCTORS \
+	FID_Work_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_UI_SekiroWidgetController_h_45_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_Work_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_UI_SekiroWidgetController_h_45_INCLASS_NO_PURE_DECLS \
+	FID_Work_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_UI_SekiroWidgetController_h_45_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -63,7 +63,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 template<> SEKIROPROJ_API UClass* StaticClass<class USekiroWidgetController>();
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_UI_SekiroWidgetController_h
+#define CURRENT_FILE_ID FID_Work_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_UI_SekiroWidgetController_h
 
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

@@ -257,14 +257,14 @@ ASekiroEffectActor::~ASekiroEffectActor() {}
 // End Class ASekiroEffectActor
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_Actor_SekiroEffectActor_h_Statics
+struct Z_CompiledInDeferFile_FID_Work_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_Actor_SekiroEffectActor_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
 		{ Z_Construct_UClass_ASekiroEffectActor, ASekiroEffectActor::StaticClass, TEXT("ASekiroEffectActor"), &Z_Registration_Info_UClass_ASekiroEffectActor, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ASekiroEffectActor), 2559624772U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_Actor_SekiroEffectActor_h_2708400445(TEXT("/Script/SekiroProj"),
-	Z_CompiledInDeferFile_FID_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_Actor_SekiroEffectActor_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_Actor_SekiroEffectActor_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Work_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_Actor_SekiroEffectActor_h_2708400445(TEXT("/Script/SekiroProj"),
+	Z_CompiledInDeferFile_FID_Work_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_Actor_SekiroEffectActor_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Work_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_Actor_SekiroEffectActor_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration

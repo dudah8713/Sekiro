@@ -1,0 +1,15 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\work\\sekiro\\sekiroproj\\intermediate\\build\\win64\\unrealeditor\\inc\\sekiroproj\\uht\\sekiroweaponbase.gen.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\work\\sekiro\\sekiroproj\\intermediate\\build\\win64\\x64\\sekiroprojeditor\\debuggame\\unrealed\\sharedpch.unrealed.project.nonoptimized.valapi.cpp20.h.pch",
+        "Includes": [
+            "c:\\work\\sekiro\\sekiroproj\\intermediate\\build\\win64\\x64\\unrealeditor\\debuggame\\sekiroproj\\definitions.sekiroproj.h",
+            "c:\\work\\sekiro\\sekiroproj\\source\\sekiroproj\\sekirogame\\items\\weapons\\sekiroweaponbase.h",
+            "c:\\work\\sekiro\\sekiroproj\\intermediate\\build\\win64\\unrealeditor\\inc\\sekiroproj\\uht\\sekiroweaponbase.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}
