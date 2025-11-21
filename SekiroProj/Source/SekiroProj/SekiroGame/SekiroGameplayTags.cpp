@@ -4,6 +4,7 @@ namespace SekiroGameplayTags
 {
 	// Input Tags
 	UE_DEFINE_GAMEPLAY_TAG(InputTag_MeleeAttack_Katana, "InputTag.MeleeAttack.Katana")
+	UE_DEFINE_GAMEPLAY_TAG(InputTag_MeleeAttack_Katana_Combo, "InputTag.MeleeAttack.Katana.Combo")
 	UE_DEFINE_GAMEPLAY_TAG(InputTag_Toggleable, "InputTag.Toggleable")
 	UE_DEFINE_GAMEPLAY_TAG(InputTag_MustBeHeld, "InputTag.MustBeHeld")
 	UE_DEFINE_GAMEPLAY_TAG(InputTag_EquipKatana, "InputTag.EquipKatana")

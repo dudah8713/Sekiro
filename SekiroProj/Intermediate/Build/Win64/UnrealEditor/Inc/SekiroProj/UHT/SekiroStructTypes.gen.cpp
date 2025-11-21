@@ -12,6 +12,7 @@ void EmptyLinkFunctionForGeneratedCodeSekiroStructTypes() {}
 
 // Begin Cross Module References
 COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
+ENGINE_API UClass* Z_Construct_UClass_UAnimInstance_NoRegister();
 ENHANCEDINPUT_API UClass* Z_Construct_UClass_UInputMappingContext_NoRegister();
 GAMEPLAYTAGS_API UScriptStruct* Z_Construct_UScriptStruct_FGameplayTag();
 SEKIROPROJ_API UClass* Z_Construct_UClass_USekiroGameplayAbility_NoRegister();
@@ -111,6 +112,10 @@ struct Z_Construct_UScriptStruct_FSekiroWeaponData_Statics
 		{ "BlueprintType", "true" },
 		{ "ModuleRelativePath", "SekiroGame/SekiroTypes/SekiroStructTypes.h" },
 	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_WeaponAnimLayerToLink_MetaData[] = {
+		{ "Category", "SekiroWeaponData" },
+		{ "ModuleRelativePath", "SekiroGame/SekiroTypes/SekiroStructTypes.h" },
+	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_WeaponInputMappingContext_MetaData[] = {
 		{ "Category", "SekiroWeaponData" },
 		{ "ModuleRelativePath", "SekiroGame/SekiroTypes/SekiroStructTypes.h" },
@@ -121,6 +126,7 @@ struct Z_Construct_UScriptStruct_FSekiroWeaponData_Statics
 		{ "TitleProperty", "InputTag" },
 	};
 #endif // WITH_METADATA
+	static const UECodeGen_Private::FClassPropertyParams NewProp_WeaponAnimLayerToLink;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_WeaponInputMappingContext;
 	static const UECodeGen_Private::FStructPropertyParams NewProp_DefaultWeaponAbilities_Inner;
 	static const UECodeGen_Private::FArrayPropertyParams NewProp_DefaultWeaponAbilities;
@@ -131,10 +137,12 @@ struct Z_Construct_UScriptStruct_FSekiroWeaponData_Statics
 	}
 	static const UECodeGen_Private::FStructParams StructParams;
 };
+const UECodeGen_Private::FClassPropertyParams Z_Construct_UScriptStruct_FSekiroWeaponData_Statics::NewProp_WeaponAnimLayerToLink = { "WeaponAnimLayerToLink", nullptr, (EPropertyFlags)0x0014000000010015, UECodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FSekiroWeaponData, WeaponAnimLayerToLink), Z_Construct_UClass_UClass, Z_Construct_UClass_UAnimInstance_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_WeaponAnimLayerToLink_MetaData), NewProp_WeaponAnimLayerToLink_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UScriptStruct_FSekiroWeaponData_Statics::NewProp_WeaponInputMappingContext = { "WeaponInputMappingContext", nullptr, (EPropertyFlags)0x0114000000010015, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FSekiroWeaponData, WeaponInputMappingContext), Z_Construct_UClass_UInputMappingContext_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_WeaponInputMappingContext_MetaData), NewProp_WeaponInputMappingContext_MetaData) };
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FSekiroWeaponData_Statics::NewProp_DefaultWeaponAbilities_Inner = { "DefaultWeaponAbilities", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FSekiroSamuraiAbilitySet, METADATA_PARAMS(0, nullptr) }; // 975700846
 const UECodeGen_Private::FArrayPropertyParams Z_Construct_UScriptStruct_FSekiroWeaponData_Statics::NewProp_DefaultWeaponAbilities = { "DefaultWeaponAbilities", nullptr, (EPropertyFlags)0x0010000000010015, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FSekiroWeaponData, DefaultWeaponAbilities), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_DefaultWeaponAbilities_MetaData), NewProp_DefaultWeaponAbilities_MetaData) }; // 975700846
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FSekiroWeaponData_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FSekiroWeaponData_Statics::NewProp_WeaponAnimLayerToLink,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FSekiroWeaponData_Statics::NewProp_WeaponInputMappingContext,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FSekiroWeaponData_Statics::NewProp_DefaultWeaponAbilities_Inner,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FSekiroWeaponData_Statics::NewProp_DefaultWeaponAbilities,
@@ -168,10 +176,10 @@ struct Z_CompiledInDeferFile_FID_Work_Sekiro_SekiroProj_Source_SekiroProj_Sekiro
 {
 	static constexpr FStructRegisterCompiledInInfo ScriptStructInfo[] = {
 		{ FSekiroSamuraiAbilitySet::StaticStruct, Z_Construct_UScriptStruct_FSekiroSamuraiAbilitySet_Statics::NewStructOps, TEXT("SekiroSamuraiAbilitySet"), &Z_Registration_Info_UScriptStruct_SekiroSamuraiAbilitySet, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FSekiroSamuraiAbilitySet), 975700846U) },
-		{ FSekiroWeaponData::StaticStruct, Z_Construct_UScriptStruct_FSekiroWeaponData_Statics::NewStructOps, TEXT("SekiroWeaponData"), &Z_Registration_Info_UScriptStruct_SekiroWeaponData, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FSekiroWeaponData), 357487391U) },
+		{ FSekiroWeaponData::StaticStruct, Z_Construct_UScriptStruct_FSekiroWeaponData_Statics::NewStructOps, TEXT("SekiroWeaponData"), &Z_Registration_Info_UScriptStruct_SekiroWeaponData, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FSekiroWeaponData), 1686841929U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Work_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_SekiroTypes_SekiroStructTypes_h_703232467(TEXT("/Script/SekiroProj"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Work_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_SekiroTypes_SekiroStructTypes_h_3229405141(TEXT("/Script/SekiroProj"),
 	nullptr, 0,
 	Z_CompiledInDeferFile_FID_Work_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_SekiroTypes_SekiroStructTypes_h_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Work_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_SekiroTypes_SekiroStructTypes_h_Statics::ScriptStructInfo),
 	nullptr, 0);

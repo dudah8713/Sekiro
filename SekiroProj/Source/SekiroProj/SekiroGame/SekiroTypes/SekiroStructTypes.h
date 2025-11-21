@@ -7,6 +7,7 @@
 
 class USekiroGameplayAbility;
 class UInputMappingContext;
+class UAnimInstance;
 
 USTRUCT(BlueprintType)
 struct FSekiroSamuraiAbilitySet
@@ -26,6 +27,9 @@ USTRUCT(BlueprintType)
 struct FSekiroWeaponData
 {
 	GENERATED_BODY()
+
+	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly)
+	TSubclassOf<UAnimInstance> WeaponAnimLayerToLink;
 	
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly)
 	TObjectPtr<UInputMappingContext> WeaponInputMappingContext;
