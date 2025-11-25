@@ -16,10 +16,11 @@ class SEKIROPROJ_API USekiroEnhancedInputComponent : public UEnhancedInputCompon
 	GENERATED_BODY()
 public:
 	template<class UserObject, typename CallbackFunc>
-	void BindNativeInputAction(UDataAsset_InputConfig* InInputConfig, const FGameplayTag& InInputTag, ETriggerEvent TriggerEvent, UserObject* ContextObject, CallbackFunc Func);
-
+	void BindAbilityInputAction(UDataAsset_InputConfig* InInputConfig, UserObject* ContextObject,
+		CallbackFunc InputPressedFunc, CallbackFunc InputReleasedFunc);
+	
 	template<class UserObject, typename CallbackFunc>
-	void BindAbilityInputAction(UDataAsset_InputConfig* InInputConfig, UserObject* ContextObject, CallbackFunc InputPressedFunc, CallbackFunc InputReleasedFunc);
+	void BindNativeInputAction(UDataAsset_InputConfig* InInputConfig, const FGameplayTag& InInputTag, ETriggerEvent TriggerEvent, UserObject* ContextObject, CallbackFunc Func);
 };
 
 template <class UserObject, typename CallbackFunc>
@@ -34,7 +35,8 @@ void USekiroEnhancedInputComponent::BindNativeInputAction(UDataAsset_InputConfig
 }
 
 template<class UserObject, typename CallbackFunc>
-void USekiroEnhancedInputComponent::BindAbilityInputAction(UDataAsset_InputConfig* InInputConfig, UserObject* ContextObject, CallbackFunc InputPressedFunc, CallbackFunc InputReleasedFunc)
+void USekiroEnhancedInputComponent::BindAbilityInputAction(UDataAsset_InputConfig* InInputConfig, UserObject* ContextObject,
+	CallbackFunc InputPressedFunc, CallbackFunc InputReleasedFunc)
 {
 	checkf(InInputConfig, TEXT("Input config data asset is null, can not proceed with binding"));
 
@@ -42,8 +44,10 @@ void USekiroEnhancedInputComponent::BindAbilityInputAction(UDataAsset_InputConfi
 	{
 		if (!AbilityInputActionConfig.IsValid()) continue;
 
-		BindAction(AbilityInputActionConfig.InputAction, ETriggerEvent::Started, ContextObject, InputPressedFunc, AbilityInputActionConfig.InputTag);
-		BindAction(AbilityInputActionConfig.InputAction, ETriggerEvent::Completed, ContextObject, InputReleasedFunc, AbilityInputActionConfig.InputTag);
+		BindAction(AbilityInputActionConfig.InputAction, ETriggerEvent::Started, ContextObject,
+			InputPressedFunc, AbilityInputActionConfig.InputTag);
+		BindAction(AbilityInputActionConfig.InputAction, ETriggerEvent::Completed, ContextObject,
+			InputReleasedFunc, AbilityInputActionConfig.InputTag);
 	}
 }
 

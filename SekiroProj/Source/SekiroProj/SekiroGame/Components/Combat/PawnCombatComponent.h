@@ -28,9 +28,13 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "Combat")
 	ASekiroWeaponBase* GetCharacterCurrentEquippedWeapon() const;
 
-	//virtual void OnHitTargetActor(AActor* HitActor);
+	virtual void OnHitTargetActor(AActor* HitActor);
 	//virtual void OnWeaponPulledFromTargetActor(AActor* InteractedActor);
 
+protected:
+	UPROPERTY()
+	TArray<AActor*> OverlappedActors;
+	
 private:
 	UPROPERTY()
 	TMap<FGameplayTag, ASekiroWeaponBase*> CharacterCarriedWeaponMap;

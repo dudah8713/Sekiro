@@ -2,6 +2,8 @@
 
 
 #include "AbilitySystem/SekiroAttributeSet.h"
+
+#include "GameplayEffectExtension.h"
 #include "Net/UnrealNetwork.h"
 
 USekiroAttributeSet::USekiroAttributeSet()
@@ -53,3 +55,22 @@ void USekiroAttributeSet::OnRep_MaxPosture(const FGameplayAttributeData& OldMaxP
 {
 	GAMEPLAYATTRIBUTE_REPNOTIFY(USekiroAttributeSet, MaxPosture, OldMaxPosture)
 }
+
+// void USekiroAttributeSet::PostGameplayEffectExecute(const struct FGameplayEffectModCallbackData& Data)
+// {
+// 	Super::PostGameplayEffectExecute(Data);
+//
+// 	if (Data.EvaluatedData.Attribute == GetInComingDamageAttribute())
+// 	{
+// 		const float LocalIncomingDamage = GetInComingDamage();
+// 		SetInComingDamage(0.f);
+//
+// 		if (LocalIncomingDamage > 0.f)
+// 		{
+// 			const float NewHealth = GetHealth() - LocalIncomingDamage;
+// 			SetHealth(FMath::Clamp(NewHealth, 0.f, GetMaxHealth()));
+//
+// 			const bool bFatal = NewHealth < 0.f;
+// 		}
+// 	}
+// }

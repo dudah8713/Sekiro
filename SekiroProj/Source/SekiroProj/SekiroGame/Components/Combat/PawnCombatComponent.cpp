@@ -38,10 +38,10 @@ ASekiroWeaponBase* UPawnCombatComponent::GetCharacterCurrentEquippedWeapon() con
 	return GetCharacterCarriedWeaponByTag(CurrentEquippedWeaponTag);
 }
 
-// void UPawnCombatComponent::OnHitTargetActor(AActor* HitActor)
-// {
-// }
-//
+void UPawnCombatComponent::OnHitTargetActor(AActor* HitActor)
+{
+}
+
 // void UPawnCombatComponent::OnWeaponPulledFromTargetActor(AActor* InteractedActor)
 // {
 // }

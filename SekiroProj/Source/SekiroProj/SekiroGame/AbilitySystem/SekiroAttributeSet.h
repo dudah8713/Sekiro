@@ -49,6 +49,10 @@ public:
 	FGameplayAttributeData MaxPosture;
 	ATTRIBUTE_ACCESSORS(USekiroAttributeSet, MaxPosture);
 
+	UPROPERTY(BlueprintReadOnly, Category = "Meta Attributes")
+	FGameplayAttributeData InComingDamage;
+	ATTRIBUTE_ACCESSORS(USekiroAttributeSet, InComingDamage);
+	
 	UFUNCTION()
 	void OnRep_Health(const FGameplayAttributeData& OldHealth) const;
 
@@ -66,4 +70,7 @@ public:
 
 	UFUNCTION()
 	void OnRep_MaxPosture(const FGameplayAttributeData& OldMaxPosture) const;
+
+	//UFUNCTION()
+	//virtual void PostGameplayEffectExecute(const struct FGameplayEffectModCallbackData& Data) override;
 };

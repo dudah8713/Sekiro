@@ -45,6 +45,7 @@ void ASekiroSamurai::PossessedBy(AController* NewController)
 
 	if (!CharacterStartUpData.IsNull())
 	{
+		// 동기 로딩
 		if (UDataAsset_StartUpDataBase* LoadedData = CharacterStartUpData.LoadSynchronous())
 		{
 			int32 AbilityApplyLevel = 1;
@@ -74,7 +75,8 @@ void ASekiroSamurai::SetupPlayerInputComponent(UInputComponent* PlayerInputCompo
 
 	USekiroEnhancedInputComponent* SekiroInputComponent = CastChecked<USekiroEnhancedInputComponent>(PlayerInputComponent);
 
-	SekiroInputComponent->BindAbilityInputAction(InputConfigDataAsset, this, &ThisClass::Input_AbilityInputPressed, &ThisClass::Input_AbilityInputReleased);
+	SekiroInputComponent->BindAbilityInputAction(InputConfigDataAsset, this,
+		&ThisClass::Input_AbilityInputPressed, &ThisClass::Input_AbilityInputReleased);
 }
 
 void ASekiroSamurai::Input_AbilityInputPressed(const FGameplayTag InInputTag)

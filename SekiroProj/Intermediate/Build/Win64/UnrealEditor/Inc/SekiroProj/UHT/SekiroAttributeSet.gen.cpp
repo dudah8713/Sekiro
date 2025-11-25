@@ -341,6 +341,10 @@ struct Z_Construct_UClass_USekiroAttributeSet_Statics
 		{ "Category", "Vital Attributes" },
 		{ "ModuleRelativePath", "SekiroGame/AbilitySystem/SekiroAttributeSet.h" },
 	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_InComingDamage_MetaData[] = {
+		{ "Category", "Meta Attributes" },
+		{ "ModuleRelativePath", "SekiroGame/AbilitySystem/SekiroAttributeSet.h" },
+	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FStructPropertyParams NewProp_Health;
 	static const UECodeGen_Private::FStructPropertyParams NewProp_MaxHealth;
@@ -348,6 +352,7 @@ struct Z_Construct_UClass_USekiroAttributeSet_Statics
 	static const UECodeGen_Private::FStructPropertyParams NewProp_MaxStamina;
 	static const UECodeGen_Private::FStructPropertyParams NewProp_Posture;
 	static const UECodeGen_Private::FStructPropertyParams NewProp_MaxPosture;
+	static const UECodeGen_Private::FStructPropertyParams NewProp_InComingDamage;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
@@ -370,6 +375,7 @@ const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_USekiroAttribu
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_USekiroAttributeSet_Statics::NewProp_MaxStamina = { "MaxStamina", "OnRep_MaxStamina", (EPropertyFlags)0x0010000100000034, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(USekiroAttributeSet, MaxStamina), Z_Construct_UScriptStruct_FGameplayAttributeData, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_MaxStamina_MetaData), NewProp_MaxStamina_MetaData) }; // 675369593
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_USekiroAttributeSet_Statics::NewProp_Posture = { "Posture", "OnRep_Posture", (EPropertyFlags)0x0010000100000034, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(USekiroAttributeSet, Posture), Z_Construct_UScriptStruct_FGameplayAttributeData, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Posture_MetaData), NewProp_Posture_MetaData) }; // 675369593
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_USekiroAttributeSet_Statics::NewProp_MaxPosture = { "MaxPosture", "OnRep_MaxPosture", (EPropertyFlags)0x0010000100000034, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(USekiroAttributeSet, MaxPosture), Z_Construct_UScriptStruct_FGameplayAttributeData, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_MaxPosture_MetaData), NewProp_MaxPosture_MetaData) }; // 675369593
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_USekiroAttributeSet_Statics::NewProp_InComingDamage = { "InComingDamage", nullptr, (EPropertyFlags)0x0010000000000014, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(USekiroAttributeSet, InComingDamage), Z_Construct_UScriptStruct_FGameplayAttributeData, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_InComingDamage_MetaData), NewProp_InComingDamage_MetaData) }; // 675369593
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_USekiroAttributeSet_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_USekiroAttributeSet_Statics::NewProp_Health,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_USekiroAttributeSet_Statics::NewProp_MaxHealth,
@@ -377,6 +383,7 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_USekiroAt
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_USekiroAttributeSet_Statics::NewProp_MaxStamina,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_USekiroAttributeSet_Statics::NewProp_Posture,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_USekiroAttributeSet_Statics::NewProp_MaxPosture,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_USekiroAttributeSet_Statics::NewProp_InComingDamage,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_USekiroAttributeSet_Statics::PropPointers) < 2048);
 UObject* (*const Z_Construct_UClass_USekiroAttributeSet_Statics::DependentSingletons[])() = {
@@ -436,10 +443,10 @@ USekiroAttributeSet::~USekiroAttributeSet() {}
 struct Z_CompiledInDeferFile_FID_Work_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_AbilitySystem_SekiroAttributeSet_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_USekiroAttributeSet, USekiroAttributeSet::StaticClass, TEXT("USekiroAttributeSet"), &Z_Registration_Info_UClass_USekiroAttributeSet, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(USekiroAttributeSet), 3303727268U) },
+		{ Z_Construct_UClass_USekiroAttributeSet, USekiroAttributeSet::StaticClass, TEXT("USekiroAttributeSet"), &Z_Registration_Info_UClass_USekiroAttributeSet, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(USekiroAttributeSet), 430615624U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Work_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_AbilitySystem_SekiroAttributeSet_h_840483201(TEXT("/Script/SekiroProj"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Work_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_AbilitySystem_SekiroAttributeSet_h_3539694998(TEXT("/Script/SekiroProj"),
 	Z_CompiledInDeferFile_FID_Work_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_AbilitySystem_SekiroAttributeSet_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Work_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_AbilitySystem_SekiroAttributeSet_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

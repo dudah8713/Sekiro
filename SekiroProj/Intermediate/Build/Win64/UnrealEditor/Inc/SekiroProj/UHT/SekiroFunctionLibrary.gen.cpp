@@ -73,12 +73,76 @@ DEFINE_FUNCTION(USekiroFunctionLibrary::execAddGameplayTagToActorIfNone)
 }
 // End Class USekiroFunctionLibrary Function AddGameplayTagToActorIfNone
 
+// Begin Class USekiroFunctionLibrary Function IsValidBlock
+struct Z_Construct_UFunction_USekiroFunctionLibrary_IsValidBlock_Statics
+{
+	struct SekiroFunctionLibrary_eventIsValidBlock_Parms
+	{
+		const AActor* InAttacker;
+		const AActor* InDefener;
+		bool ReturnValue;
+	};
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "Category", "FunctionLibrary" },
+		{ "ModuleRelativePath", "SekiroGame/SekiroFunctionLibrary.h" },
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_InAttacker_MetaData[] = {
+		{ "NativeConst", "" },
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_InDefener_MetaData[] = {
+		{ "NativeConst", "" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_InAttacker;
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_InDefener;
+	static void NewProp_ReturnValue_SetBit(void* Obj);
+	static const UECodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_USekiroFunctionLibrary_IsValidBlock_Statics::NewProp_InAttacker = { "InAttacker", nullptr, (EPropertyFlags)0x0010000000000082, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(SekiroFunctionLibrary_eventIsValidBlock_Parms, InAttacker), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_InAttacker_MetaData), NewProp_InAttacker_MetaData) };
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_USekiroFunctionLibrary_IsValidBlock_Statics::NewProp_InDefener = { "InDefener", nullptr, (EPropertyFlags)0x0010000000000082, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(SekiroFunctionLibrary_eventIsValidBlock_Parms, InDefener), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_InDefener_MetaData), NewProp_InDefener_MetaData) };
+void Z_Construct_UFunction_USekiroFunctionLibrary_IsValidBlock_Statics::NewProp_ReturnValue_SetBit(void* Obj)
+{
+	((SekiroFunctionLibrary_eventIsValidBlock_Parms*)Obj)->ReturnValue = 1;
+}
+const UECodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_USekiroFunctionLibrary_IsValidBlock_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, sizeof(bool), sizeof(SekiroFunctionLibrary_eventIsValidBlock_Parms), &Z_Construct_UFunction_USekiroFunctionLibrary_IsValidBlock_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_USekiroFunctionLibrary_IsValidBlock_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_USekiroFunctionLibrary_IsValidBlock_Statics::NewProp_InAttacker,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_USekiroFunctionLibrary_IsValidBlock_Statics::NewProp_InDefener,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_USekiroFunctionLibrary_IsValidBlock_Statics::NewProp_ReturnValue,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_USekiroFunctionLibrary_IsValidBlock_Statics::PropPointers) < 2048);
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_USekiroFunctionLibrary_IsValidBlock_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_USekiroFunctionLibrary, nullptr, "IsValidBlock", nullptr, nullptr, Z_Construct_UFunction_USekiroFunctionLibrary_IsValidBlock_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_USekiroFunctionLibrary_IsValidBlock_Statics::PropPointers), sizeof(Z_Construct_UFunction_USekiroFunctionLibrary_IsValidBlock_Statics::SekiroFunctionLibrary_eventIsValidBlock_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_USekiroFunctionLibrary_IsValidBlock_Statics::Function_MetaDataParams), Z_Construct_UFunction_USekiroFunctionLibrary_IsValidBlock_Statics::Function_MetaDataParams) };
+static_assert(sizeof(Z_Construct_UFunction_USekiroFunctionLibrary_IsValidBlock_Statics::SekiroFunctionLibrary_eventIsValidBlock_Parms) < MAX_uint16);
+UFunction* Z_Construct_UFunction_USekiroFunctionLibrary_IsValidBlock()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_USekiroFunctionLibrary_IsValidBlock_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(USekiroFunctionLibrary::execIsValidBlock)
+{
+	P_GET_OBJECT(AActor,Z_Param_InAttacker);
+	P_GET_OBJECT(AActor,Z_Param_InDefener);
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	*(bool*)Z_Param__Result=USekiroFunctionLibrary::IsValidBlock(Z_Param_InAttacker,Z_Param_InDefener);
+	P_NATIVE_END;
+}
+// End Class USekiroFunctionLibrary Function IsValidBlock
+
 // Begin Class USekiroFunctionLibrary
 void USekiroFunctionLibrary::StaticRegisterNativesUSekiroFunctionLibrary()
 {
 	UClass* Class = USekiroFunctionLibrary::StaticClass();
 	static const FNameNativePtrPair Funcs[] = {
 		{ "AddGameplayTagToActorIfNone", &USekiroFunctionLibrary::execAddGameplayTagToActorIfNone },
+		{ "IsValidBlock", &USekiroFunctionLibrary::execIsValidBlock },
 	};
 	FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
 }
@@ -101,6 +165,7 @@ struct Z_Construct_UClass_USekiroFunctionLibrary_Statics
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
 		{ &Z_Construct_UFunction_USekiroFunctionLibrary_AddGameplayTagToActorIfNone, "AddGameplayTagToActorIfNone" }, // 21697360
+		{ &Z_Construct_UFunction_USekiroFunctionLibrary_IsValidBlock, "IsValidBlock" }, // 3270302290
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
@@ -149,10 +214,10 @@ USekiroFunctionLibrary::~USekiroFunctionLibrary() {}
 struct Z_CompiledInDeferFile_FID_Work_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_SekiroFunctionLibrary_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_USekiroFunctionLibrary, USekiroFunctionLibrary::StaticClass, TEXT("USekiroFunctionLibrary"), &Z_Registration_Info_UClass_USekiroFunctionLibrary, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(USekiroFunctionLibrary), 3046652139U) },
+		{ Z_Construct_UClass_USekiroFunctionLibrary, USekiroFunctionLibrary::StaticClass, TEXT("USekiroFunctionLibrary"), &Z_Registration_Info_UClass_USekiroFunctionLibrary, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(USekiroFunctionLibrary), 2144296649U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Work_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_SekiroFunctionLibrary_h_3709104672(TEXT("/Script/SekiroProj"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Work_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_SekiroFunctionLibrary_h_2115808346(TEXT("/Script/SekiroProj"),
 	Z_CompiledInDeferFile_FID_Work_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_SekiroFunctionLibrary_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Work_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_SekiroFunctionLibrary_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

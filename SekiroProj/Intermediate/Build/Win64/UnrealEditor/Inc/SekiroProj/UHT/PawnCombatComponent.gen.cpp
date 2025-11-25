@@ -11,6 +11,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodePawnCombatComponent() {}
 
 // Begin Cross Module References
+ENGINE_API UClass* Z_Construct_UClass_AActor_NoRegister();
 GAMEPLAYTAGS_API UScriptStruct* Z_Construct_UScriptStruct_FGameplayTag();
 SEKIROPROJ_API UClass* Z_Construct_UClass_ASekiroWeaponBase_NoRegister();
 SEKIROPROJ_API UClass* Z_Construct_UClass_UPawnCombatComponent();
@@ -197,11 +198,16 @@ struct Z_Construct_UClass_UPawnCombatComponent_Statics
 		{ "Category", "Combat" },
 		{ "ModuleRelativePath", "SekiroGame/Components/Combat/PawnCombatComponent.h" },
 	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_OverlappedActors_MetaData[] = {
+		{ "ModuleRelativePath", "SekiroGame/Components/Combat/PawnCombatComponent.h" },
+	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_CharacterCarriedWeaponMap_MetaData[] = {
 		{ "ModuleRelativePath", "SekiroGame/Components/Combat/PawnCombatComponent.h" },
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FStructPropertyParams NewProp_CurrentEquippedWeaponTag;
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_OverlappedActors_Inner;
+	static const UECodeGen_Private::FArrayPropertyParams NewProp_OverlappedActors;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_CharacterCarriedWeaponMap_ValueProp;
 	static const UECodeGen_Private::FStructPropertyParams NewProp_CharacterCarriedWeaponMap_Key_KeyProp;
 	static const UECodeGen_Private::FMapPropertyParams NewProp_CharacterCarriedWeaponMap;
@@ -219,11 +225,15 @@ struct Z_Construct_UClass_UPawnCombatComponent_Statics
 	static const UECodeGen_Private::FClassParams ClassParams;
 };
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UPawnCombatComponent_Statics::NewProp_CurrentEquippedWeaponTag = { "CurrentEquippedWeaponTag", nullptr, (EPropertyFlags)0x0010000000000004, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UPawnCombatComponent, CurrentEquippedWeaponTag), Z_Construct_UScriptStruct_FGameplayTag, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_CurrentEquippedWeaponTag_MetaData), NewProp_CurrentEquippedWeaponTag_MetaData) }; // 1298103297
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UPawnCombatComponent_Statics::NewProp_OverlappedActors_Inner = { "OverlappedActors", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UPawnCombatComponent_Statics::NewProp_OverlappedActors = { "OverlappedActors", nullptr, (EPropertyFlags)0x0020080000000000, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UPawnCombatComponent, OverlappedActors), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OverlappedActors_MetaData), NewProp_OverlappedActors_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UPawnCombatComponent_Statics::NewProp_CharacterCarriedWeaponMap_ValueProp = { "CharacterCarriedWeaponMap", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 1, Z_Construct_UClass_ASekiroWeaponBase_NoRegister, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UPawnCombatComponent_Statics::NewProp_CharacterCarriedWeaponMap_Key_KeyProp = { "CharacterCarriedWeaponMap_Key", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FGameplayTag, METADATA_PARAMS(0, nullptr) }; // 1298103297
 const UECodeGen_Private::FMapPropertyParams Z_Construct_UClass_UPawnCombatComponent_Statics::NewProp_CharacterCarriedWeaponMap = { "CharacterCarriedWeaponMap", nullptr, (EPropertyFlags)0x0040000000000000, UECodeGen_Private::EPropertyGenFlags::Map, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UPawnCombatComponent, CharacterCarriedWeaponMap), EMapPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_CharacterCarriedWeaponMap_MetaData), NewProp_CharacterCarriedWeaponMap_MetaData) }; // 1298103297
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UPawnCombatComponent_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UPawnCombatComponent_Statics::NewProp_CurrentEquippedWeaponTag,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UPawnCombatComponent_Statics::NewProp_OverlappedActors_Inner,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UPawnCombatComponent_Statics::NewProp_OverlappedActors,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UPawnCombatComponent_Statics::NewProp_CharacterCarriedWeaponMap_ValueProp,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UPawnCombatComponent_Statics::NewProp_CharacterCarriedWeaponMap_Key_KeyProp,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UPawnCombatComponent_Statics::NewProp_CharacterCarriedWeaponMap,
@@ -270,10 +280,10 @@ UPawnCombatComponent::~UPawnCombatComponent() {}
 struct Z_CompiledInDeferFile_FID_Work_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_Components_Combat_PawnCombatComponent_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UPawnCombatComponent, UPawnCombatComponent::StaticClass, TEXT("UPawnCombatComponent"), &Z_Registration_Info_UClass_UPawnCombatComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UPawnCombatComponent), 4135324102U) },
+		{ Z_Construct_UClass_UPawnCombatComponent, UPawnCombatComponent::StaticClass, TEXT("UPawnCombatComponent"), &Z_Registration_Info_UClass_UPawnCombatComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UPawnCombatComponent), 1017163423U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Work_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_Components_Combat_PawnCombatComponent_h_425982783(TEXT("/Script/SekiroProj"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Work_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_Components_Combat_PawnCombatComponent_h_547516228(TEXT("/Script/SekiroProj"),
 	Z_CompiledInDeferFile_FID_Work_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_Components_Combat_PawnCombatComponent_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Work_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_Components_Combat_PawnCombatComponent_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

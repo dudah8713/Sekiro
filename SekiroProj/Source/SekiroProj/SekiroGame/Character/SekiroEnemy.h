@@ -6,6 +6,7 @@
 #include "Character/SekiroCharacterBase.h"
 #include "SekiroEnemy.generated.h"
 
+class UEnemyCombatComponent;
 /**
  * 
  */
@@ -18,5 +19,13 @@ public:
 	ASekiroEnemy();
 
 protected:
+	virtual void PossessedBy(AController* NewController) override;
 	virtual void BeginPlay() override;
+
+private:
+	void InitEnemyStartUpData();
+	
+protected:
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category ="Combat")
+	TObjectPtr<UEnemyCombatComponent> EnemyCombatComponent;
 };

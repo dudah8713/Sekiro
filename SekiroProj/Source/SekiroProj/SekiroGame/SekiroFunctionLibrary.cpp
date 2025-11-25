@@ -29,3 +29,18 @@ void USekiroFunctionLibrary::AddGameplayTagToActorIfNone(AActor* InActor, FGamep
 		SekiroASC->AddLooseGameplayTag(TagToAdd);
 	}
 }
+
+bool USekiroFunctionLibrary::IsValidBlock(const AActor* InAttacker, const AActor* InDefener)
+{
+	check(InAttacker && InDefener)
+
+	const float DotResult = FVector::DotProduct(InAttacker->GetActorForwardVector(), InDefener->GetActorForwardVector());
+
+	return DotResult < -0.1f;
+}
+
+bool USekiroFunctionLibrary::NativeDoesActorHaveTag(AActor* InActor, FGameplayTag TagToCheck)
+{
+	USekiroAbilitySystemComponent* ASC = NativeGetSekiroASCFromActor(InActor);
+	return ASC->HasMatchingGameplayTag(TagToCheck);
+}

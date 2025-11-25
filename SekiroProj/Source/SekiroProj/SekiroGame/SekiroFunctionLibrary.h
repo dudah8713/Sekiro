@@ -24,4 +24,9 @@ public:
 
 	UFUNCTION(BlueprintCallable, Category = "FunctionLibrary")
 	static void AddGameplayTagToActorIfNone(AActor* InActor, FGameplayTag TagToAdd);
+
+	UFUNCTION(BlueprintPure, Category = "FunctionLibrary")
+	static bool IsValidBlock(const AActor* InAttacker, const AActor* InDefener);
+	
+	static bool NativeDoesActorHaveTag(AActor* InActor, FGameplayTag TagToCheck);
 };

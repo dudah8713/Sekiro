@@ -17,6 +17,7 @@ struct FGameplayTag;
 #define SEKIROPROJ_SekiroFunctionLibrary_generated_h
 
 #define FID_Work_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_SekiroFunctionLibrary_h_18_RPC_WRAPPERS_NO_PURE_DECLS \
+	DECLARE_FUNCTION(execIsValidBlock); \
 	DECLARE_FUNCTION(execAddGameplayTagToActorIfNone);
 
 
