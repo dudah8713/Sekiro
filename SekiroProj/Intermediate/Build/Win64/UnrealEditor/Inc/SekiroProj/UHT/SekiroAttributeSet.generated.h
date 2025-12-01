@@ -17,6 +17,8 @@ struct FGameplayAttributeData;
 #define SEKIROPROJ_SekiroAttributeSet_generated_h
 
 #define FID_Work_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_AbilitySystem_SekiroAttributeSet_h_21_RPC_WRAPPERS_NO_PURE_DECLS \
+	DECLARE_FUNCTION(execOnRep_DamageTaken); \
+	DECLARE_FUNCTION(execOnRep_AttackPower); \
 	DECLARE_FUNCTION(execOnRep_MaxPosture); \
 	DECLARE_FUNCTION(execOnRep_Posture); \
 	DECLARE_FUNCTION(execOnRep_MaxStamina); \
@@ -41,7 +43,9 @@ public: \
 		MaxStamina, \
 		Posture, \
 		MaxPosture, \
-		NETFIELD_REP_END=MaxPosture	}; \
+		AttackPower, \
+		DamageTaken, \
+		NETFIELD_REP_END=DamageTaken	}; \
 	NO_API virtual void ValidateGeneratedRepEnums(const TArray<struct FRepRecord>& ClassReps) const override; \
 private: \
 	REPLICATED_BASE_CLASS(USekiroAttributeSet) \

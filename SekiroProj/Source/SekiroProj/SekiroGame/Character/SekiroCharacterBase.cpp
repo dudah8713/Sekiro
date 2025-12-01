@@ -18,6 +18,11 @@ UAbilitySystemComponent* ASekiroCharacterBase::GetAbilitySystemComponent() const
 	return GetSekiroAbilitySystemComponent();
 }
 
+UPawnCombatComponent* ASekiroCharacterBase::GetPawnCombatComponent() const
+{
+	return nullptr;
+}
+
 void ASekiroCharacterBase::BeginPlay()
 {
 	Super::BeginPlay();

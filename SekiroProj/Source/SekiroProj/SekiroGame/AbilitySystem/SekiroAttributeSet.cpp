@@ -8,10 +8,10 @@
 
 USekiroAttributeSet::USekiroAttributeSet()
 {
-	InitHealth(100.f);
-	InitMaxHealth(200.f);
-	InitStamina(50.0f);
-	InitMaxStamina(100.0f);
+	//InitHealth(100.f);
+	//InitMaxHealth(200.f);
+	//InitStamina(50.0f);
+	//InitMaxStamina(50.0f);
 }
 
 void USekiroAttributeSet::GetLifetimeReplicatedProps(TArray<class FLifetimeProperty>& OutLifetimeProps) const
@@ -24,6 +24,8 @@ void USekiroAttributeSet::GetLifetimeReplicatedProps(TArray<class FLifetimePrope
 	DOREPLIFETIME_CONDITION_NOTIFY(USekiroAttributeSet, MaxStamina, COND_None, REPNOTIFY_Always)
 	DOREPLIFETIME_CONDITION_NOTIFY(USekiroAttributeSet, Posture, COND_None, REPNOTIFY_Always)
 	DOREPLIFETIME_CONDITION_NOTIFY(USekiroAttributeSet, MaxPosture, COND_None, REPNOTIFY_Always)
+	DOREPLIFETIME_CONDITION_NOTIFY(USekiroAttributeSet, AttackPower, COND_None, REPNOTIFY_Always)
+	DOREPLIFETIME_CONDITION_NOTIFY(USekiroAttributeSet, DamageTaken, COND_None, REPNOTIFY_Always)
 }
 
 void USekiroAttributeSet::OnRep_Health(const FGameplayAttributeData& OldHealth) const
@@ -54,6 +56,16 @@ void USekiroAttributeSet::OnRep_Posture(const FGameplayAttributeData& OldPosture
 void USekiroAttributeSet::OnRep_MaxPosture(const FGameplayAttributeData& OldMaxPosture) const
 {
 	GAMEPLAYATTRIBUTE_REPNOTIFY(USekiroAttributeSet, MaxPosture, OldMaxPosture)
+}
+
+void USekiroAttributeSet::OnRep_AttackPower(const FGameplayAttributeData& OldAttackPower) const
+{
+	GAMEPLAYATTRIBUTE_REPNOTIFY(USekiroAttributeSet, AttackPower, OldAttackPower)
+}
+
+void USekiroAttributeSet::OnRep_DamageTaken(const FGameplayAttributeData& OldDamageTaken) const
+{
+	GAMEPLAYATTRIBUTE_REPNOTIFY(USekiroAttributeSet, DamageTaken, OldDamageTaken)
 }
 
 // void USekiroAttributeSet::PostGameplayEffectExecute(const struct FGameplayEffectModCallbackData& Data)

@@ -25,8 +25,9 @@ namespace SekiroGameplayTags
 	UE_DEFINE_GAMEPLAY_TAG(Player_Status_Blocking, "Player.Status.Blocking")
 
 	// Enemy Tags
+	UE_DEFINE_GAMEPLAY_TAG(EnemyTag_Weapon_Katana, "EnemyTag.Weapon.Katana")
 	UE_DEFINE_GAMEPLAY_TAG(Enemy_Status_UnBlocking, "Enemy.Status.UnBlocking")
-	
+
 	// Shared Tags
 	UE_DEFINE_GAMEPLAY_TAG(Shard_Event_MeleeHit, "Shard.Event.MeleeHit")
 	

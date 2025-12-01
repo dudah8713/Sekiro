@@ -12,6 +12,8 @@
             "c:\\program files\\epic games\\ue_5.5\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\gameplaytags\\uht\\gameplaytagcontainer.generated.h",
             "c:\\work\\sekiro\\sekiroproj\\source\\sekiroproj\\sekirogame\\sekirotypes\\sekiroenumtypes.h",
             "c:\\work\\sekiro\\sekiroproj\\intermediate\\build\\win64\\unrealeditor\\inc\\sekiroproj\\uht\\sekirofunctionlibrary.generated.h",
+            "c:\\program files\\epic games\\ue_5.5\\engine\\source\\runtime\\aimodule\\classes\\genericteamagentinterface.h",
+            "c:\\program files\\epic games\\ue_5.5\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\aimodule\\uht\\genericteamagentinterface.generated.h",
             "c:\\program files\\epic games\\ue_5.5\\engine\\plugins\\runtime\\gameplayabilities\\source\\gameplayabilities\\public\\abilitysystemblueprintlibrary.h",
             "c:\\program files\\epic games\\ue_5.5\\engine\\plugins\\runtime\\gameplayabilities\\source\\gameplayabilities\\public\\attributeset.h",
             "c:\\program files\\epic games\\ue_5.5\\engine\\plugins\\runtime\\gameplayabilities\\intermediate\\build\\win64\\unrealeditor\\inc\\gameplayabilities\\uht\\attributeset.generated.h",
@@ -66,7 +68,13 @@
             "c:\\program files\\epic games\\ue_5.5\\engine\\plugins\\runtime\\gameplayabilities\\source\\gameplayabilities\\public\\abilitysystemreplicationproxyinterface.h",
             "c:\\program files\\epic games\\ue_5.5\\engine\\plugins\\runtime\\gameplayabilities\\intermediate\\build\\win64\\unrealeditor\\inc\\gameplayabilities\\uht\\abilitysystemreplicationproxyinterface.generated.h",
             "c:\\program files\\epic games\\ue_5.5\\engine\\plugins\\runtime\\gameplayabilities\\intermediate\\build\\win64\\unrealeditor\\inc\\gameplayabilities\\uht\\abilitysystemcomponent.generated.h",
-            "c:\\work\\sekiro\\sekiroproj\\intermediate\\build\\win64\\unrealeditor\\inc\\sekiroproj\\uht\\sekiroabilitysystemcomponent.generated.h"
+            "c:\\work\\sekiro\\sekiroproj\\intermediate\\build\\win64\\unrealeditor\\inc\\sekiroproj\\uht\\sekiroabilitysystemcomponent.generated.h",
+            "c:\\work\\sekiro\\sekiroproj\\source\\sekiroproj\\sekirogame\\components\\combat\\pawncombatcomponent.h",
+            "c:\\work\\sekiro\\sekiroproj\\source\\sekiroproj\\sekirogame\\components\\pawnextensioncomponentbase.h",
+            "c:\\work\\sekiro\\sekiroproj\\intermediate\\build\\win64\\unrealeditor\\inc\\sekiroproj\\uht\\pawnextensioncomponentbase.generated.h",
+            "c:\\work\\sekiro\\sekiroproj\\intermediate\\build\\win64\\unrealeditor\\inc\\sekiroproj\\uht\\pawncombatcomponent.generated.h",
+            "c:\\work\\sekiro\\sekiroproj\\source\\sekiroproj\\sekirogame\\interface\\pawncombatinterface.h",
+            "c:\\work\\sekiro\\sekiroproj\\intermediate\\build\\win64\\unrealeditor\\inc\\sekiroproj\\uht\\pawncombatinterface.generated.h"
         ],
         "ImportedModules": [],
         "ImportedHeaderUnits": []

@@ -35,7 +35,7 @@ void UOverlayWidgetController::BindCallbacksToDependencies()
 	SekiroAttributeSet->GetStaminaAttribute()).AddUObject(this, &UOverlayWidgetController::StaminaChanged);
 
 	AbilitySystemComponent->GetGameplayAttributeValueChangeDelegate(
-	SekiroAttributeSet->GetMaxHealthAttribute()).AddUObject(this, &UOverlayWidgetController::MaxStaminaChanged);
+	SekiroAttributeSet->GetMaxStaminaAttribute()).AddUObject(this, &UOverlayWidgetController::MaxStaminaChanged);
 }
 
 void UOverlayWidgetController::HealthChanged(const FOnAttributeChangeData& Data) const

@@ -27,6 +27,10 @@ public:
 
 	virtual void SetupPlayerInputComponent(UInputComponent* PlayerInputComponent) override;
 
+	//~ Begin IPawnCombatInterface
+	virtual UPawnCombatComponent* GetPawnCombatComponent() const override;
+	//~ End IPawnCombatInterface
+	
 	FORCEINLINE UPlayerCombatComponent* GetPlayerCombatComponent() const {return PlayerCombatComponent;} 
 private:
 	void InitAbilityActorInfo();

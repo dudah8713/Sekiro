@@ -79,6 +79,11 @@ void ASekiroSamurai::SetupPlayerInputComponent(UInputComponent* PlayerInputCompo
 		&ThisClass::Input_AbilityInputPressed, &ThisClass::Input_AbilityInputReleased);
 }
 
+UPawnCombatComponent* ASekiroSamurai::GetPawnCombatComponent() const
+{
+	return PlayerCombatComponent;
+}
+
 void ASekiroSamurai::Input_AbilityInputPressed(const FGameplayTag InInputTag)
 {
 	SekiroASC->OnAbilityInputPressed(InInputTag);

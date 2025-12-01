@@ -7,4 +7,9 @@ enum class ESekiroConfirmType : uint8
 	No,
 };
 
-
+UENUM()
+enum class ESekiroValidType : uint8
+{
+	Valid,
+	Invalid
+};

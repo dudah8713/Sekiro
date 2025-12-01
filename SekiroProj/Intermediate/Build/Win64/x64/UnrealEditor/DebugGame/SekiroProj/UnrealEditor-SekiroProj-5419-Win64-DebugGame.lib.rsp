@@ -1,0 +1,13 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UnrealEditor-SekiroProj-5419-Win64-DebugGame.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"C:\Work\Sekiro\SekiroProj\Intermediate\Build\Win64\x64\SekiroProjEditor\DebugGame\UnrealEd\SharedPCH.UnrealEd.Project.NonOptimized.ValApi.Cpp20.h.obj"
+"C:\Work\Sekiro\SekiroProj\Intermediate\Build\Win64\x64\UnrealEditor\DebugGame\SekiroProj\Module.SekiroProj.cpp.obj"
+"C:\Work\Sekiro\SekiroProj\Intermediate\Build\Win64\x64\UnrealEditor\DebugGame\SekiroProj\DataAsset_EnemyStartUpData.cpp.obj"
+"C:\Work\Sekiro\SekiroProj\Intermediate\Build\Win64\x64\UnrealEditor\DebugGame\SekiroProj\Default.rc2.res"
+/OUT:"C:\Work\Sekiro\SekiroProj\Intermediate\Build\Win64\x64\UnrealEditor\DebugGame\SekiroProj\UnrealEditor-SekiroProj-5419-Win64-DebugGame.lib"

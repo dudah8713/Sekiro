@@ -1,4 +1,5 @@
 #include "Components/Combat/PawnCombatComponent.h"
+#include "Components/BoxComponent.h"
 #include "Items/Weapons/SekiroWeaponKatana.h"
 
 
@@ -36,6 +37,25 @@ ASekiroWeaponBase* UPawnCombatComponent::GetCharacterCurrentEquippedWeapon() con
 		return nullptr;
 	}
 	return GetCharacterCarriedWeaponByTag(CurrentEquippedWeaponTag);
+}
+
+void UPawnCombatComponent::ToggleWeaponCollision(bool bShouldEnable, EToggleDamageType ToggleDamageType)
+{
+	if (ToggleDamageType == EToggleDamageType::CurrentEquippedWeapon)
+	{
+		ASekiroWeaponBase* WeaponToToggle = GetCharacterCurrentEquippedWeapon();
+		check(WeaponToToggle)
+
+		if (bShouldEnable)
+		{
+			WeaponToToggle->GetWeaponCollisionBox()->SetCollisionEnabled(ECollisionEnabled::QueryOnly);
+		}
+		else
+		{
+			WeaponToToggle->GetWeaponCollisionBox()->SetCollisionEnabled(ECollisionEnabled::NoCollision);
+			OverlappedActors.Empty();
+		}
+	}
 }
 
 void UPawnCombatComponent::OnHitTargetActor(AActor* HitActor)

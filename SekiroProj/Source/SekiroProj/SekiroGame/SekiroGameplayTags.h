@@ -26,8 +26,9 @@ namespace SekiroGameplayTags
 	SEKIROPROJ_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(Player_Status_Blocking)
 
 	// Enemy Tags
+	SEKIROPROJ_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(EnemyTag_Weapon_Katana)
 	SEKIROPROJ_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(Enemy_Status_UnBlocking)
-
+	
 	// SHared Tags
 	SEKIROPROJ_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(Shard_Event_MeleeHit)
 	

@@ -18,6 +18,12 @@ class SEKIROPROJ_API ASekiroEnemy : public ASekiroCharacterBase
 public:
 	ASekiroEnemy();
 
+	//~ Begin IPawnCombatInterface
+	virtual UPawnCombatComponent* GetPawnCombatComponent() const override;
+	//~ End IPawnCombatInterface
+	
+	FORCEINLINE UEnemyCombatComponent* GetEnemyCombatComponent() const { return EnemyCombatComponent;}
+	
 protected:
 	virtual void PossessedBy(AController* NewController) override;
 	virtual void BeginPlay() override;

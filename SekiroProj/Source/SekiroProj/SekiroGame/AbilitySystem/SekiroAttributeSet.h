@@ -49,6 +49,14 @@ public:
 	FGameplayAttributeData MaxPosture;
 	ATTRIBUTE_ACCESSORS(USekiroAttributeSet, MaxPosture);
 
+	UPROPERTY(BlueprintReadOnly, ReplicatedUsing = OnRep_AttackPower, Category = "Attack Attributes")
+	FGameplayAttributeData AttackPower;
+	ATTRIBUTE_ACCESSORS(USekiroAttributeSet, AttackPower);
+
+	UPROPERTY(BlueprintReadOnly, ReplicatedUsing = OnRep_DamageTaken, Category = "Attack Attributes")
+	FGameplayAttributeData DamageTaken;
+	ATTRIBUTE_ACCESSORS(USekiroAttributeSet, DamageTaken);
+	
 	UPROPERTY(BlueprintReadOnly, Category = "Meta Attributes")
 	FGameplayAttributeData InComingDamage;
 	ATTRIBUTE_ACCESSORS(USekiroAttributeSet, InComingDamage);
@@ -71,6 +79,12 @@ public:
 	UFUNCTION()
 	void OnRep_MaxPosture(const FGameplayAttributeData& OldMaxPosture) const;
 
+	UFUNCTION()
+	void OnRep_AttackPower(const FGameplayAttributeData& OldAttackPower) const;
+	
+	UFUNCTION()
+	void OnRep_DamageTaken(const FGameplayAttributeData& OldDamageTaken) const;
+	
 	//UFUNCTION()
 	//virtual void PostGameplayEffectExecute(const struct FGameplayEffectModCallbackData& Data) override;
 };

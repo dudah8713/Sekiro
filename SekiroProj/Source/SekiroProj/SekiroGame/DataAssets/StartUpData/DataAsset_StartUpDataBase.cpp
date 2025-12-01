@@ -8,7 +8,7 @@ void UDataAsset_StartUpDataBase::GiveToAbilitySystemComponent(USekiroAbilitySyst
 	check(InASCtoGive)
 
 	GrantAbilities(ActivateOnGivenAbilities, InASCtoGive, ApplyLevel);
-
+	
 	if (!StartUpGameplayEffects.IsEmpty())
 	{
 		for (const TSubclassOf<UGameplayEffect>& EffectClass : StartUpGameplayEffects)

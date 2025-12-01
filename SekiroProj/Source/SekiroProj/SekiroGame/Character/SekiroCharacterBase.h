@@ -5,6 +5,7 @@
 #include "CoreMinimal.h"
 #include "AbilitySystemInterface.h"
 #include "GameFramework/Character.h"
+#include "Interface/PawnCombatInterface.h"
 #include "SekiroCharacterBase.generated.h"
 
 class USekiroAbilitySystemComponent;
@@ -13,17 +14,24 @@ class UGameplayAbility;
 class UDataAsset_StartUpDataBase;
 
 UCLASS(Abstract) //직접적인 월드 배치를 방지함
-class SEKIROPROJ_API ASekiroCharacterBase : public ACharacter, public IAbilitySystemInterface
+class SEKIROPROJ_API ASekiroCharacterBase : public ACharacter, public IAbilitySystemInterface, public IPawnCombatInterface
 {
 	GENERATED_BODY()
 
 public:
 	ASekiroCharacterBase();
-	
+
+	//~ Begin IAbilitySystemInterface 
 	virtual UAbilitySystemComponent* GetAbilitySystemComponent() const override;
 	USekiroAbilitySystemComponent* GetSekiroAbilitySystemComponent() const { return SekiroASC; }
+	//~ End IAbilitySystemInterface
+
+	//~ Begin IPawnCombatInterface
+	virtual UPawnCombatComponent* GetPawnCombatComponent() const override;
+	//~ End IPawnCombatInterface
+
 	
-	UAttributeSet* GetAttributeSet() { return AttributeSet; }
+	FORCEINLINE UAttributeSet* GetAttributeSet() { return AttributeSet; }
 	
 protected:
 	virtual void BeginPlay() override;

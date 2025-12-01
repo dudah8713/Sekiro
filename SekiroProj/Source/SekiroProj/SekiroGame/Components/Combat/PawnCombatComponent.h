@@ -8,6 +8,14 @@
 #include "PawnCombatComponent.generated.h"
 
 class ASekiroWeaponBase;
+
+UENUM(BlueprintType)
+enum class EToggleDamageType : uint8
+{
+	CurrentEquippedWeapon,
+	LeftHand,
+	RightHand
+};
 /**
  * 
  */
@@ -22,15 +30,19 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "Combat")
 	ASekiroWeaponBase* GetCharacterCarriedWeaponByTag(FGameplayTag InWeaponTagToGet) const;
 
-	UPROPERTY(BlueprintReadWrite, Category = "Combat")
-	FGameplayTag CurrentEquippedWeaponTag;
-
 	UFUNCTION(BlueprintCallable, Category = "Combat")
 	ASekiroWeaponBase* GetCharacterCurrentEquippedWeapon() const;
 
+	UFUNCTION(BlueprintCallable, Category = "Combat")
+	void ToggleWeaponCollision(bool bShouldEnable, EToggleDamageType ToggleDamageType = EToggleDamageType::CurrentEquippedWeapon);
+	
 	virtual void OnHitTargetActor(AActor* HitActor);
 	//virtual void OnWeaponPulledFromTargetActor(AActor* InteractedActor);
 
+public:
+	UPROPERTY(BlueprintReadWrite, Category = "Combat")
+	FGameplayTag CurrentEquippedWeaponTag;
+	
 protected:
 	UPROPERTY()
 	TArray<AActor*> OverlappedActors;

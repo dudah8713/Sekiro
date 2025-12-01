@@ -17,6 +17,7 @@ GAMEPLAYABILITIES_API UClass* Z_Construct_UClass_UAttributeSet_NoRegister();
 SEKIROPROJ_API UClass* Z_Construct_UClass_ASekiroCharacterBase();
 SEKIROPROJ_API UClass* Z_Construct_UClass_ASekiroCharacterBase_NoRegister();
 SEKIROPROJ_API UClass* Z_Construct_UClass_UDataAsset_StartUpDataBase_NoRegister();
+SEKIROPROJ_API UClass* Z_Construct_UClass_UPawnCombatInterface_NoRegister();
 SEKIROPROJ_API UClass* Z_Construct_UClass_USekiroAbilitySystemComponent_NoRegister();
 UPackage* Z_Construct_UPackage__Script_SekiroProj();
 // End Cross Module References
@@ -86,6 +87,7 @@ UObject* (*const Z_Construct_UClass_ASekiroCharacterBase_Statics::DependentSingl
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_ASekiroCharacterBase_Statics::DependentSingletons) < 16);
 const UECodeGen_Private::FImplementedInterfaceParams Z_Construct_UClass_ASekiroCharacterBase_Statics::InterfaceParams[] = {
 	{ Z_Construct_UClass_UAbilitySystemInterface_NoRegister, (int32)VTABLE_OFFSET(ASekiroCharacterBase, IAbilitySystemInterface), false },  // 2272790346
+	{ Z_Construct_UClass_UPawnCombatInterface_NoRegister, (int32)VTABLE_OFFSET(ASekiroCharacterBase, IPawnCombatInterface), false },  // 4176699264
 };
 const UECodeGen_Private::FClassParams Z_Construct_UClass_ASekiroCharacterBase_Statics::ClassParams = {
 	&ASekiroCharacterBase::StaticClass,
@@ -122,10 +124,10 @@ ASekiroCharacterBase::~ASekiroCharacterBase() {}
 struct Z_CompiledInDeferFile_FID_Work_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_Character_SekiroCharacterBase_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_ASekiroCharacterBase, ASekiroCharacterBase::StaticClass, TEXT("ASekiroCharacterBase"), &Z_Registration_Info_UClass_ASekiroCharacterBase, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ASekiroCharacterBase), 4259718998U) },
+		{ Z_Construct_UClass_ASekiroCharacterBase, ASekiroCharacterBase::StaticClass, TEXT("ASekiroCharacterBase"), &Z_Registration_Info_UClass_ASekiroCharacterBase, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ASekiroCharacterBase), 2320347294U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Work_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_Character_SekiroCharacterBase_h_557746338(TEXT("/Script/SekiroProj"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Work_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_Character_SekiroCharacterBase_h_1859389992(TEXT("/Script/SekiroProj"),
 	Z_CompiledInDeferFile_FID_Work_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_Character_SekiroCharacterBase_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Work_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_Character_SekiroCharacterBase_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

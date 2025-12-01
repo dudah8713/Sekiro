@@ -22,6 +22,11 @@ ASekiroEnemy::ASekiroEnemy()
 	EnemyCombatComponent = CreateDefaultSubobject<UEnemyCombatComponent>("EnemyCombatComponent");
 }
 
+UPawnCombatComponent* ASekiroEnemy::GetPawnCombatComponent() const
+{
+	return EnemyCombatComponent;
+}
+
 void ASekiroEnemy::PossessedBy(AController* NewController)
 {
 	Super::PossessedBy(NewController);

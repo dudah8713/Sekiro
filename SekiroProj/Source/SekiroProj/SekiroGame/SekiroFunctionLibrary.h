@@ -9,6 +9,7 @@
 #include "SekiroFunctionLibrary.generated.h"
 
 class USekiroAbilitySystemComponent;
+class UPawnCombatComponent;
 /**
  * 
  */
@@ -29,4 +30,12 @@ public:
 	static bool IsValidBlock(const AActor* InAttacker, const AActor* InDefener);
 	
 	static bool NativeDoesActorHaveTag(AActor* InActor, FGameplayTag TagToCheck);
+
+	UFUNCTION(BlueprintPure, Category = "FunctionLibrary")
+	static bool IsTargetPawnHostile(const APawn* QueryPawn, const APawn* TargetPawn);
+
+	static UPawnCombatComponent* NativeGetPawnCombatComponentFromActor(AActor* InActor);
+	
+	UFUNCTION(BlueprintCallable, Category = "FunctionLibrary", meta = (DisplayName = "Get Pawn Combat Component From Actor", ExpandEnumAsExecs = "OutValidType"))
+	static UPawnCombatComponent* BP_GetPawnCombatComponentFromActor(AActor* InActor, ESekiroValidType& OutValidType);
 };

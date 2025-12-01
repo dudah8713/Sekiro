@@ -2,12 +2,15 @@
 
 
 #include "SekiroFunctionLibrary.h"
-
+#include "GenericTeamAgentInterface.h"
 #include "AbilitySystemBlueprintLibrary.h"
 #include "AbilitySystem/SekiroAbilitySystemComponent.h"
+#include "Components/Combat/PawnCombatComponent.h"
+#include "Interface/PawnCombatInterface.h"
 
 USekiroAbilitySystemComponent* USekiroFunctionLibrary::NativeGetSekiroASCFromActor(AActor* InActor)
 {
+	check(InActor);
 	check(InActor);
 
 	return CastChecked<USekiroAbilitySystemComponent>(UAbilitySystemBlueprintLibrary::GetAbilitySystemComponent(InActor));
@@ -43,4 +46,38 @@ bool USekiroFunctionLibrary::NativeDoesActorHaveTag(AActor* InActor, FGameplayTa
 {
 	USekiroAbilitySystemComponent* ASC = NativeGetSekiroASCFromActor(InActor);
 	return ASC->HasMatchingGameplayTag(TagToCheck);
+}
+
+// Hostile 적대
+bool USekiroFunctionLibrary::IsTargetPawnHostile(const APawn* QueryPawn, const APawn* TargetPawn)
+{
+	check(QueryPawn && TargetPawn)
+
+	const IGenericTeamAgentInterface* QueryTeamAgent = Cast<IGenericTeamAgentInterface>(QueryPawn->GetController());
+	const IGenericTeamAgentInterface* TargetTeamAgent = Cast<IGenericTeamAgentInterface>(TargetPawn->GetController());
+
+	if (QueryTeamAgent && TargetTeamAgent)
+	{
+		return QueryTeamAgent->GetGenericTeamId() != TargetTeamAgent->GetGenericTeamId();
+	}
+	return false;
+}
+
+UPawnCombatComponent* USekiroFunctionLibrary::NativeGetPawnCombatComponentFromActor(AActor* InActor)
+{
+	check(InActor)
+
+	if (const IPawnCombatInterface* PawnCombatInterface = Cast<IPawnCombatInterface>(InActor))
+	{
+		return PawnCombatInterface->GetPawnCombatComponent();
+	}
+	return nullptr;
+}
+
+UPawnCombatComponent* USekiroFunctionLibrary::BP_GetPawnCombatComponentFromActor(AActor* InActor, ESekiroValidType& OutValidType)
+{
+	UPawnCombatComponent* CombatComponent = NativeGetPawnCombatComponentFromActor(InActor);
+	OutValidType = CombatComponent ? ESekiroValidType::Valid : ESekiroValidType::Invalid;
+
+	return CombatComponent;
 }
