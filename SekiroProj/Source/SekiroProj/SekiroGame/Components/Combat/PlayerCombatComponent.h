@@ -21,6 +21,9 @@ public:
 	UFUNCTION(BlueprintPure, Category = "Combat")
 	ASekiroWeaponKatana* GetPlayerCurrentEquippedWeapon() const;
 
+	virtual void OnHitTargetActor(AActor* HitActor) override;
+	virtual void OnWeaponPulledFromTargetActor(AActor* InteractedActor) override;
+	
 	//UFUNCTION(BlueprintPure, Category = "Combat")
 	//float GetPlayerCurrentEquippedWeaponDamageAtLevel(float InLevel) const;
 };

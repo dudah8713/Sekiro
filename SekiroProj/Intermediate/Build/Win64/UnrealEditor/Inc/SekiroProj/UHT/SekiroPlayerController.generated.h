@@ -14,18 +14,17 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define SEKIROPROJ_SekiroPlayerController_generated_h
 
-#define FID_Work_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_Player_SekiroPlayerController_h_15_INCLASS_NO_PURE_DECLS \
+#define FID_Work_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_Player_SekiroPlayerController_h_16_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesASekiroPlayerController(); \
 	friend struct Z_Construct_UClass_ASekiroPlayerController_Statics; \
 public: \
 	DECLARE_CLASS(ASekiroPlayerController, APlayerController, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/SekiroProj"), NO_API) \
-	DECLARE_SERIALIZER(ASekiroPlayerController)
+	DECLARE_SERIALIZER(ASekiroPlayerController) \
+	virtual UObject* _getUObject() const override { return const_cast<ASekiroPlayerController*>(this); }
 
 
-#define FID_Work_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_Player_SekiroPlayerController_h_15_ENHANCED_CONSTRUCTORS \
-	/** Standard constructor, called after all reflected properties have been initialized */ \
-	NO_API ASekiroPlayerController(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
+#define FID_Work_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_Player_SekiroPlayerController_h_16_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	ASekiroPlayerController(ASekiroPlayerController&&); \
@@ -33,16 +32,16 @@ private: \
 public: \
 	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, ASekiroPlayerController); \
 	DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ASekiroPlayerController); \
-	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(ASekiroPlayerController) \
+	DEFINE_DEFAULT_CONSTRUCTOR_CALL(ASekiroPlayerController) \
 	NO_API virtual ~ASekiroPlayerController();
 
 
-#define FID_Work_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_Player_SekiroPlayerController_h_12_PROLOG
-#define FID_Work_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_Player_SekiroPlayerController_h_15_GENERATED_BODY \
+#define FID_Work_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_Player_SekiroPlayerController_h_13_PROLOG
+#define FID_Work_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_Player_SekiroPlayerController_h_16_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Work_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_Player_SekiroPlayerController_h_15_INCLASS_NO_PURE_DECLS \
-	FID_Work_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_Player_SekiroPlayerController_h_15_ENHANCED_CONSTRUCTORS \
+	FID_Work_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_Player_SekiroPlayerController_h_16_INCLASS_NO_PURE_DECLS \
+	FID_Work_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_Player_SekiroPlayerController_h_16_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

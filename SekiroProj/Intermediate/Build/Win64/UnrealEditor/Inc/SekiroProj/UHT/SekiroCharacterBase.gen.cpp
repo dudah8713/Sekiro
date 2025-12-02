@@ -11,7 +11,6 @@ void EmptyLinkFunctionForGeneratedCodeSekiroCharacterBase() {}
 
 // Begin Cross Module References
 ENGINE_API UClass* Z_Construct_UClass_ACharacter();
-ENGINE_API UClass* Z_Construct_UClass_USkeletalMeshComponent_NoRegister();
 GAMEPLAYABILITIES_API UClass* Z_Construct_UClass_UAbilitySystemInterface_NoRegister();
 GAMEPLAYABILITIES_API UClass* Z_Construct_UClass_UAttributeSet_NoRegister();
 SEKIROPROJ_API UClass* Z_Construct_UClass_ASekiroCharacterBase();
@@ -39,14 +38,15 @@ struct Z_Construct_UClass_ASekiroCharacterBase_Statics
 		{ "IncludePath", "SekiroGame/Character/SekiroCharacterBase.h" },
 		{ "ModuleRelativePath", "SekiroGame/Character/SekiroCharacterBase.h" },
 	};
-	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Weapon_MetaData[] = {
-		{ "Category", "Combat" },
-		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "SekiroGame/Character/SekiroCharacterBase.h" },
-	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_SekiroASC_MetaData[] = {
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "//UPROPERTY(EditAnywhere, Category = \"Combat\")\n//TObjectPtr<USkeletalMeshComponent> Weapon;\n" },
+#endif
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "SekiroGame/Character/SekiroCharacterBase.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "UPROPERTY(EditAnywhere, Category = \"Combat\")\nTObjectPtr<USkeletalMeshComponent> Weapon;" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_AttributeSet_MetaData[] = {
 		{ "EditInline", "true" },
@@ -57,7 +57,6 @@ struct Z_Construct_UClass_ASekiroCharacterBase_Statics
 		{ "ModuleRelativePath", "SekiroGame/Character/SekiroCharacterBase.h" },
 	};
 #endif // WITH_METADATA
-	static const UECodeGen_Private::FObjectPropertyParams NewProp_Weapon;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_SekiroASC;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_AttributeSet;
 	static const UECodeGen_Private::FSoftObjectPropertyParams NewProp_CharacterStartUpData;
@@ -69,12 +68,10 @@ struct Z_Construct_UClass_ASekiroCharacterBase_Statics
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
 };
-const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ASekiroCharacterBase_Statics::NewProp_Weapon = { "Weapon", nullptr, (EPropertyFlags)0x0124080000080009, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ASekiroCharacterBase, Weapon), Z_Construct_UClass_USkeletalMeshComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Weapon_MetaData), NewProp_Weapon_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ASekiroCharacterBase_Statics::NewProp_SekiroASC = { "SekiroASC", nullptr, (EPropertyFlags)0x0124080000080008, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ASekiroCharacterBase, SekiroASC), Z_Construct_UClass_USekiroAbilitySystemComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_SekiroASC_MetaData), NewProp_SekiroASC_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ASekiroCharacterBase_Statics::NewProp_AttributeSet = { "AttributeSet", nullptr, (EPropertyFlags)0x0124080000080008, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ASekiroCharacterBase, AttributeSet), Z_Construct_UClass_UAttributeSet_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_AttributeSet_MetaData), NewProp_AttributeSet_MetaData) };
 const UECodeGen_Private::FSoftObjectPropertyParams Z_Construct_UClass_ASekiroCharacterBase_Statics::NewProp_CharacterStartUpData = { "CharacterStartUpData", nullptr, (EPropertyFlags)0x0024080000010015, UECodeGen_Private::EPropertyGenFlags::SoftObject, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ASekiroCharacterBase, CharacterStartUpData), Z_Construct_UClass_UDataAsset_StartUpDataBase_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_CharacterStartUpData_MetaData), NewProp_CharacterStartUpData_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ASekiroCharacterBase_Statics::PropPointers[] = {
-	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASekiroCharacterBase_Statics::NewProp_Weapon,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASekiroCharacterBase_Statics::NewProp_SekiroASC,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASekiroCharacterBase_Statics::NewProp_AttributeSet,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASekiroCharacterBase_Statics::NewProp_CharacterStartUpData,
@@ -124,10 +121,10 @@ ASekiroCharacterBase::~ASekiroCharacterBase() {}
 struct Z_CompiledInDeferFile_FID_Work_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_Character_SekiroCharacterBase_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_ASekiroCharacterBase, ASekiroCharacterBase::StaticClass, TEXT("ASekiroCharacterBase"), &Z_Registration_Info_UClass_ASekiroCharacterBase, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ASekiroCharacterBase), 2320347294U) },
+		{ Z_Construct_UClass_ASekiroCharacterBase, ASekiroCharacterBase::StaticClass, TEXT("ASekiroCharacterBase"), &Z_Registration_Info_UClass_ASekiroCharacterBase, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ASekiroCharacterBase), 3087699221U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Work_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_Character_SekiroCharacterBase_h_1859389992(TEXT("/Script/SekiroProj"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Work_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_Character_SekiroCharacterBase_h_1248104397(TEXT("/Script/SekiroProj"),
 	Z_CompiledInDeferFile_FID_Work_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_Character_SekiroCharacterBase_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Work_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_Character_SekiroCharacterBase_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

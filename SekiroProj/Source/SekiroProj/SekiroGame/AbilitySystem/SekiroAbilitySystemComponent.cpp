@@ -40,6 +40,10 @@ void USekiroAbilitySystemComponent::OnAbilityInputPressed(const FGameplayTag& In
 		else
 		{
 			TryActivateAbility(AbilitySpec.Handle);
+			if (AbilitySpec.IsActive())
+			{
+				InvokeReplicatedEvent(EAbilityGenericReplicatedEvent::InputPressed, AbilitySpec.Handle, AbilitySpec.ActivationInfo.GetActivationPredictionKey());
+			}
 		}
 	}
 }

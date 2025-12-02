@@ -4,7 +4,8 @@ namespace SekiroGameplayTags
 {
 	// Input Tags
 	UE_DEFINE_GAMEPLAY_TAG(InputTag_MeleeAttack_Katana, "InputTag.MeleeAttack.Katana")
-	UE_DEFINE_GAMEPLAY_TAG(InputTag_MeleeAttack_Katana_Combo, "InputTag.MeleeAttack.Katana.Combo")
+	UE_DEFINE_GAMEPLAY_TAG(InputTag_MeleeAttack_Katana_Combo_Start, "InputTag.MeleeAttack.Katana.Combo_Start")
+	UE_DEFINE_GAMEPLAY_TAG(InputTag_MeleeAttack_Katana_Combo_End, "InputTag.MeleeAttack.Katana.Combo_End")
 	UE_DEFINE_GAMEPLAY_TAG(InputTag_Guard_Katana, "InputTag.Guard.Katana")
 	
 	UE_DEFINE_GAMEPLAY_TAG(InputTag_Toggleable, "InputTag.Toggleable")

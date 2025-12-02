@@ -3,6 +3,7 @@
 #pragma once
 
 #include "CoreMinimal.h"
+#include "GenericTeamAgentInterface.h"
 #include "GameFramework/PlayerController.h"
 #include "SekiroPlayerController.generated.h"
 
@@ -10,13 +11,17 @@
  * 
  */
 UCLASS()
-class SEKIROPROJ_API ASekiroPlayerController : public APlayerController
+class SEKIROPROJ_API ASekiroPlayerController : public APlayerController, public IGenericTeamAgentInterface
 {
 	GENERATED_BODY()
 
 public:
-	//ASekiroPlayerController();
+	ASekiroPlayerController();
 
-protected:
-	//virtual void BeginPlay() override;
+	//~ Begin IGenericTeamAgentInterface
+	virtual FGenericTeamId GetGenericTeamId() const override;
+	//~ End IGenericTeamAgentInterface
+	
+private:
+	FGenericTeamId PlayerTeamId;
 };

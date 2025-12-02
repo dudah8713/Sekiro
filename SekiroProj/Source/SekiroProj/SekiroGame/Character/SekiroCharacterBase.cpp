@@ -8,9 +8,9 @@ ASekiroCharacterBase::ASekiroCharacterBase()
 {
 	PrimaryActorTick.bCanEverTick = false;
 
-	Weapon = CreateDefaultSubobject<USkeletalMeshComponent>("Weapon");
-	Weapon->SetupAttachment(GetMesh(), FName("katana_r"));
-	Weapon->SetCollisionEnabled(ECollisionEnabled::NoCollision);
+	//Weapon = CreateDefaultSubobject<USkeletalMeshComponent>("Weapon");
+	//Weapon->SetupAttachment(GetMesh(), FName("katana_r"));
+	//Weapon->SetCollisionEnabled(ECollisionEnabled::NoCollision);
 }
 
 UAbilitySystemComponent* ASekiroCharacterBase::GetAbilitySystemComponent() const

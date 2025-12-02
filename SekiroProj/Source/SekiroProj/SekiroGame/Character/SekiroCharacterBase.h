@@ -37,8 +37,8 @@ protected:
 	virtual void BeginPlay() override;
 	virtual void PossessedBy(AController* NewController) override;
 protected:
-	UPROPERTY(EditAnywhere, Category = "Combat")
-	TObjectPtr<USkeletalMeshComponent> Weapon;
+	//UPROPERTY(EditAnywhere, Category = "Combat")
+	//TObjectPtr<USkeletalMeshComponent> Weapon;
 
 	UPROPERTY()
 	TObjectPtr<USekiroAbilitySystemComponent> SekiroASC;

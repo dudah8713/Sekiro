@@ -3,12 +3,13 @@
 
 #include "Player/SekiroPlayerController.h"
 
-// ASekiroPlayerController::ASekiroPlayerController()
-// {
-// 	bReplicates = true;
-// }
+ASekiroPlayerController::ASekiroPlayerController()
+{
+	bReplicates = true;
+	PlayerTeamId = FGenericTeamId(0);
+}
 
-// void ASekiroPlayerController::BeginPlay()
-// {
-// 	Super::BeginPlay();
-// }
+FGenericTeamId ASekiroPlayerController::GetGenericTeamId() const
+{
+	return PlayerTeamId;
+}
