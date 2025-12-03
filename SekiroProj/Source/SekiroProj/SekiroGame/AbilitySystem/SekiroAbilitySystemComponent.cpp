@@ -2,6 +2,8 @@
 
 
 #include "AbilitySystem/SekiroAbilitySystemComponent.h"
+
+#include "AbilitySystemBlueprintLibrary.h"
 #include "DataAssets/StartUpData/DataAsset_StartUpDataBase.h"
 #include "SekiroGameplayTags.h"
 #include "SekiroTypes/SekiroStructTypes.h"
@@ -40,6 +42,14 @@ void USekiroAbilitySystemComponent::OnAbilityInputPressed(const FGameplayTag& In
 		else
 		{
 			TryActivateAbility(AbilitySpec.Handle);
+			
+			if (InInputTag.MatchesTag(SekiroGameplayTags::InputTag_MeleeAttack_Katana) && AbilitySpec.IsActive())
+			{
+				FGameplayEventData EventData;
+				UAbilitySystemBlueprintLibrary::SendGameplayEventToActor(
+					GetAvatarActor(),SekiroGameplayTags::Player_Event_ContinueCombo_Input, EventData
+					);
+			}
 			if (AbilitySpec.IsActive())
 			{
 				InvokeReplicatedEvent(EAbilityGenericReplicatedEvent::InputPressed, AbilitySpec.Handle, AbilitySpec.ActivationInfo.GetActivationPredictionKey());

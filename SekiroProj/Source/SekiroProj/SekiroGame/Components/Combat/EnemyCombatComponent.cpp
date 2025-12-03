@@ -31,7 +31,7 @@ void UEnemyCombatComponent::OnHitTargetActor(AActor* HitActor)
 	}
 	else
 	{
-		// 적에게 Shard_Event_MeleeHit 이벤트를 보냄
+		// 나(적)에게 Shard_Event_MeleeHit 이벤트를 보냄
 		UAbilitySystemBlueprintLibrary::SendGameplayEventToActor(GetOwningPawn(), SekiroGameplayTags::Shard_Event_MeleeHit, EventData);
 	}
 }

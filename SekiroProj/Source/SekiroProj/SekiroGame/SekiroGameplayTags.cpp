@@ -4,8 +4,8 @@ namespace SekiroGameplayTags
 {
 	// Input Tags
 	UE_DEFINE_GAMEPLAY_TAG(InputTag_MeleeAttack_Katana, "InputTag.MeleeAttack.Katana")
-	UE_DEFINE_GAMEPLAY_TAG(InputTag_MeleeAttack_Katana_Combo_Start, "InputTag.MeleeAttack.Katana.Combo_Start")
-	UE_DEFINE_GAMEPLAY_TAG(InputTag_MeleeAttack_Katana_Combo_End, "InputTag.MeleeAttack.Katana.Combo_End")
+	UE_DEFINE_GAMEPLAY_TAG(InputTag_MeleeAttack_Katana_Combo_Start, "InputTag.MeleeAttack.Katana.Combo.Start")
+	UE_DEFINE_GAMEPLAY_TAG(InputTag_MeleeAttack_Katana_Combo_End, "InputTag.MeleeAttack.Katana.Combo.End")
 	UE_DEFINE_GAMEPLAY_TAG(InputTag_Guard_Katana, "InputTag.Guard.Katana")
 	
 	UE_DEFINE_GAMEPLAY_TAG(InputTag_Toggleable, "InputTag.Toggleable")
@@ -20,6 +20,7 @@ namespace SekiroGameplayTags
 	
 	UE_DEFINE_GAMEPLAY_TAG(Player_Event_Eqip_Katana, "Player.Event.Equip.Katana")
 	UE_DEFINE_GAMEPLAY_TAG(Player_Event_SuccessfulBlock, "Player.Event.SuccessfulBlock")
+	UE_DEFINE_GAMEPLAY_TAG(Player_Event_ContinueCombo_Input, "Player.Event.ContinueCombo.Input")
 	
 	UE_DEFINE_GAMEPLAY_TAG(Player_Weapon_Katana, "Player.Weapon.Katana")
 	
@@ -31,6 +32,4 @@ namespace SekiroGameplayTags
 
 	// Shared Tags
 	UE_DEFINE_GAMEPLAY_TAG(Shard_Event_MeleeHit, "Shard.Event.MeleeHit")
-	
-	
 }
