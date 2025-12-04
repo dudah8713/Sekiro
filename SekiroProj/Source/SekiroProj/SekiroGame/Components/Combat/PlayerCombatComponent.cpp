@@ -35,3 +35,8 @@ void UPlayerCombatComponent::OnHitTargetActor(AActor* HitActor)
 void UPlayerCombatComponent::OnWeaponPulledFromTargetActor(AActor* InteractedActor)
 {
 }
+
+float UPlayerCombatComponent::GetPlayerCurrentEquippedWeaponDamageAtLevel(float InLevel) const
+{
+	return GetPlayerCurrentEquippedWeapon()->SamuraiWeaponData.WeaponBaseDamage.GetValueAtLevel(InLevel);
+}

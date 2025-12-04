@@ -53,6 +53,10 @@ public:
 	FGameplayAttributeData AttackPower;
 	ATTRIBUTE_ACCESSORS(USekiroAttributeSet, AttackPower);
 
+	UPROPERTY(BlueprintReadOnly, ReplicatedUsing = OnRep_DefensePower, Category = "Defense Attributes")
+	FGameplayAttributeData DefensePower;
+	ATTRIBUTE_ACCESSORS(USekiroAttributeSet, DefensePower);
+	
 	UPROPERTY(BlueprintReadOnly, ReplicatedUsing = OnRep_DamageTaken, Category = "Attack Attributes")
 	FGameplayAttributeData DamageTaken;
 	ATTRIBUTE_ACCESSORS(USekiroAttributeSet, DamageTaken);
@@ -81,6 +85,9 @@ public:
 
 	UFUNCTION()
 	void OnRep_AttackPower(const FGameplayAttributeData& OldAttackPower) const;
+
+	UFUNCTION()
+	void OnRep_DefensePower(const FGameplayAttributeData& OldDefensePower) const;
 	
 	UFUNCTION()
 	void OnRep_DamageTaken(const FGameplayAttributeData& OldDamageTaken) const;

@@ -2,6 +2,8 @@
 
 
 #include "SekiroGameplayAbility.h"
+
+#include "AbilitySystemBlueprintLibrary.h"
 #include "AbilitySystemComponent.h"
 #include "AbilitySystem/SekiroAbilitySystemComponent.h"
 #include "Components/Combat/PawnCombatComponent.h"
@@ -42,4 +44,26 @@ UPawnCombatComponent* USekiroGameplayAbility::GetPawnCombatComponentFromActorInf
 USekiroAbilitySystemComponent* USekiroGameplayAbility::GetSekiroASCFromActorInfo() const
 {
 	return Cast<USekiroAbilitySystemComponent>(CurrentActorInfo->AbilitySystemComponent);
+}
+
+FActiveGameplayEffectHandle USekiroGameplayAbility::NativeApplyEffectSpecHandleToTarget(AActor* TargetActor,
+	const FGameplayEffectSpecHandle& InSpecHandle)
+{
+	// Target ASC
+	UAbilitySystemComponent* TargetASC = UAbilitySystemBlueprintLibrary::GetAbilitySystemComponent(TargetActor);
+	check(TargetASC && InSpecHandle.IsValid())
+
+	return GetSekiroASCFromActorInfo()->ApplyGameplayEffectSpecToTarget(
+		*InSpecHandle.Data,
+		TargetASC);
+}
+
+FActiveGameplayEffectHandle USekiroGameplayAbility::BP_ApplyEffectSpecHandleToTarget(AActor* TargetActor,
+	const FGameplayEffectSpecHandle& InSpecHandle, ESekiroSuccessType& OutSuccessType)
+{
+	FActiveGameplayEffectHandle ActiveGameplayEffectHandle = NativeApplyEffectSpecHandleToTarget(TargetActor, InSpecHandle);
+
+	OutSuccessType = ActiveGameplayEffectHandle.WasSuccessfullyApplied() ? ESekiroSuccessType::Successful : ESekiroSuccessType::Failed;
+
+	return ActiveGameplayEffectHandle;
 }

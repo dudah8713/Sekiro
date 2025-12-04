@@ -26,6 +26,12 @@ public:
 	UFUNCTION(BlueprintPure, Category = "GAS|Ability")
 	UPlayerCombatComponent* GetPlayerCombatComponentFromActorInfo();
 
+	// Return GameplayEffectSpecHand
+	UFUNCTION(BlueprintPure, Category = "GAS|Ability")
+	FGameplayEffectSpecHandle MakeSamuraiDamageEffectSpedHandle(
+		TSubclassOf<UGameplayEffect> EffectClass, float InWeaponBaseDamage,
+		FGameplayTag InCurrentAttackTypeTag, int32 InUsedComboCount);
+	
 private:
 	TWeakObjectPtr<ASekiroSamurai> CachedSamuraiCharacter;
 	TWeakObjectPtr<ASekiroPlayerController> CachedSamuraiController;

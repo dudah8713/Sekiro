@@ -6,16 +6,22 @@
 
 #include "UObject/GeneratedCppIncludes.h"
 #include "SekiroProj/SekiroGame/AbilitySystem/Abilities/SekiroGameplayAbility.h"
+#include "GameplayAbilities/Public/ActiveGameplayEffectHandle.h"
+#include "GameplayAbilities/Public/GameplayEffectTypes.h"
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeSekiroGameplayAbility() {}
 
 // Begin Cross Module References
+ENGINE_API UClass* Z_Construct_UClass_AActor_NoRegister();
 GAMEPLAYABILITIES_API UClass* Z_Construct_UClass_UGameplayAbility();
+GAMEPLAYABILITIES_API UScriptStruct* Z_Construct_UScriptStruct_FActiveGameplayEffectHandle();
+GAMEPLAYABILITIES_API UScriptStruct* Z_Construct_UScriptStruct_FGameplayEffectSpecHandle();
 SEKIROPROJ_API UClass* Z_Construct_UClass_UPawnCombatComponent_NoRegister();
 SEKIROPROJ_API UClass* Z_Construct_UClass_USekiroAbilitySystemComponent_NoRegister();
 SEKIROPROJ_API UClass* Z_Construct_UClass_USekiroGameplayAbility();
 SEKIROPROJ_API UClass* Z_Construct_UClass_USekiroGameplayAbility_NoRegister();
 SEKIROPROJ_API UEnum* Z_Construct_UEnum_SekiroProj_ESekiroAbilityActivationPolicy();
+SEKIROPROJ_API UEnum* Z_Construct_UEnum_SekiroProj_ESekiroSuccessType();
 UPackage* Z_Construct_UPackage__Script_SekiroProj();
 // End Cross Module References
 
@@ -70,6 +76,71 @@ UEnum* Z_Construct_UEnum_SekiroProj_ESekiroAbilityActivationPolicy()
 	return Z_Registration_Info_UEnum_ESekiroAbilityActivationPolicy.InnerSingleton;
 }
 // End Enum ESekiroAbilityActivationPolicy
+
+// Begin Class USekiroGameplayAbility Function BP_ApplyEffectSpecHandleToTarget
+struct Z_Construct_UFunction_USekiroGameplayAbility_BP_ApplyEffectSpecHandleToTarget_Statics
+{
+	struct SekiroGameplayAbility_eventBP_ApplyEffectSpecHandleToTarget_Parms
+	{
+		AActor* TargetActor;
+		FGameplayEffectSpecHandle InSpecHandle;
+		ESekiroSuccessType OutSuccessType;
+		FActiveGameplayEffectHandle ReturnValue;
+	};
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "Category", "GAS|Ability" },
+		{ "DisplayName", "Apply Gameplay Effect Spec Handle to Target" },
+		{ "ExpandEnumAsExecs", "OutSuccessType" },
+		{ "ModuleRelativePath", "SekiroGame/AbilitySystem/Abilities/SekiroGameplayAbility.h" },
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_InSpecHandle_MetaData[] = {
+		{ "NativeConst", "" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_TargetActor;
+	static const UECodeGen_Private::FStructPropertyParams NewProp_InSpecHandle;
+	static const UECodeGen_Private::FBytePropertyParams NewProp_OutSuccessType_Underlying;
+	static const UECodeGen_Private::FEnumPropertyParams NewProp_OutSuccessType;
+	static const UECodeGen_Private::FStructPropertyParams NewProp_ReturnValue;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_USekiroGameplayAbility_BP_ApplyEffectSpecHandleToTarget_Statics::NewProp_TargetActor = { "TargetActor", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(SekiroGameplayAbility_eventBP_ApplyEffectSpecHandleToTarget_Parms, TargetActor), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_USekiroGameplayAbility_BP_ApplyEffectSpecHandleToTarget_Statics::NewProp_InSpecHandle = { "InSpecHandle", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(SekiroGameplayAbility_eventBP_ApplyEffectSpecHandleToTarget_Parms, InSpecHandle), Z_Construct_UScriptStruct_FGameplayEffectSpecHandle, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_InSpecHandle_MetaData), NewProp_InSpecHandle_MetaData) }; // 3383902265
+const UECodeGen_Private::FBytePropertyParams Z_Construct_UFunction_USekiroGameplayAbility_BP_ApplyEffectSpecHandleToTarget_Statics::NewProp_OutSuccessType_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_USekiroGameplayAbility_BP_ApplyEffectSpecHandleToTarget_Statics::NewProp_OutSuccessType = { "OutSuccessType", nullptr, (EPropertyFlags)0x0010000000000180, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(SekiroGameplayAbility_eventBP_ApplyEffectSpecHandleToTarget_Parms, OutSuccessType), Z_Construct_UEnum_SekiroProj_ESekiroSuccessType, METADATA_PARAMS(0, nullptr) }; // 135355370
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_USekiroGameplayAbility_BP_ApplyEffectSpecHandleToTarget_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(SekiroGameplayAbility_eventBP_ApplyEffectSpecHandleToTarget_Parms, ReturnValue), Z_Construct_UScriptStruct_FActiveGameplayEffectHandle, METADATA_PARAMS(0, nullptr) }; // 290910411
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_USekiroGameplayAbility_BP_ApplyEffectSpecHandleToTarget_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_USekiroGameplayAbility_BP_ApplyEffectSpecHandleToTarget_Statics::NewProp_TargetActor,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_USekiroGameplayAbility_BP_ApplyEffectSpecHandleToTarget_Statics::NewProp_InSpecHandle,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_USekiroGameplayAbility_BP_ApplyEffectSpecHandleToTarget_Statics::NewProp_OutSuccessType_Underlying,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_USekiroGameplayAbility_BP_ApplyEffectSpecHandleToTarget_Statics::NewProp_OutSuccessType,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_USekiroGameplayAbility_BP_ApplyEffectSpecHandleToTarget_Statics::NewProp_ReturnValue,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_USekiroGameplayAbility_BP_ApplyEffectSpecHandleToTarget_Statics::PropPointers) < 2048);
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_USekiroGameplayAbility_BP_ApplyEffectSpecHandleToTarget_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_USekiroGameplayAbility, nullptr, "BP_ApplyEffectSpecHandleToTarget", nullptr, nullptr, Z_Construct_UFunction_USekiroGameplayAbility_BP_ApplyEffectSpecHandleToTarget_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_USekiroGameplayAbility_BP_ApplyEffectSpecHandleToTarget_Statics::PropPointers), sizeof(Z_Construct_UFunction_USekiroGameplayAbility_BP_ApplyEffectSpecHandleToTarget_Statics::SekiroGameplayAbility_eventBP_ApplyEffectSpecHandleToTarget_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04480401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_USekiroGameplayAbility_BP_ApplyEffectSpecHandleToTarget_Statics::Function_MetaDataParams), Z_Construct_UFunction_USekiroGameplayAbility_BP_ApplyEffectSpecHandleToTarget_Statics::Function_MetaDataParams) };
+static_assert(sizeof(Z_Construct_UFunction_USekiroGameplayAbility_BP_ApplyEffectSpecHandleToTarget_Statics::SekiroGameplayAbility_eventBP_ApplyEffectSpecHandleToTarget_Parms) < MAX_uint16);
+UFunction* Z_Construct_UFunction_USekiroGameplayAbility_BP_ApplyEffectSpecHandleToTarget()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_USekiroGameplayAbility_BP_ApplyEffectSpecHandleToTarget_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(USekiroGameplayAbility::execBP_ApplyEffectSpecHandleToTarget)
+{
+	P_GET_OBJECT(AActor,Z_Param_TargetActor);
+	P_GET_STRUCT_REF(FGameplayEffectSpecHandle,Z_Param_Out_InSpecHandle);
+	P_GET_ENUM_REF(ESekiroSuccessType,Z_Param_Out_OutSuccessType);
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	*(FActiveGameplayEffectHandle*)Z_Param__Result=P_THIS->BP_ApplyEffectSpecHandleToTarget(Z_Param_TargetActor,Z_Param_Out_InSpecHandle,(ESekiroSuccessType&)(Z_Param_Out_OutSuccessType));
+	P_NATIVE_END;
+}
+// End Class USekiroGameplayAbility Function BP_ApplyEffectSpecHandleToTarget
 
 // Begin Class USekiroGameplayAbility Function GetPawnCombatComponentFromActorInfo
 struct Z_Construct_UFunction_USekiroGameplayAbility_GetPawnCombatComponentFromActorInfo_Statics
@@ -166,6 +237,7 @@ void USekiroGameplayAbility::StaticRegisterNativesUSekiroGameplayAbility()
 {
 	UClass* Class = USekiroGameplayAbility::StaticClass();
 	static const FNameNativePtrPair Funcs[] = {
+		{ "BP_ApplyEffectSpecHandleToTarget", &USekiroGameplayAbility::execBP_ApplyEffectSpecHandleToTarget },
 		{ "GetPawnCombatComponentFromActorInfo", &USekiroGameplayAbility::execGetPawnCombatComponentFromActorInfo },
 		{ "GetSekiroASCFromActorInfo", &USekiroGameplayAbility::execGetSekiroASCFromActorInfo },
 	};
@@ -196,6 +268,7 @@ struct Z_Construct_UClass_USekiroGameplayAbility_Statics
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
+		{ &Z_Construct_UFunction_USekiroGameplayAbility_BP_ApplyEffectSpecHandleToTarget, "BP_ApplyEffectSpecHandleToTarget" }, // 346701453
 		{ &Z_Construct_UFunction_USekiroGameplayAbility_GetPawnCombatComponentFromActorInfo, "GetPawnCombatComponentFromActorInfo" }, // 3696613973
 		{ &Z_Construct_UFunction_USekiroGameplayAbility_GetSekiroASCFromActorInfo, "GetSekiroASCFromActorInfo" }, // 267861187
 	};
@@ -256,10 +329,10 @@ struct Z_CompiledInDeferFile_FID_Work_Sekiro_SekiroProj_Source_SekiroProj_Sekiro
 		{ ESekiroAbilityActivationPolicy_StaticEnum, TEXT("ESekiroAbilityActivationPolicy"), &Z_Registration_Info_UEnum_ESekiroAbilityActivationPolicy, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 2271476337U) },
 	};
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_USekiroGameplayAbility, USekiroGameplayAbility::StaticClass, TEXT("USekiroGameplayAbility"), &Z_Registration_Info_UClass_USekiroGameplayAbility, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(USekiroGameplayAbility), 2197065023U) },
+		{ Z_Construct_UClass_USekiroGameplayAbility, USekiroGameplayAbility::StaticClass, TEXT("USekiroGameplayAbility"), &Z_Registration_Info_UClass_USekiroGameplayAbility, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(USekiroGameplayAbility), 895052744U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Work_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_AbilitySystem_Abilities_SekiroGameplayAbility_h_139981485(TEXT("/Script/SekiroProj"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Work_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_AbilitySystem_Abilities_SekiroGameplayAbility_h_1778789171(TEXT("/Script/SekiroProj"),
 	Z_CompiledInDeferFile_FID_Work_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_AbilitySystem_Abilities_SekiroGameplayAbility_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Work_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_AbilitySystem_Abilities_SekiroGameplayAbility_h_Statics::ClassInfo),
 	nullptr, 0,
 	Z_CompiledInDeferFile_FID_Work_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_AbilitySystem_Abilities_SekiroGameplayAbility_h_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Work_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_AbilitySystem_Abilities_SekiroGameplayAbility_h_Statics::EnumInfo));

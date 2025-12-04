@@ -24,6 +24,8 @@ namespace SekiroGameplayTags
 	SEKIROPROJ_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(Player_Event_ContinueCombo_Input)
 	
 	SEKIROPROJ_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(Player_Weapon_Katana)
+	SEKIROPROJ_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(Player_SetByCaller_AttackType_Light)
+	SEKIROPROJ_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(Player_SetByCaller_AttackType_Heavy)
 	
 	SEKIROPROJ_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(Player_Status_Blocking)
 
@@ -31,7 +33,8 @@ namespace SekiroGameplayTags
 	SEKIROPROJ_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(EnemyTag_Weapon_Katana)
 	SEKIROPROJ_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(Enemy_Status_UnBlocking)
 	
-	// SHared Tags
+	// Shared Tags
 	SEKIROPROJ_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(Shard_Event_MeleeHit)
+	SEKIROPROJ_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(Shard_SetByCaller_Base_Damage);
 	
 }

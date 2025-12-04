@@ -35,4 +35,12 @@ enum class ESekiroValidType : uint8;
 template<> struct TIsUEnumClass<ESekiroValidType> { enum { Value = true }; };
 template<> SEKIROPROJ_API UEnum* StaticEnum<ESekiroValidType>();
 
+#define FOREACH_ENUM_ESEKIROSUCCESSTYPE(op) \
+	op(ESekiroSuccessType::Successful) \
+	op(ESekiroSuccessType::Failed) 
+
+enum class ESekiroSuccessType : uint8;
+template<> struct TIsUEnumClass<ESekiroSuccessType> { enum { Value = true }; };
+template<> SEKIROPROJ_API UEnum* StaticEnum<ESekiroSuccessType>();
+
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

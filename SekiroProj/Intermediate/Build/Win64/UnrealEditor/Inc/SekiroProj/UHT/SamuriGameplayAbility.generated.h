@@ -11,13 +11,17 @@
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 class ASekiroPlayerController;
 class ASekiroSamurai;
+class UGameplayEffect;
 class UPlayerCombatComponent;
+struct FGameplayEffectSpecHandle;
+struct FGameplayTag;
 #ifdef SEKIROPROJ_SamuriGameplayAbility_generated_h
 #error "SamuriGameplayAbility.generated.h already included, missing '#pragma once' in SamuriGameplayAbility.h"
 #endif
 #define SEKIROPROJ_SamuriGameplayAbility_generated_h
 
 #define FID_Work_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_AbilitySystem_Abilities_SamuriGameplayAbility_h_18_RPC_WRAPPERS_NO_PURE_DECLS \
+	DECLARE_FUNCTION(execMakeSamuraiDamageEffectSpedHandle); \
 	DECLARE_FUNCTION(execGetPlayerCombatComponentFromActorInfo); \
 	DECLARE_FUNCTION(execGetPlayerControllerFromActorInfo); \
 	DECLARE_FUNCTION(execGetSamuraiCharacterFromActorInfo);

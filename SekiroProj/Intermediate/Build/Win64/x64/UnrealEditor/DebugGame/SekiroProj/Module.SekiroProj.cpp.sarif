@@ -3,7 +3,30 @@
     "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
     "runs": [
         {
-            "results": [],
+            "results": [
+                {
+                    "ruleId": "C4996",
+                    "message": {
+                        "text": "'FGameplayAbilitySpec::ActivationInfo': ActivationInfo on the Spec only applies to NonInstanced abilities (which are now deprecated; instanced abilities have their own per-instance CurrentActivationInfo) Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile."
+                    },
+                    "analysisTarget": {
+                        "uri": "file:///C:/Work/Sekiro/SekiroProj/Intermediate/Build/Win64/x64/UnrealEditor/DebugGame/SekiroProj/Module.SekiroProj.cpp"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "file:///C:/Work/Sekiro/SekiroProj/Source/SekiroProj/SekiroGame/AbilitySystem/SekiroAbilitySystemComponent.cpp"
+                                },
+                                "region": {
+                                    "startLine": 55,
+                                    "startColumn": 104
+                                }
+                            }
+                        }
+                    ]
+                }
+            ],
             "tool": {
                 "driver": {
                     "name": "MSVC",

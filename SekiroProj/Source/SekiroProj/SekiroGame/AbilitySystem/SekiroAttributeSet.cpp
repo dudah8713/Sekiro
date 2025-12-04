@@ -25,6 +25,7 @@ void USekiroAttributeSet::GetLifetimeReplicatedProps(TArray<class FLifetimePrope
 	DOREPLIFETIME_CONDITION_NOTIFY(USekiroAttributeSet, Posture, COND_None, REPNOTIFY_Always)
 	DOREPLIFETIME_CONDITION_NOTIFY(USekiroAttributeSet, MaxPosture, COND_None, REPNOTIFY_Always)
 	DOREPLIFETIME_CONDITION_NOTIFY(USekiroAttributeSet, AttackPower, COND_None, REPNOTIFY_Always)
+	DOREPLIFETIME_CONDITION_NOTIFY(USekiroAttributeSet, DefensePower, COND_None, REPNOTIFY_Always)
 	DOREPLIFETIME_CONDITION_NOTIFY(USekiroAttributeSet, DamageTaken, COND_None, REPNOTIFY_Always)
 }
 
@@ -61,6 +62,11 @@ void USekiroAttributeSet::OnRep_MaxPosture(const FGameplayAttributeData& OldMaxP
 void USekiroAttributeSet::OnRep_AttackPower(const FGameplayAttributeData& OldAttackPower) const
 {
 	GAMEPLAYATTRIBUTE_REPNOTIFY(USekiroAttributeSet, AttackPower, OldAttackPower)
+}
+
+void USekiroAttributeSet::OnRep_DefensePower(const FGameplayAttributeData& OldDefensePower) const
+{
+	GAMEPLAYATTRIBUTE_REPNOTIFY(USekiroAttributeSet, DefensePower, OldDefensePower)
 }
 
 void USekiroAttributeSet::OnRep_DamageTaken(const FGameplayAttributeData& OldDamageTaken) const

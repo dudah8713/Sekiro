@@ -4,7 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "Abilities/GameplayAbility.h"
-
+#include "SekiroTypes/SekiroEnumTypes.h"
 #include "SekiroGameplayAbility.generated.h"
 
 class ASekiroSamurai;
@@ -40,4 +40,8 @@ protected:
 	UPROPERTY(EditDefaultsOnly, Category ="SekiroAbility")
 	ESekiroAbilityActivationPolicy AbilityActivationPolicy = ESekiroAbilityActivationPolicy::OnTriggered;
 
+	FActiveGameplayEffectHandle NativeApplyEffectSpecHandleToTarget(AActor* TargetActor, const FGameplayEffectSpecHandle& InSpecHandle);
+
+	UFUNCTION(BlueprintCallable, Category = "GAS|Ability", meta = (DisplayName = "Apply Gameplay Effect Spec Handle to Target", ExpandEnumAsExecs = "OutSuccessType"))
+	FActiveGameplayEffectHandle BP_ApplyEffectSpecHandleToTarget(AActor* TargetActor, const FGameplayEffectSpecHandle& InSpecHandle, ESekiroSuccessType& OutSuccessType);
 };

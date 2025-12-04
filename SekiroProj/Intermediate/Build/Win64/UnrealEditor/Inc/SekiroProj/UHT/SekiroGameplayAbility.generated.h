@@ -9,14 +9,19 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+class AActor;
 class UPawnCombatComponent;
 class USekiroAbilitySystemComponent;
+enum class ESekiroSuccessType : uint8;
+struct FActiveGameplayEffectHandle;
+struct FGameplayEffectSpecHandle;
 #ifdef SEKIROPROJ_SekiroGameplayAbility_generated_h
 #error "SekiroGameplayAbility.generated.h already included, missing '#pragma once' in SekiroGameplayAbility.h"
 #endif
 #define SEKIROPROJ_SekiroGameplayAbility_generated_h
 
 #define FID_Work_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_AbilitySystem_Abilities_SekiroGameplayAbility_h_27_RPC_WRAPPERS_NO_PURE_DECLS \
+	DECLARE_FUNCTION(execBP_ApplyEffectSpecHandleToTarget); \
 	DECLARE_FUNCTION(execGetSekiroASCFromActorInfo); \
 	DECLARE_FUNCTION(execGetPawnCombatComponentFromActorInfo);
 

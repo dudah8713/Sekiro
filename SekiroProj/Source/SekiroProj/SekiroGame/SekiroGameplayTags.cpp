@@ -23,6 +23,8 @@ namespace SekiroGameplayTags
 	UE_DEFINE_GAMEPLAY_TAG(Player_Event_ContinueCombo_Input, "Player.Event.ContinueCombo.Input")
 	
 	UE_DEFINE_GAMEPLAY_TAG(Player_Weapon_Katana, "Player.Weapon.Katana")
+	UE_DEFINE_GAMEPLAY_TAG(Player_SetByCaller_AttackType_Light, "Player.SetByCaller.AttackType.Light")
+	UE_DEFINE_GAMEPLAY_TAG(Player_SetByCaller_AttackType_Heavy, "Player.SetByCaller.AttackType.Heavy")
 	
 	UE_DEFINE_GAMEPLAY_TAG(Player_Status_Blocking, "Player.Status.Blocking")
 
@@ -32,4 +34,5 @@ namespace SekiroGameplayTags
 
 	// Shared Tags
 	UE_DEFINE_GAMEPLAY_TAG(Shard_Event_MeleeHit, "Shard.Event.MeleeHit")
+	UE_DEFINE_GAMEPLAY_TAG(Shard_SetByCaller_Base_Damage, "Shard.SetByCaller.Base.Damage")
 }

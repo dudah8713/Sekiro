@@ -155,7 +155,7 @@ struct Z_Construct_UClass_ASekiroWeaponKatana_Statics
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
 };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_ASekiroWeaponKatana_Statics::NewProp_SamuraiWeaponData = { "SamuraiWeaponData", nullptr, (EPropertyFlags)0x0010000000010015, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ASekiroWeaponKatana, SamuraiWeaponData), Z_Construct_UScriptStruct_FSekiroWeaponData, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_SamuraiWeaponData_MetaData), NewProp_SamuraiWeaponData_MetaData) }; // 1686841929
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_ASekiroWeaponKatana_Statics::NewProp_SamuraiWeaponData = { "SamuraiWeaponData", nullptr, (EPropertyFlags)0x0010000000010015, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ASekiroWeaponKatana, SamuraiWeaponData), Z_Construct_UScriptStruct_FSekiroWeaponData, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_SamuraiWeaponData_MetaData), NewProp_SamuraiWeaponData_MetaData) }; // 1480514112
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ASekiroWeaponKatana_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASekiroWeaponKatana_Statics::NewProp_SamuraiWeaponData,
 };
@@ -201,10 +201,10 @@ ASekiroWeaponKatana::~ASekiroWeaponKatana() {}
 struct Z_CompiledInDeferFile_FID_Work_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_Items_Weapons_SekiroWeaponKatana_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_ASekiroWeaponKatana, ASekiroWeaponKatana::StaticClass, TEXT("ASekiroWeaponKatana"), &Z_Registration_Info_UClass_ASekiroWeaponKatana, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ASekiroWeaponKatana), 4292114120U) },
+		{ Z_Construct_UClass_ASekiroWeaponKatana, ASekiroWeaponKatana::StaticClass, TEXT("ASekiroWeaponKatana"), &Z_Registration_Info_UClass_ASekiroWeaponKatana, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ASekiroWeaponKatana), 2450306525U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Work_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_Items_Weapons_SekiroWeaponKatana_h_4178658391(TEXT("/Script/SekiroProj"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Work_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_Items_Weapons_SekiroWeaponKatana_h_3833396763(TEXT("/Script/SekiroProj"),
 	Z_CompiledInDeferFile_FID_Work_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_Items_Weapons_SekiroWeaponKatana_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Work_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_Items_Weapons_SekiroWeaponKatana_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

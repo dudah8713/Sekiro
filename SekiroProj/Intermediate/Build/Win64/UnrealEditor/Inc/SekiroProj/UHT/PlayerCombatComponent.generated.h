@@ -17,6 +17,7 @@ struct FGameplayTag;
 #define SEKIROPROJ_PlayerCombatComponent_generated_h
 
 #define FID_Work_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_Components_Combat_PlayerCombatComponent_h_16_RPC_WRAPPERS_NO_PURE_DECLS \
+	DECLARE_FUNCTION(execGetPlayerCurrentEquippedWeaponDamageAtLevel); \
 	DECLARE_FUNCTION(execGetPlayerCurrentEquippedWeapon); \
 	DECLARE_FUNCTION(execGetPlayerCarriedWeaponByTag);
 

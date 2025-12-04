@@ -11,6 +11,7 @@ void EmptyLinkFunctionForGeneratedCodeSekiroEnumTypes() {}
 
 // Begin Cross Module References
 SEKIROPROJ_API UEnum* Z_Construct_UEnum_SekiroProj_ESekiroConfirmType();
+SEKIROPROJ_API UEnum* Z_Construct_UEnum_SekiroProj_ESekiroSuccessType();
 SEKIROPROJ_API UEnum* Z_Construct_UEnum_SekiroProj_ESekiroValidType();
 UPackage* Z_Construct_UPackage__Script_SekiroProj();
 // End Cross Module References
@@ -117,15 +118,67 @@ UEnum* Z_Construct_UEnum_SekiroProj_ESekiroValidType()
 }
 // End Enum ESekiroValidType
 
+// Begin Enum ESekiroSuccessType
+static FEnumRegistrationInfo Z_Registration_Info_UEnum_ESekiroSuccessType;
+static UEnum* ESekiroSuccessType_StaticEnum()
+{
+	if (!Z_Registration_Info_UEnum_ESekiroSuccessType.OuterSingleton)
+	{
+		Z_Registration_Info_UEnum_ESekiroSuccessType.OuterSingleton = GetStaticEnum(Z_Construct_UEnum_SekiroProj_ESekiroSuccessType, (UObject*)Z_Construct_UPackage__Script_SekiroProj(), TEXT("ESekiroSuccessType"));
+	}
+	return Z_Registration_Info_UEnum_ESekiroSuccessType.OuterSingleton;
+}
+template<> SEKIROPROJ_API UEnum* StaticEnum<ESekiroSuccessType>()
+{
+	return ESekiroSuccessType_StaticEnum();
+}
+struct Z_Construct_UEnum_SekiroProj_ESekiroSuccessType_Statics
+{
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Enum_MetaDataParams[] = {
+		{ "Failed.Name", "ESekiroSuccessType::Failed" },
+		{ "ModuleRelativePath", "SekiroGame/SekiroTypes/SekiroEnumTypes.h" },
+		{ "Successful.Name", "ESekiroSuccessType::Successful" },
+	};
+#endif // WITH_METADATA
+	static constexpr UECodeGen_Private::FEnumeratorParam Enumerators[] = {
+		{ "ESekiroSuccessType::Successful", (int64)ESekiroSuccessType::Successful },
+		{ "ESekiroSuccessType::Failed", (int64)ESekiroSuccessType::Failed },
+	};
+	static const UECodeGen_Private::FEnumParams EnumParams;
+};
+const UECodeGen_Private::FEnumParams Z_Construct_UEnum_SekiroProj_ESekiroSuccessType_Statics::EnumParams = {
+	(UObject*(*)())Z_Construct_UPackage__Script_SekiroProj,
+	nullptr,
+	"ESekiroSuccessType",
+	"ESekiroSuccessType",
+	Z_Construct_UEnum_SekiroProj_ESekiroSuccessType_Statics::Enumerators,
+	RF_Public|RF_Transient|RF_MarkAsNative,
+	UE_ARRAY_COUNT(Z_Construct_UEnum_SekiroProj_ESekiroSuccessType_Statics::Enumerators),
+	EEnumFlags::None,
+	(uint8)UEnum::ECppForm::EnumClass,
+	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UEnum_SekiroProj_ESekiroSuccessType_Statics::Enum_MetaDataParams), Z_Construct_UEnum_SekiroProj_ESekiroSuccessType_Statics::Enum_MetaDataParams)
+};
+UEnum* Z_Construct_UEnum_SekiroProj_ESekiroSuccessType()
+{
+	if (!Z_Registration_Info_UEnum_ESekiroSuccessType.InnerSingleton)
+	{
+		UECodeGen_Private::ConstructUEnum(Z_Registration_Info_UEnum_ESekiroSuccessType.InnerSingleton, Z_Construct_UEnum_SekiroProj_ESekiroSuccessType_Statics::EnumParams);
+	}
+	return Z_Registration_Info_UEnum_ESekiroSuccessType.InnerSingleton;
+}
+// End Enum ESekiroSuccessType
+
 // Begin Registration
 struct Z_CompiledInDeferFile_FID_Work_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_SekiroTypes_SekiroEnumTypes_h_Statics
 {
 	static constexpr FEnumRegisterCompiledInInfo EnumInfo[] = {
 		{ ESekiroConfirmType_StaticEnum, TEXT("ESekiroConfirmType"), &Z_Registration_Info_UEnum_ESekiroConfirmType, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 4263493916U) },
 		{ ESekiroValidType_StaticEnum, TEXT("ESekiroValidType"), &Z_Registration_Info_UEnum_ESekiroValidType, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 1226647659U) },
+		{ ESekiroSuccessType_StaticEnum, TEXT("ESekiroSuccessType"), &Z_Registration_Info_UEnum_ESekiroSuccessType, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 135355370U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Work_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_SekiroTypes_SekiroEnumTypes_h_2953094479(TEXT("/Script/SekiroProj"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Work_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_SekiroTypes_SekiroEnumTypes_h_1726783458(TEXT("/Script/SekiroProj"),
 	nullptr, 0,
 	nullptr, 0,
 	Z_CompiledInDeferFile_FID_Work_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_SekiroTypes_SekiroEnumTypes_h_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Work_Sekiro_SekiroProj_Source_SekiroProj_SekiroGame_SekiroTypes_SekiroEnumTypes_h_Statics::EnumInfo));
